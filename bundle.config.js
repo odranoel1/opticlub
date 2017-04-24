@@ -1,22 +1,30 @@
 // bundle.config.js 
 module.exports = {
   bundle: {
-    main: {
+    vendor: {
       scripts: [
-        './lib/js/**/*.js'
+        './bower_components/jquery/dist/jquery.min.js',
+        './bower_components/bootstrap/dist/js/bootstrap.min.js'
       ],
       styles: [
-      	'./lib/css/style.css'
-      ]
+        './bower_components/bootstrap/dist/css/bootstrap.min.css'
+      ],
+      options: {
+        uglify: false,
+        minCSS: false,
+        rev: false
+      }      
     },
-    vendor: {
-    	scripts: [
-    		'./bower_components/jquery/dist/jquery.min.js',
-    		'./bower_components/bootstrap/dist/js/bootstrap.min.js'
-    	],
-    	styles: [
-    		'./bower_components/bootstrap/dist/css/bootstrap.min.css'
-    	]
+    main: {
+      scripts: [
+        './dev/js/**/*.js'
+      ],
+      styles: [
+      	'./dev/css/style.css'
+      ],
+      options: {
+        rev: false
+      }         
     }
   }
 };

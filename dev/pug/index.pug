@@ -2,10 +2,10 @@ doctype html
 html(lang="en")
 	head
 		title= pageTitle
-		!=assets.vendor.scripts
-		!=assets.main.scripts
-		!=assets.vendor.styles
-		!=assets.main.styles
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
 	body
 		h1 Pug - node template engine testing
 		#container.col
