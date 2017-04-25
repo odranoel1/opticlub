@@ -34,7 +34,7 @@ bower install
 
 Durante el desarrollo las librerias jquery/css solo se instalaran desde bower (expcepto maps)
 
-Ej. bower install jquery
+Ej. bower install jquery --save
 
 Una vez instalada se debe registrar en la llave vendor de: bundle.config.js para que gulp la compile
 
