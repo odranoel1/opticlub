@@ -8,6 +8,7 @@ module.exports = {
       ],
       styles: [
         './bower_components/bootstrap/dist/css/bootstrap.min.css',
+        './bower_components/font-awesome/css/font-awesome.min.css',
       ],
       options: {
         uglify: false,

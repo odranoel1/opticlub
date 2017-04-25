@@ -37,18 +37,18 @@ gulp.task('html', function() {
 gulp.task('webserver', function() {
 	gulp.src('./public')
 		.pipe(webserver({
-			livereload: true,
+			// livereload: true,
       // open: true,
 			directoryListing: false
 		}));
 });
 
 gulp.task('watch', function () {
+  gulp.watch(['bundle.config.js'], ['bundle']);
   gulp.watch(['dev/styl/*.styl', 'dev/styl/*/*.styl'], ['css']);
   gulp.watch(['dev/css/*.css'], ['bundle']);
   gulp.watch(['dev/js/*.js', 'dev/js/*/*.js'], ['bundle']);
   gulp.watch(['dev/pug/*.pug', 'dev/pug/*/*.pug'], ['html']);
-  
 });
 
 gulp.task('default', ['css', 'html', 'bundle', 'webserver', 'watch']);
