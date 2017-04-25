@@ -7,7 +7,7 @@ module.exports = {
         './bower_components/bootstrap/dist/js/bootstrap.min.js'
       ],
       styles: [
-        './bower_components/bootstrap/dist/css/bootstrap.min.css'
+        './bower_components/bootstrap/dist/css/bootstrap.min.css',
       ],
       options: {
         uglify: false,
@@ -26,5 +26,6 @@ module.exports = {
         rev: false
       }         
     }
-  }
+  },
+  copy: './dev/**/*.{jpg,png,svg}'
 };
