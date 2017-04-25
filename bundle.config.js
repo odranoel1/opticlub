@@ -8,7 +8,7 @@ module.exports = {
       ],
       styles: [
         './bower_components/bootstrap/dist/css/bootstrap.min.css',
-        './bower_components/font-awesome/css/font-awesome.min.css',
+        './dev/css/fa.css'
       ],
       options: {
         uglify: false,
@@ -30,7 +30,11 @@ module.exports = {
   },
   copy: [
     {
-      src: './dev/**/*.{jpg,png,svg}',
+      src: './dev/**/*.{jpg,png}',
+      base: './dev'
+    },
+    {
+      src: './dev/**/*.{eot,svg,ttf,woff,woff2,otf}',
       base: './dev'
     }
   ]
