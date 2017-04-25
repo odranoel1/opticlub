@@ -28,5 +28,10 @@ module.exports = {
       }         
     }
   },
-  copy: './dev/**/*.{jpg,png,svg}'
+  copy: [
+    {
+      src: './dev/**/*.{jpg,png,svg}',
+      base: './dev'
+    }
+  ]
 };
