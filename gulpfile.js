@@ -48,6 +48,7 @@ gulp.task('watch', function () {
   gulp.watch(['dev/styl/*.styl', 'dev/styl/*/*.styl'], ['css']);
   gulp.watch(['dev/css/*.css'], ['bundle']);
   gulp.watch(['dev/js/*.js', 'dev/js/*/*.js'], ['bundle']);
+  gulp.watch(['dev/*/*.jpg', 'dev/*/*.png', 'dev/*/*.svg'], ['bundle']);
   gulp.watch(['dev/pug/*.pug', 'dev/pug/*/*.pug'], ['html']);
 });
 
