@@ -4,10 +4,12 @@ module.exports = {
     vendor: {
       scripts: [
         './bower_components/jquery/dist/jquery.min.js',
-        './bower_components/bootstrap/dist/js/bootstrap.min.js'
+        './bower_components/bootstrap/dist/js/bootstrap.min.js',
+        './bower_components/Camera/scripts/camera.min.js'
       ],
       styles: [
         './bower_components/bootstrap/dist/css/bootstrap.min.css',
+        './bower_components/Camera/css/camera.css',
         './dev/css/fa.css'
       ],
       options: {
@@ -30,7 +32,7 @@ module.exports = {
   },
   copy: [
     {
-      src: './dev/**/*.{jpg,png}',
+      src: './dev/**/*.{jpg,png,gif}',
       base: './dev'
     },
     {

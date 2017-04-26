@@ -57,4 +57,4 @@ gulp.task('watch', function () {
   gulp.watch(['dev/pug/*.pug', 'dev/pug/*/*.pug'], ['html']);
 });
 
-gulp.task('default', ['clean', 'css', 'html', 'bundle', 'webserver', 'watch']);
+gulp.task('default', ['css', 'html', 'bundle', 'webserver', 'watch']);

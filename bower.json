@@ -15,6 +15,7 @@
   "dependencies": {
     "bootstrap": "boostrap#^3.3.7",
     "jquery": "^3.2.1",
-    "font-awesome-stylus": "^4.7.0"
+    "font-awesome-stylus": "^4.7.0",
+    "Camera": "https://github.com/pixedelic/Camera.git"
   }
 }
