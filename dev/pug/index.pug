@@ -1,20 +1,21 @@
 doctype html
 html(lang="en")
 	head
-		title= pageTitle
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		title= ""
 		link(rel="stylesheet", href="assets/vendor.css")
 		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="/favicon.png")
+
 		script(src="assets/vendor.js")
 		script(src="assets/main.js")
 	body
-		h1 Pug - node template engine testing
-		#container.col
-			if youAreUsingPug
-				p You are amazing
-			else
-				p Get on it!
-		p.
-			Pug is a terse and simple templating language with a strong focus on performance and powerful features.
-
-		p
-			i.fa.fa-facebook.fa-2x
+		include parts/header.pug
+		.Content
+			.container
+				.row
+					.col-sm-12
+						p hola
+		include parts/footer.pug
