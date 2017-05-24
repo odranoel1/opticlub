@@ -5,11 +5,13 @@ module.exports = {
       scripts: [
         './bower_components/jquery/dist/jquery.min.js',
         './bower_components/bootstrap/dist/js/bootstrap.min.js',
+        './bower_components/slicknav/dist/jquery.slicknav.min.js',
         './bower_components/Camera/scripts/camera.min.js'
       ],
       styles: [
         './bower_components/bootstrap/dist/css/bootstrap.min.css',
         './bower_components/Camera/css/camera.css',
+        './bower_components/slicknav/dist/slicknav.min.css',
         './dev/css/fa.css'
       ],
       options: {
