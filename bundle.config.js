@@ -6,7 +6,9 @@ module.exports = {
         './bower_components/jquery/dist/jquery.min.js',
         './bower_components/bootstrap/dist/js/bootstrap.min.js',
         './bower_components/slicknav/dist/jquery.slicknav.min.js',
-        './bower_components/Camera/scripts/camera.min.js'
+        './bower_components/Camera/scripts/camera.min.js',
+        './bower_components/Camera/scripts/jquery.easing.1.3.js',
+        './bower_components/Camera/scripts/jquery.mobile.customized.min.js'
       ],
       styles: [
         './bower_components/bootstrap/dist/css/bootstrap.min.css',
