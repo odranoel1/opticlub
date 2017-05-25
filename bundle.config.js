@@ -8,6 +8,7 @@ module.exports = {
         './bower_components/slicknav/dist/jquery.slicknav.min.js',
         './bower_components/Camera/scripts/camera.min.js',
         './bower_components/Camera/scripts/jquery.easing.1.3.js',
+        './bower_components/jquery-sidebar/src/jquery.sidebar.min.js',
         './bower_components/Camera/scripts/jquery.mobile.customized.min.js'
       ],
       styles: [

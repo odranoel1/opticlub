@@ -17,6 +17,7 @@
     "jquery": "^3.2.1",
     "font-awesome-stylus": "^4.7.0",
     "Camera": "https://github.com/pixedelic/Camera.git",
-    "slicknav": "https://github.com/ComputerWolf/SlickNav.git#^1.0.10"
+    "slicknav": "https://github.com/ComputerWolf/SlickNav.git#^1.0.10",
+    "jquery-sidebar": "https://github.com/jillix/jQuery-sidebar.git#^3.3.2"
   }
 }
