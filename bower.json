@@ -20,6 +20,7 @@
     "slicknav": "https://github.com/ComputerWolf/SlickNav.git#^1.0.10",
     "jquery-sidebar": "https://github.com/jillix/jQuery-sidebar.git#^3.3.2",
     "nano": "https://github.com/trix/nano.git",
-    "moment": "https://github.com/moment/moment.git#^2.19.2"
+    "moment": "https://github.com/moment/moment.git#^2.19.2",
+    "matchHeight": "https://github.com/liabru/jquery-match-height.git#^0.7.2"
   }
 }
