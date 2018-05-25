@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="es")
 	head
 		meta(name="charset", charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -20,17 +20,28 @@ html(lang="en")
 		script(src="assets/vendor.js")
 		script(src="assets/main.js")
 	body
+		- var section = 'index'
 		include parts/header.pug
+		
+		#home-sidebar.slider-pro
+			.sp-slides
+				// Slide 1
+				.sp-slide
+					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
+				.sp-slide
+					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
+				.sp-slide
+					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
+
+				// // Slide 2
+				// .sp-slide
+				// 	p Lorem ipsum dolor sit amet
+				// // Slide 3
+				// .sp-slide
+				// 	h3.sp-layer Lorem ipsum dolor sit amet
+				// 	p.sp-layer consectetur adipisicing elit
+
 		.Content
-			.mobile.Banner
-				.wrap_mobile
-					div(data-src="assets/img/banner1.jpg" data-link="#")
-					div(data-src="assets/img/banner1.jpg" data-link="#")
-			.desktop.Banner
-				.wrap_desktop
-					div(data-src="assets/img/banner1.jpg" data-link="#")
-					div(data-src="assets/img/banner1.jpg" data-link="#")
-			.u-clearfix
 			.container
 				.row
 					.col-sm-12
