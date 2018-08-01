@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "jquery": "^3.2.1",
-    "bootstrap": "^4.1.1",
+    "bootstrap": "boostrap#^3.3.7",
     "jquery-sidebar": "https://github.com/jillix/jQuery-sidebar.git#^3.3.2",
     "nano": "https://github.com/trix/nano.git",
     "moment": "https://github.com/moment/moment.git#^2.19.2",

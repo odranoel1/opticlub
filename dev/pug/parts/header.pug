@@ -15,26 +15,32 @@ header.Header
 							ul
 								li(class=section == 'index' ? 'active' : '')
 									a(href="#") Home
-								li
-									a(href="#") Nosotros
-								li
-									a(href="#") Contacto
+								li.nav-item
+									a.nav-link(href="#") Nosotros
+								li.nav-item
+									a.nav-link(href="#") Contacto
 				
 		//- .sidebar.right I am on right!
 		//- .sidebar.top I am on top!
 		//- .sidebar.bottom I am on bottom!
 	.container-fluid
 		.row
-			.col-md-12
-				nav.hidden-xs
-					ul
-						li(class=section == 'index' ? 'active' : '')
-							a(href="#") Home
-						li
-							a(href="#") Nosotros
-						li
-							a(href="#") Contacto
-				
-				a(href="#", data-action="toggle", data-side="left").sidebar-btn.pull-right.visible-xs
+			.col-md-8.col-md-offset-2.hidden-xs.hidden-sm
+				.row
+					.col-md-2
+						a.d-block(href="")
+							img.img-fluid(src="assets/img/logo.jpg", alt="")
+					.col-md-10
+						nav.navbar
+							ul.nav.navbar-nav
+								li
+									a(href="#", class=section == 'index' ? 'active' : '') Home
+								li
+									a(href="#") Nosotros
+								li
+									a(href="#") Contacto
+								
+			.col-xs-12.visible-xs.visible-sm
+				a(href="#", data-action="toggle", data-side="left").sidebar-btn.pull-right
 					i.fa.fa-bars
 					| Menu
