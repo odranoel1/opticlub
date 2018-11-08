@@ -1,7 +1,7 @@
 /node_modules
 /bower_components
 bundle.result.json
-dev/css/*.css
+dev/css/style.css
 public/assets/*
 public/assets/*
 public/*.html
