@@ -22,3 +22,67 @@
         align-items baseline
         span
           font-size 2.5em
+
+.About
+  .title
+    h2
+      color $blueDemon
+      font-size 2em
+      span
+        color $blue
+  .content
+    margin-top 40px
+    margin-bottom 40px
+    .item
+      h2
+        font-size 2em
+        font-weight bolder
+      a
+        margin 40px 0 20px 0
+        display block
+
+.Contact
+  .location
+    display flex
+    & > div
+      padding-left 0
+      padding-right 0
+    .info
+      background-color $blueDemon
+      img
+        float left
+      ul
+        float right
+        li
+          display flex
+          color $white
+          padding 10px 0
+          img
+            margin-right 20px
+  .message
+    margin 20px 0
+    i
+      border 2px solid $blue
+      padding 10px 16px
+      border-radius 20px
+    label
+      color $blue
+  .title
+    background-color $gray
+    padding 20px 0
+    text-align center
+    span
+      color $blueDemon
+  .agent
+    background-color $gray
+    .item
+      display flex
+      flex-direction column
+      align-items center
+      margin-bottom 40px
+      h2
+        font-size 2em
+        font-weight bolder
+      a
+        color $blue
+        display block

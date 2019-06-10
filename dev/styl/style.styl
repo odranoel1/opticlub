@@ -7,6 +7,7 @@ $white = #fff
 $blue = #1f63a9
 $blueDemon = #23333e
 $gray = #e8ebea
+$black = #000
 
 @import "b4.styl"
 @import "Header/style.styl"
@@ -36,6 +37,20 @@ ul
 i
 	color $blue
 
+label
+	font-weight bolder
+	color $black
+
+input
+	border none !important
+	border-bottom 1px solid $black !important
+	border-radius 0 !important
+	box-shadow none !important
+.input-default
+	background-color #e8ebea !important
+	border-color #e8ebea !important
+	box-shadow none
+
 .flex
 	display flex
 	&-align
@@ -54,6 +69,12 @@ i
 	&-blue
 		border-color $blue
 		color $blue
+
+.link
+	&-default
+		color $blue
+		font-weight bolder
+		text-decoration underline
 
 .box
 	&-gray

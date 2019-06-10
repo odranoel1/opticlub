@@ -25,81 +25,87 @@ html(lang="es")
 		
 		.Contact
 			.container-fluid
-				.row
-					.col-sm-6.box-blueDemon
-						img(src="assets/img/contacto-icono-1.png", alt="Opticlub").img-responsive
-						ul
+				.row.location
+					.col-sm-6.info
+						img(src="assets/img/opticlub-contact-icon.png", alt="Opticlub").img-responsive
+						ul.info
 							li
-								img(src="assets/img/contacto-icono-2.png", alt="Opticlub").img-responsive
-								a(href="")
+								img(src="assets/img/opticlub-pin-icon.png", alt="Opticlub").img-responsive
+								a(href="#")
 									b Calle Francia
 									p 
-										| 1225Colonia Moderna
+										| 1225 Colonia Moderna
 										| Guadalajara, Jalisco
 										| C.P. 44190
 							li
-								img(src="assets/img/contacto-icono-3.png", alt="Opticlub").img-responsive
+								img(src="assets/img/opticlub-clock-icon.png", alt="Opticlub").img-responsive
 								b Lunes-Viernes
 								p 8:00 a.m. a 5:30 p.m.
 							li
-								img(src="assets/img/contacto-icono-3.png", alt="Opticlub").img-responsive
+								img(src="assets/img/opticlub-wa-blue-icon.png", alt="Opticlub").img-responsive
 								b WhatsApp
 								a(href="tel:52 1 3311308015") +52 1 3311308015
 					.col-sm-6
-						p mapa
-				.row
-					.col-sm-12
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.199413179507!2d-103.35796838470209!3d20.661464586198466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b200fc7299f1%3A0xbedc3d1d6ec4d667!2sCalle+Francia+1225%2C+Moderna%2C+44190+Guadalajara%2C+Jal.!5e0!3m2!1ses-419!2smx!4v1560205227559!5m2!1ses-419!2smx" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				.row.my-5
+					.col-sm-8.col-sm-offset-2
 						h2 Contáctanos
-						b ¿Tienes alguna duda?
+						b ¿Tienes alguna duda? 
 						span Déjanos un mensaje y nos podremos en contacto a la brevedad
 						form(action="")
-							label * Nombre:
-							input(type="text")
-							label * Email:
-							input(type="text")
-							label * Asunto:
-							input(type="text")
-							label MENSAJE
-							textarea(name="", cols="30", rows="10")
-						input(type="button")
-				.row.box-gray
+							.form-group.mt-5
+								label * Nombre:
+								input(type="text").form-control
+							.form-group
+								label * Email:
+								input(type="text").form-control
+							.form-group
+								label * Asunto:
+								input(type="text").form-control.input-default
+							.form-group
+								.message
+									i.fas.fa-exclamation
+									label MENSAJE
+								textarea(name="", cols="30", rows="10").form-control.input-default
+						input(type="submit" value="Envíar Mensaje").btn.btn-default.pull-right
+				.row.title
 					.col-sm-12
 						h2
-							| CONOCE AL AGENTE
+							| CONOCE AL AGENTE 
 							span DE ACUERDO A TU ZONA
-				.row.box-gray
-					.col-sm-4
+				.row.agent
+					.col-sm-4.item
 						img(src="assets/img/opticlub-contact-1.png", alt="Opticlub").img-responsive
 						h2 BÁRBARA MUÑOZ
 						p Zona: Guadalajara y Zona Metropolitana
 						a(href="tel:(521) 333 662 3529") (521) 333 662 3529
 						a(href="mailto:bmunoz@opticlub.mx") bmunoz@opticlub.mx
-					.col-sm-4
+					.col-sm-4.item
 						img(src="assets/img/opticlub-contact-2.png", alt="Opticlub").img-responsive
 						h2 EFRÉN CHÁVEZ
 						p Zona: Centro
 						a(href="tel:(521) 3313165439") (521) 3313165439
 						a(href="mailto:chavez@opticlub.mx") chavez@opticlub.mx
-					.col-sm-4
+					.col-sm-4.item
 						img(src="assets/img/opticlub-contact-3.png", alt="Opticlub").img-responsive
 						h2 ESTEBAN VELÁZQUEZ
 						p Zona: Pacífico y Occidente
 						a(href="tel:(55) 458 828 11") (55) 458 828 11
 						a(href="mailto:evelazquez@opticlub.mx") evelazquez@opticlub.mx
-				.row.box-gray
-					.col-sm-4
+				.row.agent
+					.col-sm-4.item
 						img(src="assets/img/opticlub-contact-3.png", alt="Opticlub").img-responsive
 						h2 FRANCISCO ALVARADO
 						p Zona: Norte
 						a(href="tel:(521) 811 6009222") (521) 811 6009222
 						a(href="mailto:jalvarado@opticlub.mx") jalvarado@opticlub.mx
-					.col-sm-4
+					.col-sm-4.item
 						img(src="assets/img/opticlub-contact-3.png", alt="Opticlub").img-responsive
 						h2 LUIS ENRIQUE
 						p Zona: Sureste
 						a(href="tel:(521) 3311809429") (521) 3311809429
 						a(href="mailto:luisenrique@opticlub.mx") luisenrique@opticlub.mx
-					.col-sm-4
+					.col-sm-4.item
 						img(src="assets/img/opticlub-contact-3.png", alt="Opticlub").img-responsive
 						h2 OSCAR REYES
 						p Zona: Bajío

@@ -1,6 +1,6 @@
 {
-  "name": "base",
-  "description": "Base layout web app",
+  "name": "opticlub",
+  "description": "Opticlub web",
   "main": "gulpfile.js",
   "license": "ISC",
   "homepage": "https://github.com/jjacquesf/base-web",

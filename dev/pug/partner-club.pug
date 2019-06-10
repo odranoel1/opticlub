@@ -24,10 +24,10 @@ html(lang="es")
 		include parts/header.pug
 
 		.Club
-			.container
+			.container-fluid
 				.row
-					.col-sm-12
-						img(src="assets/img/icono-9.png", alt="OptiClub").img-responsive
+					.col-sm-8.col-sm-offset-2
+						img(src="assets/img/opticlub-club-icon.png", alt="OptiClub").img-responsive
 						h2
 							| ¡Se parte del club!
 							b Activa tu cuenta
@@ -35,34 +35,34 @@ html(lang="es")
 							b GRATIS
 						form(action="")
 							h2 Datos principales
-							.row
+							.row.form-group
 								.col-sm-6
 									label * Nombre completo:
-									input(type="text")
+									input(type="text").form-control
 								.col-sm-6
 									label * Correo Electrónico:
-									input(type="text")
-							.row
+									input(type="text").form-control
+							.row.form-group
 								.col-sm-6
 									label * Nombre de la empresa:
-									input(type="text")
+									input(type="text").form-control
 								.col-sm-6
 									label * Estado:
-									input(type="text")
-							.row
+									input(type="text").form-control
+							.row.form-group
 								.col-sm-6
 									label * Teléfóno
-									input(type="text")
+									input(type="text").form-control
 								.col-sm-6
 									label * Nombre de mi agente:
-									input(type="text")
-							.row
+									input(type="text").form-control
+							.row.form-group
 								.col-sm-6
 									label Contraseña
-									input(type="text")
+									input(type="text").form-control
 								.col-sm-6
 									label Repetir contraseña
-									input(type="text")
+									input(type="text").form-control
 							input(type="submit" value="+CREAR TU CUENTA SOCIO CLUB").btn.btn-default
 				.row
 					.col-sm-12
@@ -81,7 +81,7 @@ html(lang="es")
 							| de tu cuenta, posteriormente a la activación podrás visualizar las marcas y precios de nuestros productos
 				.row
 					.col-sm-12
-						img(src="assets/img/prime.png", alt="OptiClub")
+						img(src="assets/img/opticlub-crown-icon.png", alt="OptiClub")
 						h2
 							b Conviértete de Socio Club a
 							| SOCIO PRIME
@@ -89,35 +89,35 @@ html(lang="es")
 							span Activa tu cuenta
 							| en un ¡Solo click!
 				.row
-					.col-sm-12.box-gray
-						ul
+					.col-sm-12.box-gray.text-center
+						ul.list-inline
 							li
-								img(src="assets/img/carrito-1.png", alt="OptiClub").img-responsive
+								img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub").img-responsive
 								p
 									| EXCELENTES
 									span DESCUENTOS
 							li
-								img(src="", alt="OptiClub").img-responsive
+								img(src="assets/img/opticlub-alert-icon.png", alt="OptiClub").img-responsive
 								p
 									| ACCESO A CANAL DE
 									span VÍDEOS Y RECURSOS
 							li
-								img(src="assets/img/icono-5.png", alt="OptiClub").img-responsive
+								img(src="assets/img/opticlub-star-icon.png", alt="OptiClub").img-responsive
 								p
 									| MARCAS
 									span EXCLUSIVAS
 							li
-								img(src="assets/img/icono-6.png", alt="OptiClub").img-responsive
+								img(src="assets/img/opticlub-glasses-icon.png", alt="OptiClub").img-responsive
 								p
 									| CAMBIO DE MERCANCÍA
 									span A LOS 6 MESES
 							li
-								img(src="assets/img/icono-7.png", alt="OptiClub").img-responsive
+								img(src="assets/img/opticlub-web-icon.png", alt="OptiClub").img-responsive
 								p
 									| AUMENTO DE
 									span UTILIDADES
 							li
-								img(src="assets/img/icono-8.png", alt="OptiClub").img-responsive
+								img(src="assets/img/opticlub-money-icon.png", alt="OptiClub").img-responsive
 								p
 									| MEJOR PRECIO
 									span SIN LÍMITE DE VOLUMEN

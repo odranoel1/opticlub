@@ -1,7 +1,7 @@
 {
-  "name": "base-web",
+  "name": "opticlub",
   "version": "1.0.0",
-  "description": "Base layout web app",
+  "description": "Opticlub web",
   "main": "gulpfile.js",
   "dependencies": {
     "bower": "^1.8.8"
