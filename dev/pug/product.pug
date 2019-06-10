@@ -1,0 +1,112 @@
+doctype html
+html(lang="es")
+	head
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		meta(name="title", content="")
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="robots", content="index, follow")
+		meta(name="author", content="http://www.lava.mx")
+		meta(name="distribution", content="global")
+		meta(name="rating" content="general")
+		meta(name="revisit-after" content="14 Days")
+		title
+		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="favicon.png")
+
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
+	body
+		include parts/header.pug
+
+		.Product
+			.container
+				.row
+					.col-sm-8
+						img(src="", alt="OptiClub").img-responsive
+						p
+							| Felicidades llevas
+							b $1,200
+							| ahorrados.
+							| Te faltan
+							b $3,800
+							| para obtener
+							b envío GRATIS.
+					.col-sm-4
+						img(src="", alt="OptiClub").img-responsive
+						B TOTAL DEL PAQUETE 23 pzas - $2,000 pesos
+				.row
+					.col-sm-3
+						h3 ORDENAR POR
+						form(action="")
+							input(type="select")
+						h3 MARCAS
+						ul
+							li
+								a(href="#") Carnaval
+							li
+								a(href="#") Discovery
+							li
+								a(href="#") Distroller
+							li
+								a(href="#") Massimo Rossi
+							li
+								a(href="#") Nobleman
+							li
+								a(href="#") Spil
+							li
+								a(href="#") Squids
+						h3 CATEGORÍAS
+						ul
+							li
+								a(href="#") Oftálmicos
+							li
+								a(href="#") Solares
+							li
+								a(href="#") Clip On
+						h3 GÉNERO
+						ul
+							li
+								a(href="#") Mujer
+							li
+								a(href="#") Hombre
+							li
+								a(href="#") Infantil
+					.col-sm-9
+						.item
+							img(src="", alt="OptiClub").img-responsive
+							b $299.00
+							span DISCOVERY 023
+							form(action="")
+								input(type="radio")
+								input(type="select")
+								input(type="text")
+					.col-sm-3
+						img(src="", alt="OptiClub").img-responsive
+						p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
+					.col-sm-3
+						img(src="", alt="OptiClub").img-responsive
+						p ¡Satisfacción Totalen nuestros productos!
+				.row
+					.col-sm-4
+						h1 ¡Únete al club!
+						h2
+							| MEMBRESÍA
+							| SOCIO CLUB
+						b
+							| $ 0
+							| GRATIS
+						.stars
+							i.fa.fas
+						i.fas.fas
+						a(href="#").btn.btn-default ACTIVAR AHORA
+				.row
+					.col-sm-12
+						img(src="", alt="OptiClub").img-responsive
+						h2 INSTAGRAM
+						p opticlub.mx
+		include parts/footer.pug

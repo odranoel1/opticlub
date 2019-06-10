@@ -1,0 +1,133 @@
+doctype html
+html(lang="es")
+	head
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		meta(name="title", content="")
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="robots", content="index, follow")
+		meta(name="author", content="http://www.lava.mx")
+		meta(name="distribution", content="global")
+		meta(name="rating" content="general")
+		meta(name="revisit-after" content="14 Days")
+		title
+		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="favicon.png")
+
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
+	body
+		include parts/header.pug
+
+		.Club
+			.container
+				.row
+					.col-sm-12
+						img(src="assets/img/icono-9.png", alt="OptiClub").img-responsive
+						h2
+							| ¡Se parte del club!
+							b Activa tu cuenta
+							| totalmente
+							b GRATIS
+						form(action="")
+							h2 Datos principales
+							.row
+								.col-sm-6
+									label * Nombre completo:
+									input(type="text")
+								.col-sm-6
+									label * Correo Electrónico:
+									input(type="text")
+							.row
+								.col-sm-6
+									label * Nombre de la empresa:
+									input(type="text")
+								.col-sm-6
+									label * Estado:
+									input(type="text")
+							.row
+								.col-sm-6
+									label * Teléfóno
+									input(type="text")
+								.col-sm-6
+									label * Nombre de mi agente:
+									input(type="text")
+							.row
+								.col-sm-6
+									label Contraseña
+									input(type="text")
+								.col-sm-6
+									label Repetir contraseña
+									input(type="text")
+							input(type="submit" value="+CREAR TU CUENTA SOCIO CLUB").btn.btn-default
+				.row
+					.col-sm-12
+						p
+							| Al crear mi cuenta,
+							b estoy de acuerdo
+							| con:
+						ul
+							li
+								p Recibir correos electrónicos relacionados con miembros y servicios de OC
+							li
+								a(href="") Terminos y condiciones / políticas de envíos*
+						p
+							| Una vez que hagas el registro un
+							b correo de confirmación
+							| de tu cuenta, posteriormente a la activación podrás visualizar las marcas y precios de nuestros productos
+				.row
+					.col-sm-12
+						img(src="assets/img/prime.png", alt="OptiClub")
+						h2
+							b Conviértete de Socio Club a
+							| SOCIO PRIME
+						p
+							span Activa tu cuenta
+							| en un ¡Solo click!
+				.row
+					.col-sm-12.box-gray
+						ul
+							li
+								img(src="assets/img/carrito-1.png", alt="OptiClub").img-responsive
+								p
+									| EXCELENTES
+									span DESCUENTOS
+							li
+								img(src="", alt="OptiClub").img-responsive
+								p
+									| ACCESO A CANAL DE
+									span VÍDEOS Y RECURSOS
+							li
+								img(src="assets/img/icono-5.png", alt="OptiClub").img-responsive
+								p
+									| MARCAS
+									span EXCLUSIVAS
+							li
+								img(src="assets/img/icono-6.png", alt="OptiClub").img-responsive
+								p
+									| CAMBIO DE MERCANCÍA
+									span A LOS 6 MESES
+							li
+								img(src="assets/img/icono-7.png", alt="OptiClub").img-responsive
+								p
+									| AUMENTO DE
+									span UTILIDADES
+							li
+								img(src="assets/img/icono-8.png", alt="OptiClub").img-responsive
+								p
+									| MEJOR PRECIO
+									span SIN LÍMITE DE VOLUMEN
+						.start.box-blueDemon
+							h2 ¡Comienza a disfrutar de sus beneficios!
+							b
+								| $499
+								span MENSUAL
+							.stars
+							a(href="#").btn.btn-default
+								| + ACTIVAR MI CUENTA
+								b AHORA
+		include parts/footer.pug

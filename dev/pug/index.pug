@@ -33,17 +33,77 @@ html(lang="es")
 				.sp-slide
 					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
 
-				// // Slide 2
-				// .sp-slide
-				// 	p Lorem ipsum dolor sit amet
-				// // Slide 3
-				// .sp-slide
-				// 	h3.sp-layer Lorem ipsum dolor sit amet
-				// 	p.sp-layer consectetur adipisicing elit
-
-		.Content
-			.container
+		.Home
+			.container-fluid
 				.row
-					.col-sm-12
-						p hola
+					.col-sm-6.flex.flex-justify
+						img(src="assets/img/opticlub-home-banner-1.png", alt="OptiClub").img-responsive
+						.box-item
+							h2
+								b Los más vendidos
+							p Mira los favoritos de los ópticos
+					.col-sm-6.flex.flex-justify
+						img(src="assets/img/opticlub-home-banner-2.png", alt="OptiClub").img-responsive
+						.box-item
+							h2
+								b Nuevos 
+								| Modelos
+							p Mira lo último en lentes
+				.row
+					.col-sm-12.box-gray.my-5
+						ul.list-inline
+							li
+								img(src="assets/img/icono-2.png", alt="OptiClub").img-responsive
+								p ¡No te preocupes, tu compra es completamente segura!
+							li
+								img(src="assets/img/icono-1.png", alt="OptiClub").img-responsive
+								p Envíos a toda la república mexicana
+							li
+								img(src="assets/img/icono-3.png", alt="OptiClub").img-responsive
+								p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
+							li
+								img(src="assets/img/icono-4.png", alt="OptiClub").img-responsive
+								p ¡Satisfacción Totalen nuestros productos!
+				.row.box-gray.membership
+					.col-sm-4
+						//h1
+							b ¡Únete al club!
+						.item
+							h2
+								| MEMBRESÍA #[br]
+								span SOCIO CLUB
+							.price
+								span $ 0
+								p GRATIS
+							.stars
+								i.far.fa-star
+								i.far.fa-star
+								i.far.fa-star
+								i.far.fa-star
+								i.far.fa-star
+							i.fas.fa-arrow-right
+							a(href="#").btn.btn-blue ACTIVAR AHORA
+					.col-sm-4
+						.item
+							h2
+								| MEMBRESÍA #[br]
+								span SOCIO CLUB
+							.price
+								span $ 0
+								p GRATIS
+							.stars
+								i.far.fa-star
+								i.far.fa-star
+								i.far.fa-star
+								i.far.fa-star
+								i.far.fa-star
+							i.fas.fa-arrow-right
+							a(href="#").btn.btn-blue ACTIVAR AHORA
+					.col-sm-4
+						img(src="assets/img/opticlub-home-banner-3.jpg", alt="OptiClub").img-responsive
+				.row
+					.col-sm-12.text-center
+						i.fab.fa-instagram
+						h2 INSTAGRAM
+						p opticlub.mx
 		include parts/footer.pug

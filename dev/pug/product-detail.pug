@@ -1,0 +1,108 @@
+doctype html
+html(lang="es")
+	head
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		meta(name="title", content="")
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="robots", content="index, follow")
+		meta(name="author", content="http://www.lava.mx")
+		meta(name="distribution", content="global")
+		meta(name="rating" content="general")
+		meta(name="revisit-after" content="14 Days")
+		title
+		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="favicon.png")
+
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
+	body
+		include parts/header.pug
+
+		.Product
+			.container
+				.row
+					.col-sm-8
+						img(src="", alt="OptiClub").img-responsive
+						p
+							| Felicidades llevas
+							b $1,200
+							| ahorrados.
+							| Te faltan
+							b $3,800
+							| para obtener
+							b envío GRATIS.
+					.col-sm-4
+						img(src="", alt="OptiClub").img-responsive
+						B TOTAL DEL PAQUETE 23 pzas - $2,000 pesos
+				.row
+					.col-sm-8
+						span
+							a(href="#") TIENDA /
+							a(href="#") OFTÁLMICO  /
+							a(href="#") HOMBRE  /
+							a(href="#")
+								b MASSIMO ROSSI
+						ul
+							li
+								img(src="", alt="OptiClub").img-responsive
+							li
+								img(src="", alt="OptiClub").img-responsive
+						img(src="", alt="OptiClub").img-responsive
+					.col-sm-4
+						h2
+							b MASSIMO ROSSI
+							| CON SOBREPUESTO
+						p Micas polarizadas
+						span Modelo: MSM 023 C07
+						p $299.00
+						form(action="")
+							input(type="radio")
+							input(type="radio")
+							input(type="select")
+							input(type="submit" value="AGREGAR A MI PAQUETE")
+						ul.nav.nav-tabs
+							li.active
+								a(href="#description" data-toggle="tab") DESCRIPCIÓN
+							li
+								a(href="#details" data-toggle="tab") DETALLES
+							li
+								a(href="#material" data-toggle="tab") MATERIAL
+						.tab-content
+							#description.tab-pane.fade.in.active
+								p
+									| Parte de nuestra segunda colección de Clip On, las gafas
+									| de sol MSM 023 C07 tienen un marco en forma de "D"
+									| hecho de acetato fino. Las micas están 100% protegidas
+									| contra los rayos UV, y las gafas tienen un logotipo
+									| de Massimo Rossi en las varillas.
+							#details.tab-pane.fade
+								p
+									| Parte de nuestra segunda colección de Clip On, las gafas
+									| de sol MSM 023 C07 tienen un marco en forma de "D"
+									| hecho de acetato fino. Las micas están 100% protegidas
+									| contra los rayos UV, y las gafas tienen un logotipo
+									| de Massimo Rossi en las varillas.
+							#material.tab-pane.fade
+								p
+									| Parte de nuestra segunda colección de Clip On, las gafas
+									| de sol MSM 023 C07 tienen un marco en forma de "D"
+									| hecho de acetato fino. Las micas están 100% protegidas
+									| contra los rayos UV, y las gafas tienen un logotipo
+									| de Massimo Rossi en las varillas.
+						a(href="#") Términos y condiciones
+						a(href="#") Politica de envíos
+				.row
+					.col-sm-12
+						h2
+							b También te puede
+							| interesar
+						img(src="", alt="OptiClub").img-responsive
+						b MASSIMO ROSSI
+						p Acetato y Metal
+						span $299.00
+		include parts/footer.pug

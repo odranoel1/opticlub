@@ -1,4 +1,4 @@
-// bundle.config.js 
+// bundle.config.js
 module.exports = {
   bundle: {
     vendor: {
@@ -33,18 +33,19 @@ module.exports = {
         uglify: false,
         minCSS: false,
         rev: false
-      }      
+      }
     },
     main: {
       scripts: [
         './dev/js/**/*.js'
       ],
       styles: [
-      	'./dev/css/style.css'
+      	'./dev/css/style.css',
+        './dev/css/webfont.css'
       ],
       options: {
         rev: false
-      }         
+      }
     }
   },
   copy: [

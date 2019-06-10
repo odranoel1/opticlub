@@ -2,6 +2,13 @@ $desktop_size = 1024px
 $tablet_size = 768px
 $phone_size = 320px
 
+//Colors
+$white = #fff
+$blue = #1f63a9
+$blueDemon = #23333e
+$gray = #e8ebea
+
+@import "b4.styl"
 @import "Header/style.styl"
 @import "Content/style.styl"
 @import "Footer/style.styl"
@@ -9,8 +16,51 @@ $phone_size = 320px
 body
 	background white
 	font-size 16px
-	font-family 'Open Sans', sans-serif
-		
+	font-family 'Aileron-Regular', sans-serif
+h1
+	font-size 1.5em
+	color $blueDemon
+h2
+	font-size 1.4em
+	color $blue
+h3
+	font-size 1.3em
+h4
+	font-size 1.2em
+h5
+	font-size 1.1em
+p
+	font-size 1em
+ul
+	list-style none
+i
+	color $blue
+
+.flex
+	display flex
+	&-align
+		align-items center
+	&-justify
+		justify-content center
+
+.btn
+	color $white
+	&-default
+		background-color $blue
+	&-primary
+		background-color $blueDemon
+	&-link
+		border-color $blue
+	&-blue
+		border-color $blue
+		color $blue
+
+.box
+	&-gray
+		background-color $gray
+	&-blueDemon
+		background-color $blueDemon
+
 .notify
 	padding 0.8em
 	margin-bottom 1em
@@ -30,7 +80,7 @@ body
 		background #fff6bf
 		color #514721
 		border-color #ffd324
-	
+
 	&.info
 		background #d5edf8
 		color #205791

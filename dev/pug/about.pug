@@ -1,0 +1,60 @@
+doctype html
+html(lang="es")
+	head
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		meta(name="title", content="")
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="robots", content="index, follow")
+		meta(name="author", content="http://www.lava.mx")
+		meta(name="distribution", content="global")
+		meta(name="rating" content="general")
+		meta(name="revisit-after" content="14 Days")
+		title
+		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="favicon.png")
+
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
+	body
+		include parts/header.pug
+		
+		.About.box-gray
+			.container
+				.row
+					.col-sm-12
+						h2 ¡Ellos hacen realidad Opticlub!
+						p Conoce a nuestro equipo
+				.row
+					.col-sm-4
+						img(src="assets/img/nosotros-3.png", alt="Opticlub").img-responsive
+						h2 NOEMÍ CALDERON
+						p Ejecutiva de Ventas
+						a(href="mailto:noemi@opticlub.mx") noemi@opticlub.mx 
+						p
+							| Todo lo bonito utiliza lentes, mis favoritos
+							| idudablemente son los ClipOn, vaguardistas y 
+							| llenos de pasión
+					.col-sm-4
+						img(src="assets/img/nosotros-2.png", alt="Opticlub").img-responsive
+						h2 CINTHIA ARIAS
+						p Ejecutiva de Ventas
+						a(href="mailto:cinthiarias@opticlub.mx") cinthiarias@opticlub.mx 
+						p
+							| Todo lo bonito utiliza lentes, mis favoritos
+							| idudablemente son los ClipOn, vaguardistas y 
+							| llenos de pasión
+					.col-sm-4
+						img(src="assets/img/nosotros-1.png", alt="Opticlub").img-responsive
+						h2 LUIS PACHECO
+						p Director Comercial
+						a(href="mailto:cinthiarias@opticlub.mx") cinthiarias@opticlub.mx 
+						p
+							| Todo lo bonito utiliza lentes, mis favoritos
+							| idudablemente son los ClipOn, vaguardistas y 
+							| llenos de pasión
+		include parts/footer.pug

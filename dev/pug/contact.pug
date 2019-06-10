@@ -1,0 +1,108 @@
+doctype html
+html(lang="es")
+	head
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		meta(name="title", content="")
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="robots", content="index, follow")
+		meta(name="author", content="http://www.lava.mx")
+		meta(name="distribution", content="global")
+		meta(name="rating" content="general")
+		meta(name="revisit-after" content="14 Days")
+		title
+		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="favicon.png")
+
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
+	body
+		include parts/header.pug
+		
+		.Contact
+			.container-fluid
+				.row
+					.col-sm-6.box-blueDemon
+						img(src="assets/img/contacto-icono-1.png", alt="Opticlub").img-responsive
+						ul
+							li
+								img(src="assets/img/contacto-icono-2.png", alt="Opticlub").img-responsive
+								a(href="")
+									b Calle Francia
+									p 
+										| 1225Colonia Moderna
+										| Guadalajara, Jalisco
+										| C.P. 44190
+							li
+								img(src="assets/img/contacto-icono-3.png", alt="Opticlub").img-responsive
+								b Lunes-Viernes
+								p 8:00 a.m. a 5:30 p.m.
+							li
+								img(src="assets/img/contacto-icono-3.png", alt="Opticlub").img-responsive
+								b WhatsApp
+								a(href="tel:52 1 3311308015") +52 1 3311308015
+					.col-sm-6
+						p mapa
+				.row
+					.col-sm-12
+						h2 Contáctanos
+						b ¿Tienes alguna duda?
+						span Déjanos un mensaje y nos podremos en contacto a la brevedad
+						form(action="")
+							label * Nombre:
+							input(type="text")
+							label * Email:
+							input(type="text")
+							label * Asunto:
+							input(type="text")
+							label MENSAJE
+							textarea(name="", cols="30", rows="10")
+						input(type="button")
+				.row.box-gray
+					.col-sm-12
+						h2
+							| CONOCE AL AGENTE
+							span DE ACUERDO A TU ZONA
+				.row.box-gray
+					.col-sm-4
+						img(src="assets/img/opticlub-contact-1.png", alt="Opticlub").img-responsive
+						h2 BÁRBARA MUÑOZ
+						p Zona: Guadalajara y Zona Metropolitana
+						a(href="tel:(521) 333 662 3529") (521) 333 662 3529
+						a(href="mailto:bmunoz@opticlub.mx") bmunoz@opticlub.mx
+					.col-sm-4
+						img(src="assets/img/opticlub-contact-2.png", alt="Opticlub").img-responsive
+						h2 EFRÉN CHÁVEZ
+						p Zona: Centro
+						a(href="tel:(521) 3313165439") (521) 3313165439
+						a(href="mailto:chavez@opticlub.mx") chavez@opticlub.mx
+					.col-sm-4
+						img(src="assets/img/opticlub-contact-3.png", alt="Opticlub").img-responsive
+						h2 ESTEBAN VELÁZQUEZ
+						p Zona: Pacífico y Occidente
+						a(href="tel:(55) 458 828 11") (55) 458 828 11
+						a(href="mailto:evelazquez@opticlub.mx") evelazquez@opticlub.mx
+				.row.box-gray
+					.col-sm-4
+						img(src="assets/img/opticlub-contact-3.png", alt="Opticlub").img-responsive
+						h2 FRANCISCO ALVARADO
+						p Zona: Norte
+						a(href="tel:(521) 811 6009222") (521) 811 6009222
+						a(href="mailto:jalvarado@opticlub.mx") jalvarado@opticlub.mx
+					.col-sm-4
+						img(src="assets/img/opticlub-contact-3.png", alt="Opticlub").img-responsive
+						h2 LUIS ENRIQUE
+						p Zona: Sureste
+						a(href="tel:(521) 3311809429") (521) 3311809429
+						a(href="mailto:luisenrique@opticlub.mx") luisenrique@opticlub.mx
+					.col-sm-4
+						img(src="assets/img/opticlub-contact-3.png", alt="Opticlub").img-responsive
+						h2 OSCAR REYES
+						p Zona: Bajío
+						a(href="tel:(443) 273 7553") (443) 273 7553
+						a(href="mailto:oreyes@opticlub.mx") oreyes@opticlub.mx
+		include parts/footer.pug

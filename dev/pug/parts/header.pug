@@ -1,46 +1,31 @@
 header.Header
-	.sidebars
-		.sidebar.left 
-			.container-fluid
-				.row
-					.sidebar-header.col-xs-12
-						a.logo(href="#")
-							img(src="assets/img/logo.jpg", alt="")
-						a.sidebar-btn.pull-right(href='#', data-action='toggle', data-side='left')
-							i.fa.fa-time
-							| Cerrar
-				.row
-					.sidebar-content.col-xs-12
-						nav
-							ul
-								li(class=section == 'index' ? 'active' : '')
-									a(href="#") Home
-								li.nav-item
-									a.nav-link(href="#") Nosotros
-								li.nav-item
-									a.nav-link(href="#") Contacto
-				
-		//- .sidebar.right I am on right!
-		//- .sidebar.top I am on top!
-		//- .sidebar.bottom I am on bottom!
 	.container-fluid
 		.row
-			.col-md-8.col-md-offset-2.hidden-xs.hidden-sm
-				.row
-					.col-md-2
-						a.d-block(href="")
-							img.img-fluid(src="assets/img/logo.jpg", alt="")
-					.col-md-10
-						nav.navbar
-							ul.nav.navbar-nav
-								li
-									a(href="#", class=section == 'index' ? 'active' : '') Home
-								li
-									a(href="#") Nosotros
-								li
-									a(href="#") Contacto
-								
-			.col-xs-12.visible-xs.visible-sm
-				a(href="#", data-action="toggle", data-side="left").sidebar-btn.pull-right
-					i.fa.fa-bars
-					| Menu
+			.col-sm-12
+				ul.list-inline
+					li
+						a(href="#")
+							i.fab.fa-facebook-f
+						a(href="#")
+							i.fab.fa-instagram
+					li
+						i.fab.fa-whatsapp
+						a(href="tel:521 331 1308015") +521 331 1308015
+					li
+						a(href="#", class=section == 'index' ? 'active' : '') TIENDA
+					li
+						a(href="#") NOSOTROS
+					li
+						a.d-block(href="/")
+							img(src="assets/img/opti-logo.png", alt="OptiClub Logo").img-responsive
+					li
+						img(src="assets/img/menu-1.png", alt="OptiClub").img-responsive
+						a(href="#") BUSCAR
+					li
+						a(href="#") MEMBRESÍAS
+					li
+						img(src="assets/img/menu-2.png", alt="OptiClub").img-responsive
+						a(href="#") MI PAQUETE (23)
+					li
+						img(src="", alt="OptiClub").img-responsive
+						a(href="#") SOY SOCIO
