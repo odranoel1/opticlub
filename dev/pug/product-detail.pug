@@ -23,86 +23,138 @@ html(lang="es")
 	body
 		include parts/header.pug
 
-		.Product
-			.container
-				.row
-					.col-sm-8
-						img(src="", alt="OptiClub").img-responsive
-						p
-							| Felicidades llevas
-							b $1,200
-							| ahorrados.
-							| Te faltan
-							b $3,800
-							| para obtener
-							b envío GRATIS.
-					.col-sm-4
-						img(src="", alt="OptiClub").img-responsive
-						B TOTAL DEL PAQUETE 23 pzas - $2,000 pesos
-				.row
-					.col-sm-8
-						span
-							a(href="#") TIENDA /
-							a(href="#") OFTÁLMICO  /
-							a(href="#") HOMBRE  /
-							a(href="#")
-								b MASSIMO ROSSI
-						ul
-							li
-								img(src="", alt="OptiClub").img-responsive
-							li
-								img(src="", alt="OptiClub").img-responsive
-						img(src="", alt="OptiClub").img-responsive
-					.col-sm-4
-						h2
-							b MASSIMO ROSSI
-							| CON SOBREPUESTO
-						p Micas polarizadas
-						span Modelo: MSM 023 C07
-						p $299.00
-						form(action="")
-							input(type="radio")
-							input(type="radio")
-							input(type="select")
-							input(type="submit" value="AGREGAR A MI PAQUETE")
-						ul.nav.nav-tabs
-							li.active
-								a(href="#description" data-toggle="tab") DESCRIPCIÓN
-							li
-								a(href="#details" data-toggle="tab") DETALLES
-							li
-								a(href="#material" data-toggle="tab") MATERIAL
-						.tab-content
-							#description.tab-pane.fade.in.active
-								p
-									| Parte de nuestra segunda colección de Clip On, las gafas
-									| de sol MSM 023 C07 tienen un marco en forma de "D"
-									| hecho de acetato fino. Las micas están 100% protegidas
-									| contra los rayos UV, y las gafas tienen un logotipo
-									| de Massimo Rossi en las varillas.
-							#details.tab-pane.fade
-								p
-									| Parte de nuestra segunda colección de Clip On, las gafas
-									| de sol MSM 023 C07 tienen un marco en forma de "D"
-									| hecho de acetato fino. Las micas están 100% protegidas
-									| contra los rayos UV, y las gafas tienen un logotipo
-									| de Massimo Rossi en las varillas.
-							#material.tab-pane.fade
-								p
-									| Parte de nuestra segunda colección de Clip On, las gafas
-									| de sol MSM 023 C07 tienen un marco en forma de "D"
-									| hecho de acetato fino. Las micas están 100% protegidas
-									| contra los rayos UV, y las gafas tienen un logotipo
-									| de Massimo Rossi en las varillas.
-						a(href="#") Términos y condiciones
-						a(href="#") Politica de envíos
-				.row
-					.col-sm-12
-						h2
-							b También te puede
-							| interesar
-						img(src="", alt="OptiClub").img-responsive
-						b MASSIMO ROSSI
-						p Acetato y Metal
-						span $299.00
+		.Product-detail.container-fluid
+			.row.cta-offer
+				.col-sm-6
+					img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub").img-responsive
+					p
+						| Felicidades llevas
+						b $1,200
+						| ahorrados.
+						| Te faltan
+						b $3,800
+						| para obtener
+						b envío GRATIS.
+				.col-sm-6
+					img(src="assets/img/opticlub-heart-icon.png", alt="OptiClub").img-responsive
+					B TOTAL DEL PAQUETE 23 pzas - $2,000 pesos
+			.row
+				.col-sm-7.col-sm-offset-1
+					.row
+						.col-sm-12
+							span.breadcrumbs
+								a(href="#") TIENDA / 
+								a(href="#") OFTÁLMICO  / 
+								a(href="#") HOMBRE  / 
+								a(href="#")
+									b MASSIMO ROSSI
+					.row
+						.col-sm-3
+							ul.thumbnails
+								li
+									img(src="assets/img/opticlub-product-item-thumbnail.jpg", alt="OptiClub").img-responsive
+								li
+									img(src="assets/img/opticlub-product-item-thumbnail.jpg", alt="OptiClub").img-responsive
+						.col-sm-9
+							img(src="assets/img/opticlub-product-item.jpg", alt="OptiClub").img-responsive
+				.col-sm-3.content
+					.name
+						h2 MASSIMO ROSSI 
+						span CON SOBREPUESTO
+					p Micas polarizadas
+					span Modelo: MSM 023 C07
+					p.price $299.00
+					form(action="").my-5
+						row.form-group
+							.col-sm-6
+								label.radio-inline
+									input(type="radio")
+									| C04
+								label.radio-inline
+									input(type="radio")
+									| C11
+							.col-sm-6
+								label Cantidad
+								select.form-control
+									option 12
+									option 11
+									option 10
+						input(type="submit" value="AGREGAR A MI PAQUETE").btn.btn-default.btn-block
+					ul.nav.nav-tabs
+						li.active
+							a(href="#description" data-toggle="tab") DESCRIPCIÓN
+						li
+							a(href="#details" data-toggle="tab") DETALLES
+						li
+							a(href="#material" data-toggle="tab") MATERIAL
+					.tab-content
+						#description.tab-pane.fade.in.active
+							p
+								| Parte de nuestra segunda colección de Clip On, las gafas
+								| de sol MSM 023 C07 tienen un marco en forma de "D"
+								| hecho de acetato fino. Las micas están 100% protegidas
+								| contra los rayos UV, y las gafas tienen un logotipo
+								| de Massimo Rossi en las varillas.
+						#details.tab-pane.fade
+							p
+								| Parte de nuestra segunda colección de Clip On, las gafas
+								| de sol MSM 023 C07 tienen un marco en forma de "D"
+								| hecho de acetato fino. Las micas están 100% protegidas
+								| contra los rayos UV, y las gafas tienen un logotipo
+								| de Massimo Rossi en las varillas.
+						#material.tab-pane.fade
+							p
+								| Parte de nuestra segunda colección de Clip On, las gafas
+								| de sol MSM 023 C07 tienen un marco en forma de "D"
+								| hecho de acetato fino. Las micas están 100% protegidas
+								| contra los rayos UV, y las gafas tienen un logotipo
+								| de Massimo Rossi en las varillas.
+					a(href="#").link.link-default Términos y condiciones #[br]
+					a(href="#").link.link-default Politica de envíos
+			.row
+				.col-sm-10.col-sm-offset-1.text-center
+					h2
+						b También te puede 
+						| interesar
+			.row.owl-carousel.owl-theme#product-carousel
+				.col-sm-12
+					img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+					b MASSIMO ROSSI
+					p Acetato y Metal
+					span $299.00
+				.col-sm-12
+					img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+					b MASSIMO ROSSI
+					p Acetato y Metal
+					span $299.00
+				.col-sm-12
+					img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+					b MASSIMO ROSSI
+					p Acetato y Metal
+					span $299.00
+				.col-sm-12
+					img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+					b MASSIMO ROSSI
+					p Acetato y Metal
+					span $299.00
+				.col-sm-12
+					img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+					b MASSIMO ROSSI
+					p Acetato y Metal
+					span $299.00
+			.row
+				.col-sm-12.cta-default
+					ul.list-inline
+						li
+							img(src="assets/img/opticlub-shield-icon.png", alt="OptiClub").img-responsive
+							p ¡No te preocupes, tu compra es completamente segura!
+						li
+							img(src="assets/img/opticlub-package-icon.png", alt="OptiClub").img-responsive
+							p Envíos a toda la república mexicana
+						li
+							img(src="assets/img/opticlub-mobil-card-icon.png", alt="OptiClub").img-responsive
+							p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
+						li
+							img(src="assets/img/opticlub-prize-icon.png", alt="OptiClub").img-responsive
+							p ¡Satisfacción Totalen nuestros productos!
 		include parts/footer.pug

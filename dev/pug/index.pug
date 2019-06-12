@@ -22,17 +22,17 @@ html(lang="es")
 		script(src="assets/main.js")
 	body
 		include parts/header.pug
-		
-		#home-sidebar.slider-pro
-			.sp-slides
-				// Slide 1
-				.sp-slide
-					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
-				.sp-slide
-					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
-				.sp-slide
-					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
 
+		.Banner-home
+			img(src="assets/img/opticlub-adorn-left-icon.png", alt="OptiClub").img-responsive
+			img(src="assets/img/opticlub-logo-primary.png", alt="OptiClub").img-responsive
+			img(src="assets/img/opticlub-adorn-right-icon.png", alt="OptiClub").img-responsive
+			p
+				| ¿Quieres ganar mayores
+				b utilidades
+				| para tu negocio?
+			b ¡Se parte de nuestro club!
+			a(href="#").btn + CREAR CUENTA
 		.Home
 			.container-fluid
 				.row
@@ -50,7 +50,7 @@ html(lang="es")
 								| Modelos
 							p Mira lo último en lentes
 				.row
-					.col-sm-12.box-gray.my-5
+					.col-sm-12.cta-default
 						ul.list-inline
 							li
 								img(src="assets/img/opticlub-shield-icon.png", alt="OptiClub").img-responsive
@@ -63,7 +63,7 @@ html(lang="es")
 								p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
 							li
 								img(src="assets/img/opticlub-prize-icon.png", alt="OptiClub").img-responsive
-								p ¡Satisfacción Totalen nuestros productos!
+								p ¡Satisfacción Total en nuestros productos!
 				.row.box-gray.membership
 					.col-sm-4
 						//h1

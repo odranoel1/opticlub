@@ -27,189 +27,254 @@ html(lang="es")
 			.container
 				.row
 					.col-sm-6
-						img(src="assets/img/menu-2.png", alt="OptiClub").img-responsive
+						img(src="assets/img/opticlub-box-icon.png", alt="OptiClub").img-responsive
 						h2
-							| Estas a punto de terminar
+							| Estas a punto de terminar 
 							b "Mi paquete"
 						form(action="")
 							h2 INFORMACIÓN DE CONTACTO
-							label(for="") * Nombre Completo:
-							input(type="text")
-							label(for="") * Correo electrónico:
-							input(type="text")
+							.row.form-group
+								.col-sm-12
+									label(for="") * Nombre Completo:
+									input(type="text").form-control
+							.row.form-group
+								.col-sm-12
+									label(for="") * Correo electrónico:
+									input(type="text").form-control
 							h2 DIRECCIÓN DE ENVÍO
-							a(href="#") Cambiar
-							h2 Seleccionar una dirección de envío
-							a(href="#") Cerrar
-								i.fa.fa-close
+							a(href="#" data-toggle="modal" data-target="#changeAdress").link-default Cambiar
+							.modal.fade#changeAdress(role="dialog")
+								.modal-dialog.modal-lg
+									.modal-content
+										.modal-header
+											h2 Seleccionar una dirección de envío
+											a(href="#" data-dismiss="modal").close Cerrar
+												i.fa.fa-close
+										.modal-body
+											.row
+												.col-sm-4
+													b Noemí Calderon
+													p
+														| Francia 1225 Colonia Moder...
+														| COLONIA MODERNAGUADALAJARA, JALISCO
+														| Teléfono celular: (044) 3311
+													i.fa.fa-check
+													span Entregar en esta dirección
+												.col-sm-4
+													b Miguel López
+													p
+														| Francia 1225 Colonia Moder...
+														| COLONIA MODERNAGUADALAJARA, JALISCO
+														| Teléfono celular: (044) 3311
+													a(href="#").btn.btn-primary Entregar en esta dirección
+												.col-sm-4
+													i.fa.fa-plus
+													span
+														b Añadir
+														| una nueva dirección de envío
+													a(href="#").link-default Añadir una dirección de envío nueva
+													a(href="#").link-default Editar o eliminar direcciones
+							.row.form-group
+								.col-sm-6
+									label(for="") * Nombre Completo:
+									input(type="text").form-control
+							.row.form-group
+								.col-sm-12
+									label(for="") * Direción completa (Calle, número y colonia)
+									input(type="text").form-control
+							.row.form-group
+								.col-sm-6
+									label(for="") * Código Postal:
+									input(type="text").form-control
+								.col-sm-6
+									label(for="") * País:
+									input(type="text").form-control
+							.row.form-group
+								.col-sm-6
+									label(for="") * Estado:
+									input(type="text").form-control
+								.col-sm-6
+									label(for="") * Ciudad:
+									input(type="text").form-control
+							.row.form-group
+								.col-sm-12
+									label(for="") * Teléfono móvil:
+									input(type="text").form-control
+							.row.form-group
+								.col-sm-12
+									textarea(name="", cols="30", rows="10").form-control.input-default
+							.row.form-group
+								.col-sm-12
+									input(type="submit" value="Guardar NUEVA dirección de envío").btn.btn-primary.pull-right
+							h2 MÉTODO DE ENVÍO
 							.row
 								.col-sm-4
-									b Noemí Calderon
-									p
-										| Francia 1225 Colonia Moder...
-										| COLONIA MODERNAGUADALAJARA, JALISCO
-										| Teléfono celular: (044) 3311
-									i.fa.fa-check
-									span Etregar en esta dirección
-								.col-sm-4
-									b Miguel López
-									p
-										| Francia 1225 Colonia Moder...
-										| COLONIA MODERNAGUADALAJARA, JALISCO
-										| Teléfono celular: (044) 3311
-									i.fa.fa-check
-									a(href="#").btn Etregar en esta dirección
-								.col-sm-4
-									i.fa.fa-plus
-									span
-										b Añadir
-										| una nueva dirección de envío
-									a(href="#") Añadir una dirección de envío nueva
-									a(href="#") Editar o eliminar direcciones
-							label(for="") * Nombre Completo:
-							input(type="text")
-							label(for="") * Direción completa (Calle, número y colonia)
-							input(type="text")
-							label(for="") * Código Postal:
-							input(type="text")
-							label(for="") * País:
-							input(type="text")
-							label(for="") * Estado:
-							input(type="text")
-							label(for="") * Ciudad:
-							input(type="text")
-							label(for="") * Teléfono móvil:
-							input(type="text")
-							textarea(name="", cols="30", rows="10")
-							input(type="submit" value="Guardar NUEVA dirección de envío").btn.btn-primary
-							img(src="assets/img/icono-1.png", alt="OptiClub").img-responsive
-							h2 MÉTODO DE ENVÍO
-							img(src="assets/img/compra-logo.png", alt="OptiClub").img-responsive
-							input(type="radio")
-							b 5 a 7 días hábiles
-							span ($235.00)
+									img(src="assets/img/opticlub-package-icon.png", alt="OptiClub").img-responsive
+								.col-sm-8
+									input(type="radio")
+									img(src="assets/img/compra-logo.png", alt="OptiClub").img-responsive
+									b 5 a 7 días hábiles
+									span ($235.00)
 							h2 MÉTODO DE PAGO
 							p
-								| Los pagosm se realizarán a la cuenta de
+								| Los pagos se realizarán a la cuenta de 
 								b Alhazen Optical
-							input(type="radio")
-							img(src="assets/img/compra-logo-2.png", alt="OptiClub Santander").img-responsive
-							span Transferencia bancaria, depósito o cheque
-							input(type="radio")
-							img(src="assets/img/compra-logo-3.png", alt="OptiClub Santander").img-responsive
-							span 1 mes gratis de membresía PRIME al pagar con PayPal
-							input(type="radio")
-							img(src="assets/img/compra-logo-4.png", alt="OptiClub Santander").img-responsive
-							span Pago en línea (Oxxo o tarjetas bancarias)
-					.col-sm-6
-						form(action="")
-							img(src="assets/img/icono-compra.png", alt="OptiClub").img-responsive
-							h1 ¿Necesitas Factura?
-							input(type="radio")
-							input(type="radio")
-							label(for="") ¿Seleccionar misma dirección de envío?
-							input(type="radio")
-							input(type="radio")
-							a(href="#") Cambiar
-							h2 Seleccionar datos de facturación
-							a(href="#") Cerrar
-								i.fa.fa-close
 							.row
 								.col-sm-4
-									b RFC OC8901BM1OPTICLUB S.A DE C.V.
-									p
-										| Francia 1225 Colonia Moder...
-										| COLONIA MODERNAGUADALAJARA, JALISCO
-										| Teléfono celular: (044) 3311
-									i.fa.fa-check
-									a(href="#").btn Entregar en esta dirección
-								.col-sm-4
-									b RFC RI3854FZMOPTICA LENTES Y MÁS
-									p
-										| Francia 1225 Colonia Moder...
-										| COLONIA MODERNAGUADALAJARA, JALISCO
-										| Teléfono celular: (044) 3311
-									i.fa.fa-check
-									span Entregar en esta dirección
-								.col-sm-4
-									i.fa.fa-plus
-									span
-										b Añadir
-										| nuevos datos fiscales
-									a(href="#") Añadir nuevos datos fiscales
-									a(href="#") Editar o eliminar datos fiscales
-							label(for="") * RFC:
-							input(type="text")
-							label(for="") * Razón Social:
-							input(type="text")
-							label(for="") * Dirección completa (Calle, número y colonia):
-							input(type="text")
-							label(for="") * Código Postal:
-							input(type="text")
-							label(for="") * País:
-							input(type="text")
-							label(for="") * Estado:
-							input(type="text")
-							label(for="") * Ciudad:
-							input(type="text")
-							label(for="") * Teléfono móvil:
-							input(type="text")
-							label(for="") USO DE CFDI
-							input(type="select")
-							label(for="") MÉTODO DE PAGO
-							input(type="select")
-							input(type="submit" value="Guardar NUEVOS datos de facturación").btn.btn-primary
+									img(src="assets/img/opticlub-wallet-icon.png", alt="OptiClub").img-responsive
+								.col-sm-8
+									label.radio-inline
+										input(type="radio")
+										img(src="assets/img/opticlub-payment-santander-black.png", alt="OptiClub Santander").img-responsive
+										span Transferencia bancaria, depósito o cheque
+									label.radio-inline
+										input(type="radio")
+										img(src="assets/img/opticlub-payment-paypal-black.png", alt="OptiClub Paypal").img-responsive
+										span 1 mes gratis de membresía PRIME al pagar con PayPal
+									label.radio-inline
+										input(type="radio")
+										img(src="assets/img/opticlub-payment-conekta-black.png", alt="OptiClub Conekta").img-responsive
+										span Pago en línea (Oxxo o tarjetas bancarias)
+					.col-sm-6
+						form(action="")
+							img(src="assets/img/opticlub-bill-icon.png", alt="OptiClub").img-responsive
+							h1 ¿Necesitas Factura?
+							label.radio-inline
+								input(type="radio")
+								| Sí
+							label.radio-inline
+								input(type="radio")
+								| No
+							h2 ¿Seleccionar misma dirección de envío?
+							label.radio-inline
+								input(type="radio")
+								| Sí
+							label.radio-inline
+								input(type="radio")
+								| No
+							a(href="#" data-toggle="modal" data-target="#changeShippingAdress").link-default Cambiar
+							.modal.fade#changeShippingAdress(role="dialog")
+								.modal-dialog.modal-lg
+									.modal-content
+										.modal-header
+											h2 Seleccionar datos de facturación
+											a(href="#") Cerrar
+												i.fa.fa-close
+										.modal-body
+											.row
+												.col-sm-4
+													b RFC OC8901BM1OPTICLUB S.A DE C.V.
+													p
+														| Francia 1225 Colonia Moder...
+														| COLONIA MODERNAGUADALAJARA, JALISCO
+														| Teléfono celular: (044) 3311
+													a(href="#").btn.btn-primary Entregar en esta dirección
+												.col-sm-4
+													b RFC RI3854FZMOPTICA LENTES Y MÁS
+													p
+														| Francia 1225 Colonia Moder...
+														| COLONIA MODERNAGUADALAJARA, JALISCO
+														| Teléfono celular: (044) 3311
+													i.fa.fa-check
+													span Entregar en esta dirección
+												.col-sm-4
+													span
+														b Añadir
+														| nuevos datos fiscales
+													a(href="#").link-default Añadir nuevos datos fiscales
+													a(href="#").link-default Editar o eliminar datos fiscales
+							.row
+								.col-sm-12.form-group
+									label(for="") * RFC:
+									input(type="text").form-control
+									label(for="") * Razón Social:
+									input(type="text").form-control
+									label(for="") * Dirección completa (Calle, número y colonia):
+									input(type="text").form-control
+									label(for="") * Código Postal:
+									input(type="text").form-control
+									label(for="") * País:
+									input(type="text").form-control
+									label(for="") * Estado:
+									input(type="text").form-control
+									label(for="") * Ciudad:
+									input(type="text").form-control
+									label(for="") * Teléfono móvil:
+									input(type="text").form-control
+									label(for="") USO DE CFDI
+									select.form-control
+										option G03 Gastos en General
+										option G03 Gastos en General
+										option G03 Gastos en General
+									label(for="") MÉTODO DE PAGO
+									select.form-control
+										option 3 Transferencia electrónica de fondos
+										option 3 Transferencia electrónica de fondos
+										option 3 Transferencia electrónica de fondos
+							.row
+								.col-sm-12
+									input(type="submit" value="Guardar NUEVOS datos de facturación").btn.btn-primary.pull-right
 				.row
 					.col-sm-12
-						i.fas.fa-arrow
+						i.fas.fa-chevron-right
 						a(href="") Resumen de Paquete
 				.row
 					.col-sm-8
-						img(src="", alt="")
-						p Texto
+						img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub").img-responsive
+						p Felicidades llevas $1,200 ahorrados. Te faltan $3,800 para obtener envío GRATIS.
 					.col-sm-4
-						img(src="", alt="")
-						p Texto
+						img(src="assets/img/opticlub-heart-icon.png", alt="OptiClub").img-responsive
+						p
+							| TOTAL DEL PAQUETE
+							| 23 pzas - $2,000 pesos
 				.row
 					.col-sm-12
-						table
-							tr
-								th DESCRIPCIÓN
-								th TOTAL
-							tr
-								td
-									img(src="", alt="OptiClub").img-responsive
-								td
-									h3
-										b DISCOVERY 079
-										| (DIS079-19)
-									p
-										| Precio Unitario $300.00
-										| Color: Negro
-										| Cantidad select
-								td
-									span $900
-									i.fas.fa-trash
+						img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+						.table-responsive
+							table.table
+								tr
+									th DESCRIPCIÓN
+									th TOTAL
+								tr
+									td
+										h3
+											b DISCOVERY 079
+											| (DIS079-19)
+										p
+											| Precio Unitario $300.00
+											| Color: Negro
+											| Cantidad select
+										label(for="") Cantidad
+										select.form-control
+											option(value="") 1
+											option(value="") 2
+											option(value="") 3
+									td
+										span $900
+										img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub").img-responsive
 				.row
 					.col-sm-12
-						table
-							tr
-								td SUBTOTAL
-								td MX $2,700.00
-							tr
-								td ENVÍO
-								td MX $235.00
-							tr
-								td Total
-								td MX $2,935.00
+						.table-responsive
+							table.table
+								tr
+									td SUBTOTAL
+									td MX $2,700.00
+								tr
+									td ENVÍO
+									td MX $235.00
+								tr
+									td Total
+									td MX $2,935.00
 				.row
-					.col-sm-12
+					.col-sm-12.form-group
+						img(src="assets/img/opticlub-alert-icon.png", alt="").img-responsive
 						label OBSERVACIONES DEL PAQUETE
-						textarea(name="", cols="30", rows="10")
+						textarea(name="", cols="30", rows="10").form-control.input-default
 				.row
-					.col-sm-4
+					.col-sm-4.form-group
+						img(src="assets/img/opticlub-discount-icon.png", alt="").img-responsive
 						label(for="") CÓDIGO PROMOCIONAL
-						input(type="text")
+						input(type="text").form-control.input-default
 					.col-sm-4
 						a(href="#").btn.btn-primary SEGUIR COMPRANDO
 					.col-sm-4
@@ -219,11 +284,11 @@ html(lang="es")
 						b ¿Necesitas Ayuda?
 						ul
 							li
-								| - Contáctanos  por
+								| - Contáctanos por 
 								b WhatsApp
 								a(href="tel:(044) 3311308015") (044) 3311308015
-								| o al correo
-								a(href="mailto:hola@opticlub.mx") hola@opticlub.mx
+								| o al correo 
+								a(href="mailto:hola@opticlub.mx").link-default hola@opticlub.mx
 							li
 								| - Puedes devolver tus artículos dentro de un plazo de 5 días inmediatos a la entrega del paquete;
 								| las políticas de devolución dependen de cada proveedor y se especifican en cada detalle del producto.

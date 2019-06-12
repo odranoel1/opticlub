@@ -23,111 +23,107 @@ html(lang="es")
 	body
 		include parts/header.pug
 
-		.Club
-			.container-fluid
-				.row
-					.col-sm-8.col-sm-offset-2
-						img(src="assets/img/opticlub-club-icon.png", alt="OptiClub").img-responsive
+		.Club.container-fluid
+			.row
+				.col-sm-8.col-sm-offset-2
+					img(src="assets/img/opticlub-club-icon.png", alt="OptiClub").img-responsive
+					h2
+						| ¡Se parte del club!
+						b Activa tu cuenta
+						| totalmente
+						b GRATIS
+					form(action="")
+						h2 Datos principales
+						.row.form-group
+							.col-sm-6
+								label * Nombre completo:
+								input(type="text").form-control
+							.col-sm-6
+								label * Correo Electrónico:
+								input(type="text").form-control
+						.row.form-group
+							.col-sm-6
+								label * Nombre de la empresa:
+								input(type="text").form-control
+							.col-sm-6
+								label * Estado:
+								input(type="text").form-control
+						.row.form-group
+							.col-sm-6
+								label * Teléfóno
+								input(type="text").form-control
+							.col-sm-6
+								label * Nombre de mi agente:
+								input(type="text").form-control
+						.row.form-group
+							.col-sm-6
+								label.label-pass Contraseña
+								.input-group
+									input(type="text").form-control.input-primary
+									span.input-group-btn
+										a(href="#").btn.btn-primary Mostrar
+							.col-sm-6
+								label Repetir contraseña
+								input(type="text").form-control.input-default
+						input(type="submit" value="+CREAR TU CUENTA SOCIO CLUB").btn.btn-default.pull-right
+			.row
+				.col-sm-8.col-sm-offset-2
+					p
+						| Al crear mi cuenta,
+						b estoy de acuerdo
+						| con:
+					ul
+						li Recibir correos electrónicos relacionados con miembros y servicios de OC
+						li
+							a(href="#").link-default Terminos y condiciones / políticas de envíos*
+					p
+						| Una vez que hagas el registro un
+						b correo de confirmación
+						| de tu cuenta, posteriormente a la activación podrás visualizar las marcas y precios de nuestros productos
+			.row
+				.col-sm-8.col-sm-offset-2
+					.title-main
+						img(src="assets/img/opticlub-crown-icon.png", alt="OptiClub").img-responsive
 						h2
-							| ¡Se parte del club!
-							b Activa tu cuenta
-							| totalmente
-							b GRATIS
-						form(action="")
-							h2 Datos principales
-							.row.form-group
-								.col-sm-6
-									label * Nombre completo:
-									input(type="text").form-control
-								.col-sm-6
-									label * Correo Electrónico:
-									input(type="text").form-control
-							.row.form-group
-								.col-sm-6
-									label * Nombre de la empresa:
-									input(type="text").form-control
-								.col-sm-6
-									label * Estado:
-									input(type="text").form-control
-							.row.form-group
-								.col-sm-6
-									label * Teléfóno
-									input(type="text").form-control
-								.col-sm-6
-									label * Nombre de mi agente:
-									input(type="text").form-control
-							.row.form-group
-								.col-sm-6
-									label Contraseña
-									input(type="text").form-control
-								.col-sm-6
-									label Repetir contraseña
-									input(type="text").form-control
-							input(type="submit" value="+CREAR TU CUENTA SOCIO CLUB").btn.btn-default
-				.row
-					.col-sm-12
-						p
-							| Al crear mi cuenta,
-							b estoy de acuerdo
-							| con:
-						ul
-							li
-								p Recibir correos electrónicos relacionados con miembros y servicios de OC
-							li
-								a(href="") Terminos y condiciones / políticas de envíos*
-						p
-							| Una vez que hagas el registro un
-							b correo de confirmación
-							| de tu cuenta, posteriormente a la activación podrás visualizar las marcas y precios de nuestros productos
-				.row
-					.col-sm-12
-						img(src="assets/img/opticlub-crown-icon.png", alt="OptiClub")
-						h2
-							b Conviértete de Socio Club a
+							b Conviértete de Socio Club a 
 							| SOCIO PRIME
-						p
-							span Activa tu cuenta
-							| en un ¡Solo click!
-				.row
-					.col-sm-12.box-gray.text-center
-						ul.list-inline
-							li
-								img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub").img-responsive
-								p
-									| EXCELENTES
-									span DESCUENTOS
-							li
-								img(src="assets/img/opticlub-alert-icon.png", alt="OptiClub").img-responsive
-								p
-									| ACCESO A CANAL DE
-									span VÍDEOS Y RECURSOS
-							li
-								img(src="assets/img/opticlub-star-icon.png", alt="OptiClub").img-responsive
-								p
-									| MARCAS
-									span EXCLUSIVAS
-							li
-								img(src="assets/img/opticlub-glasses-icon.png", alt="OptiClub").img-responsive
-								p
-									| CAMBIO DE MERCANCÍA
-									span A LOS 6 MESES
-							li
-								img(src="assets/img/opticlub-web-icon.png", alt="OptiClub").img-responsive
-								p
-									| AUMENTO DE
-									span UTILIDADES
-							li
-								img(src="assets/img/opticlub-money-icon.png", alt="OptiClub").img-responsive
-								p
-									| MEJOR PRECIO
-									span SIN LÍMITE DE VOLUMEN
-						.start.box-blueDemon
-							h2 ¡Comienza a disfrutar de sus beneficios!
-							b
-								| $499
-								span MENSUAL
-							.stars
-							a(href="#").btn.btn-default
-								| + ACTIVAR MI CUENTA
-								b AHORA
+					p
+						span Activa tu cuenta 
+						| en un ¡Solo click!
+			.row
+				.col-sm-8.col-sm-offset-2.benefits
+					ul.list-inline
+						li
+							img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub")
+							p EXCELENTES
+							span DESCUENTOS
+						li
+							img(src="assets/img/opticlub-alert-icon.png", alt="OptiClub")
+							p ACCESO A CANAL DE
+							span VÍDEOS Y RECURSOS
+						li
+							img(src="assets/img/opticlub-star-icon.png", alt="OptiClub")
+							p MARCAS
+							span EXCLUSIVAS
+						li
+							img(src="assets/img/opticlub-glasses-icon.png", alt="OptiClub")
+							p CAMBIO DE MERCANCÍA
+							span A LOS 6 MESES
+						li
+							img(src="assets/img/opticlub-web-icon.png", alt="OptiClub")
+							p AUMENTO DE
+							span UTILIDADES
+						li
+							img(src="assets/img/opticlub-money-icon.png", alt="OptiClub")
+							p MEJOR PRECIO
+							span SIN LÍMITE DE VOLUMEN
+					.enable
+						h2 ¡Comienza a disfrutar de sus beneficios!
+						b
+							| $499
+							span MENSUAL
+						i.far.fa-star
+						a(href="#").btn.btn-default
+							| + ACTIVAR MI CUENTA 
+							b AHORA
 		include parts/footer.pug

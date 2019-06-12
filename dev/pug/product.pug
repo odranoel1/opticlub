@@ -23,90 +23,99 @@ html(lang="es")
 	body
 		include parts/header.pug
 
-		.Product
-			.container
-				.row
-					.col-sm-8
-						img(src="", alt="OptiClub").img-responsive
-						p
-							| Felicidades llevas
-							b $1,200
-							| ahorrados.
-							| Te faltan
-							b $3,800
-							| para obtener
-							b envío GRATIS.
-					.col-sm-4
-						img(src="", alt="OptiClub").img-responsive
-						B TOTAL DEL PAQUETE 23 pzas - $2,000 pesos
-				.row
-					.col-sm-3
-						h3 ORDENAR POR
-						form(action="")
-							input(type="select")
-						h3 MARCAS
-						ul
-							li
-								a(href="#") Carnaval
-							li
-								a(href="#") Discovery
-							li
-								a(href="#") Distroller
-							li
-								a(href="#") Massimo Rossi
-							li
-								a(href="#") Nobleman
-							li
-								a(href="#") Spil
-							li
-								a(href="#") Squids
-						h3 CATEGORÍAS
-						ul
-							li
-								a(href="#") Oftálmicos
-							li
-								a(href="#") Solares
-							li
-								a(href="#") Clip On
-						h3 GÉNERO
-						ul
-							li
-								a(href="#") Mujer
-							li
-								a(href="#") Hombre
-							li
-								a(href="#") Infantil
-					.col-sm-9
-						.item
-							img(src="", alt="OptiClub").img-responsive
+		.Product.container-fluid
+			.row.cta-offer
+				.col-sm-6
+					img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub").img-responsive
+					p
+						| Felicidades llevas 
+						b $1,200
+						| ahorrados. 
+						| Te faltan 
+						b $3,800 
+						| para obtener 
+						b envío GRATIS.
+				.col-sm-6
+					img(src="assets/img/opticlub-heart-icon.png", alt="OptiClub").img-responsive
+					b TOTAL DEL PAQUETE 23 pzas - $2,000 pesos
+			.row
+				.col-sm-2.col-sm-offset-1
+					h3 ORDENAR POR
+					form(action="")
+						select.form-control
+							option Mayor Precio
+							option Menor Precio
+					h3
+						b MARCAS
+					ul.sidebar-category
+						li
+							a(href="#") Carnaval
+						li
+							a(href="#") Discovery
+						li
+							a(href="#") Distroller
+						li
+							a(href="#") Massimo Rossi
+						li
+							a(href="#") Nobleman
+						li
+							a(href="#") Spil
+						li
+							a(href="#") Squids
+					h3
+						b CATEGORÍAS
+					ul.sidebar-category
+						li
+							a(href="#") Oftálmicos
+						li
+							a(href="#") Solares
+						li
+							a(href="#") Clip On
+					h3
+						b GÉNERO
+					ul.sidebar-category
+						li
+							a(href="#") Mujer
+						li
+							a(href="#") Hombre
+						li
+							a(href="#") Infantil
+				.col-sm-8
+					.row
+						.col-sm-4.item
+							img(src="assets/img/opticlub-glasses-product.jpg", alt="OptiClub").img-responsive
 							b $299.00
-							span DISCOVERY 023
+							p DISCOVERY 023
 							form(action="")
-								input(type="radio")
-								input(type="select")
-								input(type="text")
-					.col-sm-3
-						img(src="", alt="OptiClub").img-responsive
-						p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
-					.col-sm-3
-						img(src="", alt="OptiClub").img-responsive
-						p ¡Satisfacción Totalen nuestros productos!
-				.row
-					.col-sm-4
-						h1 ¡Únete al club!
-						h2
-							| MEMBRESÍA
-							| SOCIO CLUB
-						b
-							| $ 0
-							| GRATIS
-						.stars
-							i.fa.fas
-						i.fas.fas
-						a(href="#").btn.btn-default ACTIVAR AHORA
-				.row
-					.col-sm-12
-						img(src="", alt="OptiClub").img-responsive
-						h2 INSTAGRAM
-						p opticlub.mx
+								row.form-group
+									.col-sm-12
+										label.radio-inline
+											input(type="radio")
+											| C09
+										label.radio-inline
+											input(type="radio")
+											| C29
+								row.form-group
+									.col-sm-3
+										select.form-control
+											option 12
+											option 11
+											option 10
+									.col-sm-9
+										input(type="text" value="+ Mi paquete").btn.btn-link.btn-block
+			.row
+				.col-sm-12.cta-default
+					ul.list-inline
+						li
+							img(src="assets/img/opticlub-shield-icon.png", alt="OptiClub").img-responsive
+							p ¡No te preocupes, tu compra es completamente segura!
+						li
+							img(src="assets/img/opticlub-package-icon.png", alt="OptiClub").img-responsive
+							p Envíos a toda la república mexicana
+						li
+							img(src="assets/img/opticlub-mobil-card-icon.png", alt="OptiClub").img-responsive
+							p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
+						li
+							img(src="assets/img/opticlub-prize-icon.png", alt="OptiClub").img-responsive
+							p ¡Satisfacción Totalen nuestros productos!
 		include parts/footer.pug

@@ -19,21 +19,13 @@ $( document ).ready(function() {
         }
     });
 
-    if($(".sidebars").length != 0)
-    {
-        var sides = ["left", "top", "right", "bottom"];
-      
-        for (var i = 0; i < sides.length; ++i) {
-            var cSide = sides[i];
-            $(".sidebar." + cSide).sidebar({side: cSide});
-        }
+    $('#product-carousel').owlCarousel({
+      nav: true,
+      dots: false,
+    });
 
-        $(".sidebar-btn[data-action]").on("click", function () {
-            var $this = $(this);
-            var action = $this.attr("data-action");
-            var side = $this.attr("data-side");
-            $(".sidebar." + side).trigger("sidebar:" + action);
-            return false;
-        });
-    }
+    $('#video-carousel').owlCarousel({
+      nav: true,
+      dots: false,
+    });
 });

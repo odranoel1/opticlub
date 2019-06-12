@@ -23,31 +23,78 @@ html(lang="es")
 	body
 		include parts/header.pug
 
-		.Order
-			.container
+		.Order.container-fluid
+			.row.cta-offer
+				.col-sm-6
+					img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub").img-responsive
+					p
+						| Felicidades llevas 
+						b $1,200
+						| ahorrados. 
+						| Te faltan 
+						b $3,800 
+						| para obtener 
+						b envío GRATIS.
+				.col-sm-6
+					img(src="assets/img/opticlub-heart-icon.png", alt="OptiClub").img-responsive
+					b TOTAL DEL PAQUETE 23 pzas - $2,000 pesos
+			.row
+				.col-sm-8.col-sm-offset-2
+					img(src="assets/img/opticlub-box-icon.png", alt="OptiClub").img-responsive
+					h2
+						b "Mi paquete" 
+						| Piezas actuales añadidas a mi pedido:
+					table.table
+						tr
+							th
+							th DESCRIPCIÓN
+							th TOTAL
+						tr
+							td
+								img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+							td
+								h3
+									b DISCOVERY 079
+									| (DIS079-19)
+								p
+									| Precio Unitario $300.00
+									| Color: Negro
+									| Cantidad select
+							td
+								span $900
+								img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub").img-responsive
+						tr
+							td
+								img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+							td
+								h3
+									b DISCOVERY 079
+									| (DIS079-19)
+								p
+									| Precio Unitario $300.00
+									| Color: Negro
+									| Cantidad select
+							td
+								span $900
+								img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub").img-responsive
 				.row
-					.col-sm-12
-						h2
-							b "Mi paquete"
-							| Piezas actuales añadidas a mi pedido:
-						table
-							tr
-								th DESCRIPCIÓN
-								th TOTAL
-							tr
-								td
-									img(src="", alt="OptiClub").img-responsive
-								td
-									h3
-										b DISCOVERY 079
-										| (DIS079-19)
-									p
-										| Precio Unitario $300.00
-										| Color: Negro
-										| Cantidad select
-								td
-									span $900
-									i.fas.fa-trash
-						a(href="#").btn SEGUIR COMPRANDO
-						a(href="#").btn CONTINUAR A PAGO
+					.col-sm-8.col-sm-offset-2
+						.buttons.pull-right
+							a(href="#").btn.btn-default SEGUIR COMPRANDO
+							a(href="#").btn.btn-primary CONTINUAR A PAGO
+				.row
+					.col-sm-12.cta-default
+						ul.list-inline
+							li
+								img(src="assets/img/opticlub-shield-icon.png", alt="OptiClub").img-responsive
+								p ¡No te preocupes, tu compra es completamente segura!
+							li
+								img(src="assets/img/opticlub-package-icon.png", alt="OptiClub").img-responsive
+								p Envíos a toda la república mexicana
+							li
+								img(src="assets/img/opticlub-mobil-card-icon.png", alt="OptiClub").img-responsive
+								p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
+							li
+								img(src="assets/img/opticlub-prize-icon.png", alt="OptiClub").img-responsive
+								p ¡Satisfacción Totalen nuestros productos!
 		include parts/footer.pug

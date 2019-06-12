@@ -23,91 +23,118 @@ html(lang="es")
 	body
 		include parts/header.pug
 
-		.Course
-			.container
-				.row
-					.col-sm-12
-						span
-							a(href="#") Buscar >
-							a(href="#") Cursos >
-							a(href="#") Técnicas de venta para generar utilidad en tu negocio
-						h1
-							| Técnicas de venta
-							| para tu Negocio
-						h2 7 Estrategias para vender más
-						a(href="#").btn.btn-default Iniciar curso
-				.row
-					.col-sm-12
-						ul
-							li
-								a(href="#") Acerca
-							li 
-								a(href="#") Programa
-							li
-								a(href="#") Reseña
-							li
-								a(href="#") Preguntas frecuentes
-				.row
-					.col-sm-8
-						h2 Acerca de este curso
-						.stars
-						span 607 comentarios
-						p
-							| En este curso, identificarás las principales responsabilidades y actividades que realiza un directivo en
-							| cualquier nivel de mando. Revisarás ejemplos que reflejan la importancia del ejercicio del liderazgo
-							| resaltando el valor del manejo adecuado de la comunicación, toma de desiciones, motivación,
-							| delegación, supervisión y coordinación del equipo de trabajo.
-						a(href="#") VER MÁS
-					.col-sm-4
-						h3 Instructores
-						b Itzel Mercado, Sofía Rincón y Laura Luna
-						h3 Duración
-						b 15 minutos
-						h2 Material de Descarga
-						p
-							| Descarga el resumen de nuestra
-							b solución “Ventas”
-							| en
-							b formato PDF
-						a(href="#") DESCARGAR
-						p
-							| Descarga el resumen de nuestra
-							b solución Cobranza
-							| en
-							b formato PDF
-						a(href="#") DESCARGAR
-						p
-							| Descarga el resumen de nuestra
-							b solución Cobranza
-							| en
-							b formato PDF
-						a(href="#") DESCARGAR
-				.row
-					.col-sm-12
-						h2 Vídeos que te pueden interesar:
-						ul
-							li
-								a(href="#") Tips
-							li
-								a(href="#") Conferencias
-							li
-								a(href="#") Cursos
-							li
-								a(href="#") Entrevistas
-				.row
-					.col-sm-12
-						.interesting-video
-							img(src="", alt="OptiClub").img-responsive
-							h2 Top Ventas
-							b Introducción a las ventas
-							p Curso de Ana López López
-							p
-								| Muchos vendedores se enfocan únicamente
-								| en lo que están vendiendo y se olvidan que
-								| están en un negocio donde la base es la
-								| gente; tus clientes quieren ser tratados de
-								| forma personalizada.
-							i.fas.fas
-							span 987 comentarios
-							a(href="#") ¡Iniciar Ahora!
+		.Course.container-fluid
+			.row
+				.col-sm-12
+					span
+						a(href="#") Buscar >
+						a(href="#") Cursos >
+						a(href="#") Técnicas de venta para generar utilidad en tu negocio
+					h1
+						| Técnicas de venta
+						| para tu Negocio
+					h2 7 Estrategias para vender más
+					a(href="#").btn.btn-default Iniciar curso
+			.row
+				.col-sm-12.breadcrumbs
+					ul.list-inline
+						li
+							a(href="#") Acerca
+						li 
+							a(href="#") Programa
+						li
+							a(href="#") Reseña
+						li
+							a(href="#") Preguntas frecuentes
+			.row
+				.col-sm-7.col-sm-offset-1.about
+					h2
+						b Acerca de este curso
+					.stars
+					span 607 comentarios
+					p
+						| En este curso, identificarás las principales responsabilidades y actividades que realiza un directivo en
+						| cualquier nivel de mando. Revisarás ejemplos que reflejan la importancia del ejercicio del liderazgo
+						| resaltando el valor del manejo adecuado de la comunicación, toma de desiciones, motivación,
+						| delegación, supervisión y coordinación del equipo de trabajo.
+					a(href="#").btn VER MÁS
+				.col-sm-2.sidebar-right
+					h3 Instructores
+					b Itzel Mercado, Sofía Rincón y Laura Luna
+					h3 Duración
+					b 15 minutos
+					h2 Material de Descarga
+					p
+						| Descarga el resumen de nuestra 
+						b solución “Ventas” 
+						| en 
+						b formato PDF
+					a(href="#").btn.btn-blue DESCARGAR
+					p
+						| Descarga el resumen de nuestra 
+						b solución Cobranza 
+						| en 
+						b formato PDF
+					a(href="#").btn.btn-blue DESCARGAR
+					p
+						| Descarga el resumen de nuestra 
+						b solución Cobranza 
+						| en 
+						b formato PDF
+					a(href="#").btn.btn-blue DESCARGAR
+			.row.text-center
+				.col-sm-12.breadcrumbs
+					h2 Vídeos que te pueden interesar:
+					ul.list-inline
+						li
+							a(href="#") Tips
+						li
+							a(href="#") Conferencias
+						li
+							a(href="#") Cursos
+						li
+							a(href="#") Entrevistas
+			.row.owl-carousel.owl-theme#video-carousel
+				.col-sm-8.col-sm-offset-2.item
+					img(src="assets/img/opticlub-course-thumbnail.jpg", alt="OptiClub").img-responsive
+					h2.top Top Ventas
+					b.title Introducción a las ventas
+					p Curso de Ana López López
+					p
+						| Muchos vendedores se enfocan únicamente
+						| en lo que están vendiendo y se olvidan que
+						| están en un negocio donde la base es la
+						| gente; tus clientes quieren ser tratados de
+						| forma personalizada.
+					i.far.fa-user
+					span 987 comentarios
+					a(href="#").btn.btn-default ¡Iniciar Ahora!
+				.col-sm-8.col-sm-offset-2.item
+					img(src="assets/img/opticlub-course-thumbnail.jpg", alt="OptiClub").img-responsive
+					h2.top Top Ventas
+					b.title Introducción a las ventas
+					p Curso de Ana López López
+					p
+						| Muchos vendedores se enfocan únicamente
+						| en lo que están vendiendo y se olvidan que
+						| están en un negocio donde la base es la
+						| gente; tus clientes quieren ser tratados de
+						| forma personalizada.
+					i.far.fa-user
+					span 987 comentarios
+					a(href="#").btn.btn-default ¡Iniciar Ahora!
+				.col-sm-8.col-sm-offset-2.item
+					img(src="assets/img/opticlub-course-thumbnail.jpg", alt="OptiClub").img-responsive
+					h2.top Top Ventas
+					b.title Introducción a las ventas
+					p Curso de Ana López López
+					p
+						| Muchos vendedores se enfocan únicamente
+						| en lo que están vendiendo y se olvidan que
+						| están en un negocio donde la base es la
+						| gente; tus clientes quieren ser tratados de
+						| forma personalizada.
+					i.far.fa-user
+					span 987 comentarios
+					a(href="#").btn.btn-default ¡Iniciar Ahora!
 		include parts/footer.pug

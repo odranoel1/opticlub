@@ -1,15 +1,13 @@
+.Banner-home
+  background-color $blueDemon
+  color $white
+  display grid
+  grid-template-columns auto auto auto
+
 .Home
   .box-item
     position absolute
     top 20%
-  ul
-    width 100%
-    display flex
-    padding 20px
-    li
-      border-right 1px solid black
-      width 25%
-      display flex
   .membership
     margin 10px
     .item
@@ -86,3 +84,178 @@
       a
         color $blue
         display block
+
+.Prime
+  .form-prime
+    .label-pass
+      color $blue
+  .title-default b
+    color $blue
+  ul.agree
+    list-style circle
+    p, span
+      color $blue
+    span
+      font-size 0.8em
+
+.Club
+  .benefits
+    display flex
+    ul
+      width 60%
+      display grid
+      grid-template-columns auto auto auto
+    .enable
+      width 40%
+      background-color $blueDemon
+      h2, b
+        color $white
+
+.Membership
+  .info
+    border 1px solid #b8c3c0
+    display grid
+    grid-template-columns auto auto
+    padding 10px
+    margin-right 10px
+    margin-bottom 20px
+  .agent
+    border 1px solid #b8c3c0
+    display grid
+    grid-template-columns auto auto auto auto
+
+.Product
+  ul.sidebar-category
+    padding-left 5px
+    border-bottom 1px solid $black
+    li
+      padding 7px 0
+      a
+        color $black
+  .item
+    text-align center
+    b
+      font-size 1.3em
+    .btn-link
+      border 1px solid $black !important
+      color $black
+
+.Product-detail
+  .breadcrumbs
+    a
+      color $blueDemon
+      font-weight bold
+      b
+        color $blue
+  ul.thumbnails
+    padding-left 0
+    li
+      border 1px solid $gray
+      margin 10px 0
+  .content
+    .name
+      h2
+        color $blueDemon
+        font-size 1.5em
+        font-weight bold
+      span
+        display block
+    .price
+      font-size 2em
+  ul.nav-tabs
+    a
+      color $blueDemon
+      font-weight bold
+    .active a
+      text-decoration underline
+  .tab-content
+    padding 10px
+    p
+      line-height 25pt
+      text-align justify
+
+.Course
+  .breadcrumbs
+    border-bottom 1px solid $black
+    ul
+      padding 30px
+      margin 0
+      li
+        padding 0 15px
+        a
+          color $blue
+  .about
+    p
+      text-align justify
+      width 80%
+  #video-carousel
+    .item
+      background-color $gray
+      .top
+        color $blueDemon
+      .title
+        color $blue
+        font-weight 1.5em
+  .sidebar-right
+    h3
+      font-weight bold
+      font-size 1.5em
+      color $blueDemon
+    b
+      color $blue
+      font-weight bold
+    p
+      b
+        color $black
+
+.benefits
+  background-color $gray
+  text-align center
+  ul
+    padding 35px 0
+    li
+      font-weight bold
+      color $blueDemon
+      padding 0 25px
+      p
+        margin 15px 0 0
+      span
+        color $blue
+
+.title-default
+  color $blueDemon
+
+.title-main
+  display flex
+  align-items center
+  h2
+    margin-left 10px
+    color $blueDemon
+    b
+      color $blue
+      display block
+
+.cta-default
+  background-color $gray
+  margin 3rem 0
+  ul
+    display flex
+    padding 20px
+    width 100%
+    li
+      border-right 1px solid #b8c3c0
+      width 25%
+      display flex
+
+.cta-offer
+  display flex
+  color $white
+  & > div:first-child, & > div:last-child
+    padding 20px 0
+    display flex
+    align-items center
+    justify-content center
+  & > div:first-child
+    background-color $blueDemon
+  & > div:last-child
+    background-color $blue

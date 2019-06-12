@@ -22,60 +22,72 @@ html(lang="es")
 		script(src="assets/main.js")
 	body
 		include parts/header.pug
-		
-		.Membership
-			.container
-				.row
-					.col-sm-12
-						img(src="assets/img/opticlub-gem-icon.png", alt="OptiClub").img-responsive
-						h2 Membresía
-						p SOCIO CLUB
-				.row
-					.col-sm-6
-						h3 Mis paquetes
-						p Rastrear pedidos, devolver pedidos, garantías ocomprar algo de nuevo
-						img(src="assets/img/opticlub-packages-icon.png", alt="OptiClub").img-responsive
-					.col-sm-6
+
+		.Membership.container-fluid
+			.row
+				.col-sm-8.col-sm-offset-2
+					img(src="assets/img/opticlub-gem-icon.png", alt="OptiClub").img-responsive
+					h2 Membresía
+					p SOCIO CLUB
+			.row.flex
+				.col-sm-4.col-sm-offset-2.info
+					.content
+						h3
+							b Mis paquetes
+						p
+							| Rastrear pedidos, devolver pedidos, garantías o #[br]
+							| comprar algo de nuevo
+					img(src="assets/img/opticlub-packages-icon.png", alt="OptiClub").img-responsive
+				.col-sm-4.info
+					.content
 						h3 Direcciones
 						p Editar direcciones para pedidos y datos fiscales
-						img(src="assets/img/opticlub-directions-icon.png", alt="OptiClub").img-responsive
-				.row
-					.col-sm-6
+					img(src="assets/img/opticlub-directions-icon.png", alt="OptiClub").img-responsive
+			.row
+				.col-sm-4.col-sm-offset-2.info
+					.content
 						h3 Mi cuenta
 						p Editar inicio de sesión, nombre y número deteléfono móvi
-						img(src="assets/img/opticlub-account-icon.png", alt="OptiClub").img-responsive
-					.col-sm-6
+					img(src="assets/img/opticlub-account-icon.png", alt="OptiClub").img-responsive
+				.col-sm-4.info
+					.content
 						h3 Beneficios Prime
 						p Ver beneficios y cambiarme a PRIME
-						img(src="assets/img/opticlub-star-prime-icon.png", alt="OptiClub").img-responsive
-				.row
-					.col-sm-12
-						img(src="assets/img/opticlub-agent-icon.png", alt="OptiClub").img-responsive
+					img(src="assets/img/opticlub-star-prime-icon.png", alt="OptiClub").img-responsive
+			.row
+				.col-sm-8.col-sm-offset-2.agent
+					img(src="assets/img/opticlub-agent-icon.png", alt="OptiClub").img-responsive
+					.info
 						h2 Mi agente
 						p Francisco Alvarado
-						.stars
-						a(href="mailto:jalvarado@opticlub.mx") jalvarado@opticlub.mx
-						a(href="tel:521 81 384958304") +521 81 384958304
+						i.far.fa-star
+					.contact
+						a(href="mailto:jalvarado@opticlub.mx").link-primary jalvarado@opticlub.mx #[br]
+						a(href="tel:521 81 384958304").link-primary +521 81 384958304
+					.date
 						p
 							| ¿Prefieres una visita
 							| directamente en tu óptica?
-						i.fas.fa
-						a(href="#").btn.btn-default SOLICITA UNA CITA
-				.row
-					.col-sm-12
-						a(href="#") ¿Ayuda?
-						a(href="#") Preguntas Frecuentes
-				.row
-					.col-sm-3
-						img(src="assets/img/opticlub-shield-icon.png", alt="OptiClub").img-responsive
-						p ¡No te preocupes, tu compra es completamente segura!
-					.col-sm-3
-						img(src="assets/img/opticlub-package-icon.png", alt="OptiClub").img-responsive
-						p Envíos a toda la república mexicana
-					.col-sm-3
-						img(src="assets/img/opticlub-mobil-card-icon.png", alt="OptiClub").img-responsive
-						p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
-					.col-sm-3
-						img(src="assets/img/opticlub-prize-icon.png", alt="OptiClub").img-responsive
-						p ¡Satisfacción Totalen nuestros productos!
+						i.fas.fa-arrow-right
+						a(href="#").btn.btn-blue SOLICITA UNA CITA
+			.row
+				.col-sm-8.col-sm-offset-2
+					.help.pull-right
+						a(href="#").link.link-primary ¿Ayuda? #[br]
+						a(href="#").link.link-primary Preguntas Frecuentes
+			.row
+				.col-sm-12.cta-default
+					ul.list-inline
+						li
+							img(src="assets/img/opticlub-shield-icon.png", alt="OptiClub").img-responsive
+							p ¡No te preocupes, tu compra es completamente segura!
+						li
+							img(src="assets/img/opticlub-package-icon.png", alt="OptiClub").img-responsive
+							p Envíos a toda la república mexicana
+						li
+							img(src="assets/img/opticlub-mobil-card-icon.png", alt="OptiClub").img-responsive
+							p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
+						li
+							img(src="assets/img/opticlub-prize-icon.png", alt="OptiClub").img-responsive
+							p ¡Satisfacción Total en nuestros productos!
 		include parts/footer.pug

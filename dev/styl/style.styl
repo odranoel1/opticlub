@@ -46,10 +46,14 @@ input
 	border-bottom 1px solid $black !important
 	border-radius 0 !important
 	box-shadow none !important
-.input-default
-	background-color #e8ebea !important
-	border-color #e8ebea !important
-	box-shadow none
+.input
+	&-default
+		background-color #e8ebea !important
+		border-color #e8ebea !important
+		box-shadow none
+	&-primary
+		background-color #f6f3bb
+		border-color #f6f3bb !important
 
 .flex
 	display flex
@@ -71,10 +75,13 @@ input
 		color $blue
 
 .link
+	text-decoration underline
+	text-decoration underline
 	&-default
 		color $blue
 		font-weight bolder
-		text-decoration underline
+	&-primary
+		color $black
 
 .box
 	&-gray
