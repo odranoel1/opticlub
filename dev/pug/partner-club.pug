@@ -25,7 +25,7 @@ html(lang="es")
 
 		.Club.container-fluid
 			.row
-				.col-sm-8.col-sm-offset-2.title
+				.col-sm-10.col-sm-offset-1.title
 					img(src="assets/img/opticlub-club-icon.png", alt="OptiClub").img-responsive
 					.content
 						h2 ¡Se parte del club! 
@@ -36,7 +36,7 @@ html(lang="es")
 					.adorn
 						img(src="assets/img/opticlub-adorn-white.png", alt="OptiClub").img-responsive
 			.row
-				.col-sm-8.col-sm-offset-2.content-form
+				.col-sm-10.col-sm-offset-1.content-form
 					h2 Datos principales
 					form(action="")
 						.row.form-group
@@ -72,7 +72,7 @@ html(lang="es")
 								input(type="text").form-control.input-default
 						input(type="submit" value="+ CREAR TU CUENTA SOCIO CLUB").btn.btn-default.pull-right
 			.row
-				.col-sm-8.col-sm-offset-2.agree
+				.col-sm-10.col-sm-offset-1.agree
 					p
 						| Al crear mi cuenta,	 
 						b estoy de acuerdo	
@@ -86,17 +86,17 @@ html(lang="es")
 						b correo de confirmación 
 						| de tu cuenta, posteriormente a la activación podrás visualizar las marcas y precios de nuestros productos
 			.row
-				.col-sm-8.col-sm-offset-2
-					.title-main
-						img(src="assets/img/opticlub-crown-icon.png", alt="OptiClub").img-responsive
+				.col-sm-10.col-sm-offset-1.title.convert-prime
+					img(src="assets/img/opticlub-crown-icon.png", alt="OptiClub").img-responsive
+					.content
 						h2
-							b Conviértete de Socio Club a 
-							| SOCIO PRIME
-					p
-						span Activa tu cuenta 
-						| en un ¡Solo click!
-			.row
-				.col-sm-8.col-sm-offset-2.benefits
+							| Conviértete de Socio Club a 
+							span SOCIO PRIME
+						p
+							span Activa tu cuenta 
+							| en un ¡Solo click!
+			.row.account-prime
+				.col-md-6.col-md-offset-1.benefits
 					ul.list-inline
 						li
 							img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub")
@@ -122,13 +122,18 @@ html(lang="es")
 							img(src="assets/img/opticlub-money-icon.png", alt="OptiClub")
 							p MEJOR PRECIO
 							span SIN LÍMITE DE VOLUMEN
-					.enable
-						h2 ¡Comienza a disfrutar de sus beneficios!
-						b
-							| $499
-							span MENSUAL
-						i.far.fa-star
-						a(href="#").btn.btn-default
-							| + ACTIVAR MI CUENTA 
-							b AHORA
+				.col-md-4.enable
+					h3.text ¡Comienza a disfrutar de sus beneficios!
+					.price
+						p $499
+						.stars
+							p MENSUAL
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+					a(href="#").btn.btn-default
+						| + ACTIVAR MI CUENTA 
+						b AHORA
 		include parts/footer.pug

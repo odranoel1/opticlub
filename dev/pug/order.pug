@@ -25,7 +25,7 @@ html(lang="es")
 
 		.Order.container-fluid
 			.row.cta-offer
-				.col-sm-6
+				.col-sm-7
 					img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub").img-responsive
 					p
 						| Felicidades llevas 
@@ -35,66 +35,126 @@ html(lang="es")
 						b $3,800 
 						| para obtener 
 						b envío GRATIS.
-				.col-sm-6
+				.col-sm-5
 					img(src="assets/img/opticlub-heart-icon.png", alt="OptiClub").img-responsive
 					b TOTAL DEL PAQUETE 23 pzas - $2,000 pesos
 			.row
 				.col-sm-8.col-sm-offset-2
-					img(src="assets/img/opticlub-box-icon.png", alt="OptiClub").img-responsive
-					h2
-						b "Mi paquete" 
-						| Piezas actuales añadidas a mi pedido:
-					table.table
-						tr
-							th
-							th DESCRIPCIÓN
-							th TOTAL
-						tr
-							td
-								img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
-							td
-								h3
-									b DISCOVERY 079
-									| (DIS079-19)
-								p
-									| Precio Unitario $300.00
-									| Color: Negro
-									| Cantidad select
-							td
-								span $900
-								img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub").img-responsive
-						tr
-							td
-								img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
-							td
-								h3
-									b DISCOVERY 079
-									| (DIS079-19)
-								p
-									| Precio Unitario $300.00
-									| Color: Negro
-									| Cantidad select
-							td
-								span $900
-								img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub").img-responsive
-				.row
-					.col-sm-8.col-sm-offset-2
-						.buttons.pull-right
-							a(href="product.html").btn.btn-default SEGUIR COMPRANDO
-							a(href="checkout.html").btn.btn-primary CONTINUAR A PAGO
-				.row
-					.col-sm-12.cta-default
-						ul.list-inline
-							li
-								img(src="assets/img/opticlub-shield-icon.png", alt="OptiClub").img-responsive
-								p ¡No te preocupes, tu compra es completamente segura!
-							li
-								img(src="assets/img/opticlub-package-icon.png", alt="OptiClub").img-responsive
-								p Envíos a toda la república mexicana
-							li
-								img(src="assets/img/opticlub-mobil-card-icon.png", alt="OptiClub").img-responsive
-								p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
-							li
-								img(src="assets/img/opticlub-prize-icon.png", alt="OptiClub").img-responsive
-								p ¡Satisfacción Totalen nuestros productos!
+					.title
+						img(src="assets/img/opticlub-box-icon.png", alt="OptiClub").img-responsive
+						h2
+							b "Mi paquete" 
+							| Piezas actuales añadidas a mi pedido:
+					form.table-responsive
+						table.table
+							thead
+								tr
+									th
+									th DESCRIPCIÓN
+									th(colspan="2") TOTAL
+							tbody
+								tr
+									td
+										img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+									td
+										h3
+											b DISCOVERY 079
+											| (DIS079-19)
+										p
+											| Precio Unitario $300.00 #[br]
+											| Color: Negro
+										.form-group
+											label Cantidad
+											select.form-control
+												option 1
+												option 2
+												option 3
+									td
+										span $900
+									td.delete
+										a(href="#")
+											img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub").img-responsive
+								tr
+									td
+										img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+									td
+										h3
+											b DISCOVERY 079
+											| (DIS079-19)
+										p
+											| Precio Unitario $300.00 #[br]
+											| Color: Negro
+										.form-group
+											label Cantidad
+											select.form-control
+												option 1
+												option 2
+												option 3
+									td
+										span $900
+									td.delete
+										a(href="#")
+											img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub").img-responsive
+								tr
+									td
+										img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+									td
+										h3
+											b DISCOVERY 079
+											| (DIS079-19)
+										p
+											| Precio Unitario $300.00 #[br]
+											| Color: Negro
+										.form-group
+											label Cantidad
+											select.form-control
+												option 1
+												option 2
+												option 3
+									td
+										span $900
+									td.delete
+										a(href="#")
+											img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub").img-responsive
+								tr
+									td
+										img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+									td
+										h3
+											b DISCOVERY 079
+											| (DIS079-19)
+										p
+											| Precio Unitario $300.00 #[br]
+											| Color: Negro
+										.form-group
+											label Cantidad
+											select.form-control
+												option 1
+												option 2
+												option 3
+									td
+										span $900
+									td.delete
+										a(href="#")
+											img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub").img-responsive
+			.row.my-5
+				.col-sm-8.col-sm-offset-2.text-center
+					.pull-right
+						a(href="product.html").btn.btn-default SEGUIR COMPRANDO
+						a(href="checkout.html").btn.btn-primary CONTINUAR A PAGO
+			.row
+				.col-sm-12.cta-default
+					ul.list-inline
+						li
+							img(src="assets/img/opticlub-shield-icon.png", alt="OptiClub").img-responsive
+							p ¡No te preocupes, tu compra es completamente segura!
+						li
+							img(src="assets/img/opticlub-package-icon.png", alt="OptiClub").img-responsive
+							p Envíos a toda la república mexicana
+						li
+							img(src="assets/img/opticlub-mobil-card-icon.png", alt="OptiClub").img-responsive
+							p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
+						li
+							img(src="assets/img/opticlub-prize-icon.png", alt="OptiClub").img-responsive
+							p ¡Satisfacción Totalen nuestros productos!
 		include parts/footer.pug
