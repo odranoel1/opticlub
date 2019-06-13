@@ -1,31 +1,54 @@
 header.Header
 	.container-fluid
 		.row
-			.col-sm-12
-				ul.list-inline
-					li
-						a(href="#")
+			.col-sm-12.px-0
+				ul.list-inline.desktop
+					li.social-media
+						a(href="#").mr-3
 							i.fab.fa-facebook-f
 						a(href="#")
 							i.fab.fa-instagram
+					li.whatsapp
+						i.fab.fa-whatsapp.pl-3
+						a(href="https://api.whatsapp.com/send?phone=5213311308015" target="_blank").ml-2 +521 331 1308015
 					li
-						i.fab.fa-whatsapp
-						a(href="tel:521 331 1308015") +521 331 1308015
-					li
-						a(href="#", class=section == 'index' ? 'active' : '') TIENDA
+						a(href="product.html", class=section == 'index' ? 'active' : '') TIENDA
 					li
 						a(href="about.html") NOSOTROS
-					li
+					li.logo
 						a.d-block(href="/")
 							img(src="assets/img/opti-logo-default.png", alt="OptiClub Logo").img-responsive
-					li
+					li.align
 						img(src="assets/img/opticlub-monocle-icon.png", alt="OptiClub").img-responsive
 						a(href="#") BUSCAR
 					li
-						a(href="#") MEMBRESÍAS
-					li
+						a(href="membership.html") MEMBRESÍAS
+					li.align
 						img(src="assets/img/opticlub-box-icon.png", alt="OptiClub").img-responsive
 						a(href="#") MI PAQUETE (23)
-					li
+					li.align
 						img(src="assets/img/opticlub-login-icon.png", alt="OptiClub").img-responsive
 						a(href="#") SOY SOCIO
+				.header-mobil
+					a.d-block(href="/")
+						img(src="assets/img/opti-logo-default.png", alt="OptiClub Logo").img-responsive
+					a(href="#", target="_blank").open-menu
+						i.fas.fa-bars
+				ul.mobil
+					li
+						a(href="product.html", class=section == 'index' ? 'active' : '') TIENDA
+					li
+						a(href="about.html") NOSOTROS
+					li
+						a(href="membership.html") MEMBRESÍAS
+					li
+						a(href="#") MI PAQUETE (23)
+					li
+						a(href="#") SOY SOCIO
+					li
+						a(href="#").mr-3
+							i.fab.fa-facebook-f
+						a(href="#")
+							i.fab.fa-instagram
+						i.fab.fa-whatsapp.px-3
+						a(href="https://api.whatsapp.com/send?phone=5213311308015" target="_blank") +521 331 1308015

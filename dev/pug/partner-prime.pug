@@ -22,17 +22,20 @@ html(lang="es")
 		script(src="assets/main.js")
 	body
 		include parts/header.pug
-
-		.Prime.container-fluid
-			.row
-				.col-sm-8.col-sm-offset-2
-					.title-main
-						img(src="assets/img/opticlub-crown-icon.png", alt="OptiClub").img-responsive
+		
+		form(action="")
+			.Prime.container-fluid
+				.row
+					.col-sm-8.col-sm-offset-2.title
+						img(src="assets/img/opticlub-crown-icon.png", alt="OptiClub").img-responsive.crown
 						h2
 							| Estas a punto de convertirte en 
 							b SOCIO PRIME
-					form(action="").form-prime
-						h2.title-default
+						.adorn
+							img(src="assets/img/opticlub-adorn-white.png", alt="OptiClub").img-responsive
+				.row
+					.col-sm-8.col-sm-offset-2.content-form
+						h2
 							b Datos principales
 						.row.form-group
 							.col-sm-6
@@ -56,68 +59,66 @@ html(lang="es")
 								label * Nombre de mi agente:
 								input(type="text").form-control
 						.row.form-group
-							.col-sm-6
-								label.label-pass Contraseña
+							.col-sm-6.pass-style
+								label Contraseña
 								.input-group
-									input(type="text").form-control.input-primary
+									input(type="password").form-control.input-primary
 									span.input-group-btn
 										a(href="#").btn.btn-primary Mostrar
 							.col-sm-6
 								label Repetir contraseña
 								input(type="password").form-control.input-default
-			.row
-				.col-sm-12.text-center
-					h2.title-default
-						| Estos son los 
-						b beneficios 
-						| que PRIME te ofrece
-			.row.benefits
-				.col-sm-12
-					ul.list-inline
-						li
-							img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub")
-							p EXCELENTES
-							span DESCUENTOS
-						li
-							img(src="assets/img/opticlub-alert-icon.png", alt="OptiClub")
-							p ACCESO A CANAL DE
-							span VÍDEOS Y RECURSOS
-						li
-							img(src="assets/img/opticlub-star-icon.png", alt="OptiClub")
-							p MARCAS
-							span EXCLUSIVAS
-						li
-							img(src="assets/img/opticlub-glasses-icon.png", alt="OptiClub")
-							p CAMBIO DE MERCANCÍA
-							span A LOS 6 MESES
-						li
-							img(src="assets/img/opticlub-web-icon.png", alt="OptiClub")
-							p AUMENTO DE
-							span UTILIDADES
-						li
-							img(src="assets/img/opticlub-money-icon.png", alt="OptiClub")
-							p MEJOR PRECIO
-							span SIN LÍMITE DE VOLUMEN
-			.row
-				.col-sm-8.col-sm-offset-2
-					p
-						| Al crear mi cuenta,
-						b estoy de acuerdo 
-						| con:
-					ul.agree
-						li Recibir correos electrónicos relacionados con miembros y servicios de OC
-						li
-							a(href="#").link-default Terminos y condiciones / políticas de envíos*
-						li
-							p El pago para la membresía socio prime se realizará automáticamente de forma mensual en la cuenta seleccionada
-							span *Puedes cancelar tu suscripción socio prime en cualquier momento, al hacer este proceso se perderán los beneficios
-					p
-						| Una vez que hagas el registro un 
-						b correo de confirmación 
-						| de tu cuenta, posteriormente a la activación podrás visualizar las marcas y precios de nuestros productos
-			.row
-				.col-sm-8.col-sm-offset-2
-					a(href="#").btn.btn-default.pull-right
-						| + CREAR CUENTA 
-						b SOCIO PRIME
+				.row
+					.col-sm-12.benefit-title
+						h2
+							| Estos son los 
+							b beneficios 
+							| que PRIME te ofrece
+				.row.benefits
+					.col-sm-12
+						ul.list-inline
+							li
+								img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub")
+								p EXCELENTES
+								span DESCUENTOS
+							li
+								img(src="assets/img/opticlub-alert-icon.png", alt="OptiClub")
+								p ACCESO A CANAL DE
+								span VÍDEOS Y RECURSOS
+							li
+								img(src="assets/img/opticlub-star-icon.png", alt="OptiClub")
+								p MARCAS
+								span EXCLUSIVAS
+							li
+								img(src="assets/img/opticlub-glasses-icon.png", alt="OptiClub")
+								p CAMBIO DE MERCANCÍA
+								span A LOS 6 MESES
+							li
+								img(src="assets/img/opticlub-web-icon.png", alt="OptiClub")
+								p AUMENTO DE
+								span UTILIDADES
+							li
+								img(src="assets/img/opticlub-money-icon.png", alt="OptiClub")
+								p MEJOR PRECIO
+								span SIN LÍMITE DE VOLUMEN
+				.row
+					.col-sm-8.col-sm-offset-2.agree
+						p
+							| Al crear mi cuenta, 
+							b estoy de acuerdo 
+							| con:
+						ul
+							li Recibir correos electrónicos relacionados con miembros y servicios de OC
+							li
+								a(href="#") Términos y condiciones / políticas de envíos*
+							li
+								p El pago para la membresía socio prime se realizará automáticamente de forma mensual en la cuenta seleccionada
+								span *Puedes cancelar tu suscripción socio prime en cualquier momento, al hacer este proceso se perderán los beneficios
+						p
+							| Una vez que hagas el registro enviaremos un 
+							b correo de confirmación 
+							| de tu cuenta, posteriormente a la activación podrás visualizar las marcas y precios de nuestros productos
+				.row.mb-5
+					.col-sm-8.col-sm-offset-2
+						input(type="submit" value="+ CREAR CUENTA SOCIO PRIME").btn.btn-default.pull-right
 		include parts/footer.pug

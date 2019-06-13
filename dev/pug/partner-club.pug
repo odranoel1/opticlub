@@ -25,15 +25,20 @@ html(lang="es")
 
 		.Club.container-fluid
 			.row
-				.col-sm-8.col-sm-offset-2
+				.col-sm-8.col-sm-offset-2.title
 					img(src="assets/img/opticlub-club-icon.png", alt="OptiClub").img-responsive
-					h2
-						| ¡Se parte del club!
-						b Activa tu cuenta
-						| totalmente
-						b GRATIS
+					.content
+						h2 ¡Se parte del club! 
+						p
+							b.enable Activa tu cuenta 
+							| totalmente 
+							b GRATIS
+					.adorn
+						img(src="assets/img/opticlub-adorn-white.png", alt="OptiClub").img-responsive
+			.row
+				.col-sm-8.col-sm-offset-2.content-form
+					h2 Datos principales
 					form(action="")
-						h2 Datos principales
 						.row.form-group
 							.col-sm-6
 								label * Nombre completo:
@@ -56,8 +61,8 @@ html(lang="es")
 								label * Nombre de mi agente:
 								input(type="text").form-control
 						.row.form-group
-							.col-sm-6
-								label.label-pass Contraseña
+							.col-sm-6.pass-style
+								label Contraseña
 								.input-group
 									input(type="text").form-control.input-primary
 									span.input-group-btn
@@ -65,20 +70,20 @@ html(lang="es")
 							.col-sm-6
 								label Repetir contraseña
 								input(type="text").form-control.input-default
-						input(type="submit" value="+CREAR TU CUENTA SOCIO CLUB").btn.btn-default.pull-right
+						input(type="submit" value="+ CREAR TU CUENTA SOCIO CLUB").btn.btn-default.pull-right
 			.row
-				.col-sm-8.col-sm-offset-2
+				.col-sm-8.col-sm-offset-2.agree
 					p
-						| Al crear mi cuenta,
-						b estoy de acuerdo
+						| Al crear mi cuenta,	 
+						b estoy de acuerdo	
 						| con:
 					ul
 						li Recibir correos electrónicos relacionados con miembros y servicios de OC
 						li
-							a(href="#").link-default Terminos y condiciones / políticas de envíos*
+							a(href="#") Terminos y condiciones / políticas de envíos*
 					p
-						| Una vez que hagas el registro un
-						b correo de confirmación
+						| Una vez que hagas el registro enviaremos un 
+						b correo de confirmación 
 						| de tu cuenta, posteriormente a la activación podrás visualizar las marcas y precios de nuestros productos
 			.row
 				.col-sm-8.col-sm-offset-2

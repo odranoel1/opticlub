@@ -64,8 +64,14 @@ input
 
 .btn
 	color $white
+	transition 0.3s
+	&:hover
+		background-color rgba($blue, 0.8)
+		border-color $blue
+		color $white
 	&-default
 		background-color $blue
+		border-color $blue
 	&-primary
 		background-color $blueDemon
 	&-link
@@ -80,6 +86,7 @@ input
 	&-default
 		color $blue
 		font-weight bolder
+		text-decoration underline
 	&-primary
 		color $black
 
@@ -88,6 +95,11 @@ input
 		background-color $gray
 	&-blueDemon
 		background-color $blueDemon
+
+.img-default
+	display block
+	width 100%
+	height auto
 
 .notify
 	padding 0.8em

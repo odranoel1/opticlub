@@ -26,55 +26,66 @@ html(lang="es")
 		.Membership.container-fluid
 			.row
 				.col-sm-8.col-sm-offset-2
-					img(src="assets/img/opticlub-gem-icon.png", alt="OptiClub").img-responsive
-					h2 Membresía
-					p SOCIO CLUB
-			.row.flex
-				.col-sm-4.col-sm-offset-2.info
-					.content
-						h3
-							b Mis paquetes
-						p
-							| Rastrear pedidos, devolver pedidos, garantías o #[br]
-							| comprar algo de nuevo
-					img(src="assets/img/opticlub-packages-icon.png", alt="OptiClub").img-responsive
-				.col-sm-4.info
-					.content
-						h3 Direcciones
-						p Editar direcciones para pedidos y datos fiscales
-					img(src="assets/img/opticlub-directions-icon.png", alt="OptiClub").img-responsive
+					.title
+						h2 Membresía
+						h2
+							img(src="assets/img/opticlub-gem-icon.png", alt="OptiClub")
+							| SOCIO CLUB
 			.row
-				.col-sm-4.col-sm-offset-2.info
-					.content
-						h3 Mi cuenta
-						p Editar inicio de sesión, nombre y número deteléfono móvi
-					img(src="assets/img/opticlub-account-icon.png", alt="OptiClub").img-responsive
-				.col-sm-4.info
-					.content
-						h3 Beneficios Prime
-						p Ver beneficios y cambiarme a PRIME
-					img(src="assets/img/opticlub-star-prime-icon.png", alt="OptiClub").img-responsive
+				.col-sm-12.info
+					.item
+						.text
+							h3
+								b Mis paquetes
+							p
+								| Rastrear pedidos, devolver pedidos, garantías o #[br]
+								| comprar algo de nuevo
+						img(src="assets/img/opticlub-packages-icon.png", alt="OptiClub").img-responsive
+					.item
+						.text
+							h3
+								b Direcciones
+							p Editar direcciones para pedidos y datos fiscales
+						img(src="assets/img/opticlub-directions-icon.png", alt="OptiClub").img-responsive
+					.item
+						.text
+							h3
+								b Mi cuenta
+							p Editar inicio de sesión, nombre y número de teléfono móvil
+						img(src="assets/img/opticlub-account-icon.png", alt="OptiClub").img-responsive
+					.item
+						.text
+							h3
+								b Beneficios Prime
+							p Ver beneficios y cambiarme a PRIME
+						img(src="assets/img/opticlub-star-prime-icon.png", alt="OptiClub").img-responsive
 			.row
-				.col-sm-8.col-sm-offset-2.agent
-					img(src="assets/img/opticlub-agent-icon.png", alt="OptiClub").img-responsive
-					.info
-						h2 Mi agente
-						p Francisco Alvarado
-						i.far.fa-star
-					.contact
-						a(href="mailto:jalvarado@opticlub.mx").link-primary jalvarado@opticlub.mx #[br]
-						a(href="tel:521 81 384958304").link-primary +521 81 384958304
-					.date
-						p
-							| ¿Prefieres una visita
-							| directamente en tu óptica?
-						i.fas.fa-arrow-right
-						a(href="#").btn.btn-blue SOLICITA UNA CITA
+				.col-sm-12.agent
+					.item
+						img(src="assets/img/opticlub-agent-icon.png", alt="OptiClub").img-responsive
+						.details
+							h2 Mi agente
+							p Francisco Alvarado
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+							i.fas.fa-star
+						.contact
+							a(href="mailto:jalvarado@opticlub.mx").link-primary jalvarado@opticlub.mx #[br]
+							a(href="tel:521 81 384958304").link-primary +521 81 384958304
+						.date
+							p
+								b
+									| ¿Prefieres una visita #[br]
+									| directamente en tu óptica?
+							i.fas.fa-arrow-right
+							a(href="#").btn.btn-blue.ml-3 SOLICITA UNA CITA
 			.row
-				.col-sm-8.col-sm-offset-2
+				.col-sm-8.col-sm-offset-2.my-5
 					.help.pull-right
-						a(href="#").link.link-primary ¿Ayuda? #[br]
-						a(href="#").link.link-primary Preguntas Frecuentes
+						a(href="#").link.link-primary ¿Ayuda?
+						a(href="#").link.link-primary.ml-3 Preguntas Frecuentes
 			.row
 				.col-sm-12.cta-default
 					ul.list-inline

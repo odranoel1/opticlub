@@ -23,32 +23,34 @@ html(lang="es")
 	body
 		include parts/header.pug
 
-		.Banner-home
-			img(src="assets/img/opticlub-adorn-left-icon.png", alt="OptiClub").img-responsive
-			img(src="assets/img/opticlub-logo-primary.png", alt="OptiClub").img-responsive
-			img(src="assets/img/opticlub-adorn-right-icon.png", alt="OptiClub").img-responsive
-			p
-				| ¿Quieres ganar mayores
-				b utilidades
-				| para tu negocio?
-			b ¡Se parte de nuestro club!
-			a(href="#").btn + CREAR CUENTA
+		//- .Banner-home
+		//- 	img(src="assets/img/opticlub-adorn-left-icon.png", alt="OptiClub").img-responsive
+		//- 	img(src="assets/img/opticlub-logo-primary.png", alt="OptiClub").img-responsive
+		//- 	img(src="assets/img/opticlub-adorn-right-icon.png", alt="OptiClub").img-responsive
+		//- 	p
+		//- 		| ¿Quieres ganar mayores
+		//- 		b utilidades
+		//- 		| para tu negocio?
+		//- 	b ¡Se parte de nuestro club!
+		//- 	a(href="#").btn + CREAR CUENTA
 		.Home
 			.container-fluid
 				.row
-					.col-sm-6.flex.flex-justify
-						img(src="assets/img/opticlub-home-banner-1.png", alt="OptiClub").img-responsive
-						.box-item
-							h2
-								b Los más vendidos
-							p Mira los favoritos de los ópticos
-					.col-sm-6.flex.flex-justify
-						img(src="assets/img/opticlub-home-banner-2.png", alt="OptiClub").img-responsive
-						.box-item
-							h2
-								b Nuevos 
-								| Modelos
-							p Mira lo último en lentes
+					.col-sm-6.product
+						.content
+							img(src="assets/img/opticlub-home-banner-1.png", alt="OptiClub").img-default
+							a(href="product.html").text
+								h2
+									b Los más vendidos
+								p Mira los favoritos de los ópticos
+					.col-sm-6.product
+						.content
+							img(src="assets/img/opticlub-home-banner-2.png", alt="OptiClub").img-default
+							a(href="product.html").text
+								h2
+									| Nuevos 
+									span Modelos
+								p Mira lo último en lentes
 				.row
 					.col-sm-12.cta-default
 						ul.list-inline
@@ -60,46 +62,57 @@ html(lang="es")
 								p Envíos a toda la república mexicana
 							li
 								img(src="assets/img/opticlub-mobil-card-icon.png", alt="OptiClub").img-responsive
-								p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
+								p
+									| ¡Comprar es fácil! Puedes usar #[br]
+									| Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
 							li
 								img(src="assets/img/opticlub-prize-icon.png", alt="OptiClub").img-responsive
 								p ¡Satisfacción Total en nuestros productos!
-				.row.box-gray.membership
-					.col-sm-4
-						//h1
-							b ¡Únete al club!
-						.item
-							h2
-								| MEMBRESÍA #[br]
-								span SOCIO CLUB
-							.price
-								span $ 0
-								p GRATIS
-							.stars
-								i.far.fa-star
-								i.far.fa-star
-								i.far.fa-star
-								i.far.fa-star
-								i.far.fa-star
-							i.fas.fa-arrow-right
-							a(href="#").btn.btn-blue ACTIVAR AHORA
-					.col-sm-4
-						.item
-							h2
-								| MEMBRESÍA #[br]
-								span SOCIO CLUB
-							.price
-								span $ 0
-								p GRATIS
-							.stars
-								i.far.fa-star
-								i.far.fa-star
-								i.far.fa-star
-								i.far.fa-star
-								i.far.fa-star
-							i.fas.fa-arrow-right
-							a(href="#").btn.btn-blue ACTIVAR AHORA
-					.col-sm-4
+				.row.membership
+					.col-sm-6.col-md-8
+						.row
+							.col-sm-10.col-sm-offset-1
+								h1 ¡Únete al Club!
+						.row
+							.col-sm-5.col-sm-offset-1.item
+								h2 MEMBRESÍA
+									p SOCIO CLUB
+								p.price $0 
+									span GRATIS
+								.stars
+									a(href="#", target="_blank")
+										i.fas.fa-star
+									a(href="#", target="_blank")
+										i.far.fa-star
+									a(href="#", target="_blank")
+										i.far.fa-star
+									a(href="#", target="_blank")
+										i.far.fa-star
+									a(href="#", target="_blank")
+										i.far.fa-star
+								i.fas.fa-arrow-right.mr-3
+								a(href="partner-club.html").btn.btn-blue ACTIVAR AHORA
+							.col-sm-5.item
+								h2 MEMBRESÍA
+									p SOCIO PRIME
+								p.price $499 
+									span GRATIS
+								.stars
+									a(href="#", target="_blank")
+										i.fas.fa-star
+									a(href="#", target="_blank")
+										i.fas.fa-star
+									a(href="#", target="_blank")
+										i.fas.fa-star
+									a(href="#", target="_blank")
+										i.fas.fa-star
+									a(href="#", target="_blank")
+										i.fas.fa-star
+									a(href="#", target="_blank")
+										i.fas.fa-star
+								i.fas.fa-arrow-right.mr-3
+								a(href="partner-prime.html").btn.btn-default COMPRAR AHORA
+					.col-sm-6.col-md-4
 						img(src="assets/img/opticlub-home-banner-3.jpg", alt="OptiClub").img-responsive
 				.row
 					.col-sm-12.text-center

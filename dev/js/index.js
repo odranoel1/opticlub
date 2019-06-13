@@ -28,4 +28,11 @@ $( document ).ready(function() {
       nav: true,
       dots: false,
     });
+
+    //Open Mobil Menu
+    $('.open-menu').click(function(e){
+      e.preventDefault();
+
+      $('.mobil').slideToggle('fast');
+    });
 });

@@ -1,8 +1,64 @@
 .Header
   a
     color $blueDemon
-  ul
-    padding 20px 0
+  ul.desktop
+    padding 26px 0
     display flex
     justify-content center
     align-items center
+    margin 0
+    position relative
+    @media only screen and (max-width 1280px)
+      padding-top 90px
+    @media only screen and (max-width 1080px)
+      padding-top 120px
+    @media only screen and (max-width 768px)
+      display none
+    li
+      padding 0 15px
+      white-space pre
+      @media only screen and (max-width 1080px)
+        white-space normal
+      i
+        font-size 1.2em
+      i.fa-whatsapp
+        color $black
+    .social-media, .whatsapp
+      @media only screen and (max-width 1080px)
+        position absolute
+        top 90px
+    .social-media
+      @media only screen and (max-width 1080px)
+        left 39%
+    .whatsapp
+      @media only screen and (max-width 1080px)
+        left 44%
+    .logo
+      @media only screen and (max-width 1280px)
+        position absolute
+        top 15px
+        left 50%
+        transform translate(-50%)
+    .align
+      display flex
+      align-items center
+      img
+        margin-right 1rem
+    li.align:last-child
+      border-left 1px solid $blueDemon
+  .header-mobil
+    display none
+    @media only screen and (max-width 768px)
+      display block
+      padding 10px
+    .open-menu
+      position absolute
+      top 10px
+      right 10px
+      font-size 1.5em
+  ul.mobil
+    display none
+    margin 0
+    padding 10px
+    li
+      padding 10px 0
