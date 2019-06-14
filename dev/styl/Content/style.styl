@@ -418,6 +418,8 @@
     display flex
     align-items center
     margin 40px 0
+    @media only screen and (max-width 768px)
+      display block
     img
       margin-right 10px
     h2
@@ -434,13 +436,197 @@
     label
       color #333333
       font-weight lighter
-  .delete img
-    width 30px
+  .delete
+    @media only screen and (max-width 768px)
+      float right
+    img
+      width 30px
   .pull-right a
     margin 10px
 
+.Checkout
+  .title
+    display flex
+    align-items center
+    margin-top 40px
+    @media only screen and (max-width 768px)
+      display block
+    img
+      margin-right 10px
+    h2
+      color $blueDemon
+  .form
+    label
+      font-weight lighter
+    a
+      color $blue
+      display inline-block
+      font-size 0.9em
+    .form-group
+      margin 20px 0
+  .title-form
+    color $white
+    background-color $blue
+    border-radius 15px
+    padding 4px 16px
+    width auto
+    display inline-block
+    @media only screen and (max-width 768px)
+      font-size 1em
+  .form-adress
+    .msg
+      img
+        width 40px
+        margin 10px 10px 10px 0
+      label
+        color $blue
+        font-weight bolder
+  .form-bill
+    .header
+      background-color $blue
+      padding 15px
+      display grid
+      grid-template-columns auto auto
+      grid-template-rows auto
+      img
+        justify-self end
+      h1, label
+        color $white
+    .body
+      background-color $gray
+      padding 20px
+      .change-adress
+        display grid
+        grid-template-columns repeat(3, auto)
+        grid-template-rows auto
+        align-items center
+        font-weight bold
+        h2
+          color $blueDemon
+          margin 7px 0
+        h4, label
+          font-weight bold
+      .form-control
+        background-color transparent
+      .select-style
+        label, select
+          font-weight bold
+        label
+          color $blue
+        select
+          color $blueDemon
+  .form-payment
+    .shipping
+      display grid
+      grid-template-columns 80px auto
+      margin-top 20px
+      @media only screen and (max-width 480px)
+        grid-template-columns auto
+      img
+        @media only screen and (max-width 480px)
+          justify-self center
+      .item
+        background-color $gray
+        padding 15px
+        margin 15px
+        display grid
+        grid-template-columns auto auto auto
+        grid-template-rows auto
+        gap 2rem
+        @media only screen and (max-width 480px)
+          margin-top 15px
+      .item.payment
+        display grid
+        grid-template-columns auto auto
+        grid-template-rows auto auto auto
+      .item, .item.payment
+        @media only screen and (max-width 1280px)
+          grid-template-columns auto
+  .resume-package
+    padding 20px 0
+    font-size 2em
+    a, i
+      color $blueDemon
+  .finish-payment
+    display grid
+    grid-template-columns auto auto auto
+    grid-template-rows auto
+    align-items end
+    gap 2rem
+    @media only screen and (max-width 768px)
+      grid-template-columns auto
+    .msg
+      margin-bottom 0
+  .resume-total
+    tr
+      td
+        border-top transparent
+        text-align right
+        &:first-child
+          font-weight bold
+          @media only screen and (min-width 769px)
+            width 80%
+      &:nth-child(2)
+        border-bottom 1px solid $gray
+  .modal
+    .modal-header
+      background-color $gray
+      .msg
+        img
+          width 40px
+        h2
+          color $blue
+          font-weight bolder
+          display inline
+        float left
+      a
+        color $blue
+        opacity 1
+        i
+          color $blueDemon
+    .modal-body
+      a.btn
+        color $white
+      a.btn-adress
+        color $black
+        background-color $gray
+        border 1px solid $gray
+        i
+          color #33ab48
+          margin-right 10px
+      .add-adress
+        border 1px solid $gray
+        background-color $gray
+        padding 20px 10px
+        display flex
+        align-items center
+        margin-bottom 10px
+        i
+          color $blueDemon
+          font-size 2em
+        span
+          margin-left 10px
+
 .Course
-  .breadcrumbs
+  .banner
+    background-image url('../assets/img/opticlub-course-banner.jpg')
+    background-position center center
+    background-repeat no-repeat
+    background-size cover
+    padding-top 7%
+    padding-bottom 7%
+    padding-left 5%
+    .breadcrumbs a
+      color $black
+      text-decoration none
+    h1
+      font-weight bold
+      font-size 2.3em
+      @media only screen and (min-width 769px)
+        width 30%
+    h2
+      color $blueDemon
+  .tabs
     border-bottom 1px solid $black
     ul
       padding 30px
@@ -448,30 +634,65 @@
       li
         padding 0 15px
         a
+          color #303842
+          &:hover
+            background-color transparent
+            border-color transparent
+      .active a
+        color $blue
+        border-color transparent
+  .content
+    display grid
+    grid-template-columns auto 300px
+    grid-template-rows auto
+    gap 3rem
+    padding 50px
+    @media only screen and (max-width 768px)
+      grid-template-columns auto
+      padding 10px
+    .about
+      .stars
+        display inline-block
+        margin-right 10px
+        i
+          color #f7bc4b
+      p
+        text-align justify
+        line-height 20pt
+      .btn-blue
+        border-color transparent
+        font-weight bold
+    .sidebar-right
+      h3
+        font-weight bold
+        color $blueDemon
+      p
+        color $blue
+      .download
+        color $blueDemon
+        margin-top 20px
+        span
           color $blue
-  .about
-    p
-      text-align justify
-      width 80%
-  #video-carousel
+      .btn-blue
+        border-radius 19px
+        padding 9px 16px
+        border 3px solid
+  .style-carousel
     .item
       background-color $gray
+      margin 15px
+      padding 25px
       .top
         color $blueDemon
       .title
         color $blue
         font-weight 1.5em
-  .sidebar-right
-    h3
-      font-weight bold
-      font-size 1.5em
-      color $blueDemon
-    b
-      color $blue
-      font-weight bold
-    p
-      b
-        color $black
+      p
+        text-align justify
+      i
+        margin-right 10px
+      a.btn-default
+        float right
 
 .cta-default
   background-color $gray
@@ -571,3 +792,18 @@
         color $blue
       span
         font-size 0.8em
+
+.resume-product
+  position relative
+  height 600px
+  overflow auto
+  thead
+    background-color $gray
+
+.msg
+  img
+    width 40px
+    margin 10px 10px 10px 0
+  label
+    color $blue
+    font-weight bolder

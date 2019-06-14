@@ -46,9 +46,54 @@ $( document ).ready(function() {
     $( ".owl-prev").html('<i class="fas fa-chevron-left"></i>');
     $( ".owl-next").html('<i class="fas fa-chevron-right"></i>');
 
-    $('#video-carousel').owlCarousel({
-      nav: true,
-      dots: false,
+    $('#tips-carousel').owlCarousel({
+        // items: 4,
+        nav: true,
+        dots: false,
+        loop: true,
+        responsive: {
+          0: {
+            nav: false,
+            dots: true,
+            items: 1
+          },
+          480: {
+            nav: false,
+            dots: true,
+            items: 2
+          },
+          768: {
+            items: 3
+          },
+          992: {
+            items: 3
+          }
+        }
+    });
+
+    $('#conferences-carousel').owlCarousel({
+        // items: 4,
+        nav: true,
+        dots: false,
+        loop: true,
+        responsive: {
+          0: {
+            nav: false,
+            dots: true,
+            items: 1
+          },
+          480: {
+            nav: false,
+            dots: true,
+            items: 2
+          },
+          768: {
+            items: 3
+          },
+          992: {
+            items: 3
+          }
+        }
     });
 
     //Open Mobil Menu

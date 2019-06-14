@@ -23,143 +23,127 @@ html(lang="es")
 	body
 		include parts/header.pug
 
-		.Checkout
-			.container
-				.row
-					.col-sm-6
+		.Checkout.container-fluid
+			.row
+				.col-md-10.col-md-offset-1
+					.title
 						img(src="assets/img/opticlub-box-icon.png", alt="OptiClub").img-responsive
 						h2
 							| Estas a punto de terminar 
 							b "Mi paquete"
-						form(action="")
-							h2 INFORMACIÓN DE CONTACTO
-							.row.form-group
-								.col-sm-12
-									label(for="") * Nombre Completo:
-									input(type="text").form-control
-							.row.form-group
-								.col-sm-12
-									label(for="") * Correo electrónico:
-									input(type="text").form-control
-							h2 DIRECCIÓN DE ENVÍO
-							a(href="#" data-toggle="modal" data-target="#changeAdress").link-default Cambiar
-							.modal.fade#changeAdress(role="dialog")
-								.modal-dialog.modal-lg
-									.modal-content
-										.modal-header
+			.row
+				.col-sm-6.col-md-5.col-md-offset-1.mt-5
+					form(action="").form.form-adress
+						h2.title-form INFORMACIÓN DE CONTACTO
+						.row
+							.col-sm-12
+								label(for="") * Nombre Completo:
+								input(type="text").form-control
+						.row
+							.col-sm-12.form-group
+								label(for="") * Correo electrónico:
+								input(type="text").form-control
+						h2.title-form DIRECCIÓN DE ENVÍO
+						a(href="#" data-toggle="modal" data-target="#changeAdress").ml-3 Cambiar
+						.modal.fade#changeAdress(role="dialog")
+							.modal-dialog.modal-lg
+								.modal-content
+									.modal-header
+										.msg
+											img(src="assets/img/opticlub-alert-icon.png", alt="Opticlub")
 											h2 Seleccionar una dirección de envío
-											a(href="#" data-dismiss="modal").close Cerrar
-												i.fa.fa-close
-										.modal-body
-											.row
-												.col-sm-4
-													b Noemí Calderon
-													p
-														| Francia 1225 Colonia Moder...
-														| COLONIA MODERNAGUADALAJARA, JALISCO
-														| Teléfono celular: (044) 3311
+										a(href="#" data-dismiss="modal").close Cerrar
+											i.fas.fa-times.ml-3
+									.modal-body
+										.row
+											.col-sm-4
+												b Noemí Calderon
+												p
+													| Francia 1225 Colonia Moder...
+													| COLONIA MODERNAGUADALAJARA, JALISCO
+													| Teléfono celular: (044) 3311
+												a(href="#").btn.btn-adress
 													i.fa.fa-check
-													span Entregar en esta dirección
-												.col-sm-4
-													b Miguel López
-													p
-														| Francia 1225 Colonia Moder...
-														| COLONIA MODERNAGUADALAJARA, JALISCO
-														| Teléfono celular: (044) 3311
-													a(href="#").btn.btn-primary Entregar en esta dirección
-												.col-sm-4
+													| Entregar en esta dirección
+											.col-sm-4
+												b Miguel López
+												p
+													| Francia 1225 Colonia Moder...
+													| COLONIA MODERNAGUADALAJARA, JALISCO
+													| Teléfono celular: (044) 3311
+												a(href="#").btn.btn-primary Entregar en esta dirección
+											.col-sm-4
+												.add-adress
 													i.fa.fa-plus
 													span
-														b Añadir
+														b Añadir 
 														| una nueva dirección de envío
-													a(href="#").link-default Añadir una dirección de envío nueva
-													a(href="#").link-default Editar o eliminar direcciones
-							.row.form-group
-								.col-sm-6
-									label(for="") * Nombre Completo:
-									input(type="text").form-control
-							.row.form-group
-								.col-sm-12
-									label(for="") * Direción completa (Calle, número y colonia)
-									input(type="text").form-control
-							.row.form-group
-								.col-sm-6
-									label(for="") * Código Postal:
-									input(type="text").form-control
-								.col-sm-6
-									label(for="") * País:
-									input(type="text").form-control
-							.row.form-group
-								.col-sm-6
-									label(for="") * Estado:
-									input(type="text").form-control
-								.col-sm-6
-									label(for="") * Ciudad:
-									input(type="text").form-control
-							.row.form-group
-								.col-sm-12
+												a(href="#").link-default Añadir una dirección de envío nueva
+												a(href="#").link-default Editar o eliminar direcciones
+						.row
+							.col-sm-6.form-group
+								label(for="") * Nombre Completo:
+								input(type="text").form-control
+						.row
+							.col-sm-12.form-group
+								label(for="") * Direción completa (Calle, número y colonia)
+								input(type="text").form-control
+						.row
+							.col-sm-6.form-group
+								label(for="") * Código Postal:
+								input(type="text").form-control
+							.col-sm-6.form-group
+								label(for="") * País:
+								input(type="text").form-control
+						.row
+							.col-sm-6.form-group
+								label(for="") * Estado:
+								input(type="text").form-control
+							.col-sm-6.form-group
+								label(for="") * Ciudad:
+								input(type="text").form-control
+						.row
+							.col-sm-12
+								.form-group
 									label(for="") * Teléfono móvil:
 									input(type="text").form-control
-							.row.form-group
-								.col-sm-12
-									textarea(name="", cols="30", rows="10").form-control.input-default
-							.row.form-group
-								.col-sm-12
+								.form-group.msg
+									img(src="assets/img/opticlub-alert-icon.png", alt="Opticlub")
+									label INFORMACIÓN ADICIONAL
+									textarea(name="", cols="30", rows="5").form-control.input-default
+								.form-group
 									input(type="submit" value="Guardar NUEVA dirección de envío").btn.btn-primary.pull-right
-							h2 MÉTODO DE ENVÍO
-							.row
-								.col-sm-4
-									img(src="assets/img/opticlub-package-icon.png", alt="OptiClub").img-responsive
-								.col-sm-8
-									input(type="radio")
-									img(src="assets/img/compra-logo.png", alt="OptiClub").img-responsive
-									b 5 a 7 días hábiles
-									span ($235.00)
-							h2 MÉTODO DE PAGO
-							p
-								| Los pagos se realizarán a la cuenta de 
-								b Alhazen Optical
-							.row
-								.col-sm-4
-									img(src="assets/img/opticlub-wallet-icon.png", alt="OptiClub").img-responsive
-								.col-sm-8
-									label.radio-inline
-										input(type="radio")
-										img(src="assets/img/opticlub-payment-santander-black.png", alt="OptiClub Santander").img-responsive
-										span Transferencia bancaria, depósito o cheque
-									label.radio-inline
-										input(type="radio")
-										img(src="assets/img/opticlub-payment-paypal-black.png", alt="OptiClub Paypal").img-responsive
-										span 1 mes gratis de membresía PRIME al pagar con PayPal
-									label.radio-inline
-										input(type="radio")
-										img(src="assets/img/opticlub-payment-conekta-black.png", alt="OptiClub Conekta").img-responsive
-										span Pago en línea (Oxxo o tarjetas bancarias)
-					.col-sm-6
-						form(action="")
+				.col-sm-6.col-md-5.mt-5
+					form(action="").form.form-bill
+						.header
 							img(src="assets/img/opticlub-bill-icon.png", alt="OptiClub").img-responsive
-							h1 ¿Necesitas Factura?
-							label.radio-inline
-								input(type="radio")
-								| Sí
-							label.radio-inline
-								input(type="radio")
-								| No
-							h2 ¿Seleccionar misma dirección de envío?
-							label.radio-inline
-								input(type="radio")
-								| Sí
-							label.radio-inline
-								input(type="radio")
-								| No
-							a(href="#" data-toggle="modal" data-target="#changeShippingAdress").link-default Cambiar
+							.need-bill
+								h1 ¿Necesitas Factura?
+								label.radio-inline
+									input(type="radio" name="optradio")
+									| Sí
+								label.radio-inline
+									input(type="radio" name="optradio")
+									| No
+						.body
+							.change-adress
+								h4 ¿Seleccionar misma dirección de envío?
+								label.radio-inline
+									input(type="radio" name="optradio")
+									| Sí
+								label.radio-inline
+									input(type="radio" name="optradio")
+									| No
+							a(href="#" data-toggle="modal" data-target="#changeShippingAdress") Cambiar
 							.modal.fade#changeShippingAdress(role="dialog")
 								.modal-dialog.modal-lg
 									.modal-content
 										.modal-header
-											h2 Seleccionar datos de facturación
-											a(href="#") Cerrar
-												i.fa.fa-close
+											.msg
+												img(src="assets/img/opticlub-alert-icon.png", alt="Opticlub")
+												h2 Seleccionar datos de facturación
+											a(href="#" data-dismiss="modal").close Cerrar
+												i.fas.fa-times.ml-3
 										.modal-body
 											.row
 												.col-sm-4
@@ -175,125 +159,332 @@ html(lang="es")
 														| Francia 1225 Colonia Moder...
 														| COLONIA MODERNAGUADALAJARA, JALISCO
 														| Teléfono celular: (044) 3311
-													i.fa.fa-check
-													span Entregar en esta dirección
+													a(href="#").btn.btn-adress
+														i.fa.fa-check
+														| Entregar en esta dirección
 												.col-sm-4
-													span
-														b Añadir
-														| nuevos datos fiscales
+													.add-adress
+														i.fa.fa-plus
+														span
+															b Añadir 
+															| nuevos datos fiscales
 													a(href="#").link-default Añadir nuevos datos fiscales
 													a(href="#").link-default Editar o eliminar datos fiscales
-							.row
-								.col-sm-12.form-group
-									label(for="") * RFC:
-									input(type="text").form-control
-									label(for="") * Razón Social:
-									input(type="text").form-control
-									label(for="") * Dirección completa (Calle, número y colonia):
-									input(type="text").form-control
-									label(for="") * Código Postal:
-									input(type="text").form-control
-									label(for="") * País:
-									input(type="text").form-control
-									label(for="") * Estado:
-									input(type="text").form-control
-									label(for="") * Ciudad:
-									input(type="text").form-control
-									label(for="") * Teléfono móvil:
-									input(type="text").form-control
-									label(for="") USO DE CFDI
-									select.form-control
-										option G03 Gastos en General
-										option G03 Gastos en General
-										option G03 Gastos en General
-									label(for="") MÉTODO DE PAGO
-									select.form-control
-										option 3 Transferencia electrónica de fondos
-										option 3 Transferencia electrónica de fondos
-										option 3 Transferencia electrónica de fondos
-							.row
-								.col-sm-12
-									input(type="submit" value="Guardar NUEVOS datos de facturación").btn.btn-primary.pull-right
-				.row
-					.col-sm-12
-						i.fas.fa-chevron-right
-						a(href="") Resumen de Paquete
-				.row
-					.col-sm-8
-						img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub").img-responsive
-						p Felicidades llevas $1,200 ahorrados. Te faltan $3,800 para obtener envío GRATIS.
-					.col-sm-4
-						img(src="assets/img/opticlub-heart-icon.png", alt="OptiClub").img-responsive
+							.form-group
+								label(for="") * RFC:
+								input(type="text").form-control
+							.form-group
+								label(for="") * Razón Social:
+								input(type="text").form-control
+							.form-group
+								label(for="") * Dirección completa (Calle, número y colonia):
+								input(type="text").form-control
+							.form-group
+								label(for="") * Código Postal:
+								input(type="text").form-control
+							.form-group
+								label(for="") * País:
+								input(type="text").form-control
+							.form-group
+								label(for="") * Estado:
+								input(type="text").form-control
+							.form-group
+								label(for="") * Ciudad:
+								input(type="text").form-control
+							.form-group
+								label(for="") * Teléfono móvil:
+								input(type="text").form-control
+							.form-group.select-style
+								label(for="") USO DE CFDI
+								select.form-control
+									option G03 Gastos en General
+									option G03 Gastos en General
+									option G03 Gastos en General
+							.form-group.select-style
+								label(for="") MÉTODO DE PAGO
+								select.form-control
+									option 3 Transferencia electrónica de fondos
+									option 3 Transferencia electrónica de fondos
+									option 3 Transferencia electrónica de fondos
+						.form-group
+							input(type="submit" value="Guardar NUEVOS datos de facturación").btn.btn-primary.pull-right
+			.row
+				.col-md-5.col-md-offset-1
+					form.form-payment
+						h2.title-form MÉTODO DE ENVÍO
+						.shipping
+							img(src="assets/img/opticlub-package-icon.png", alt="OptiClub").img-responsive
+							.item
+								label.radio-inline
+									input(type="radio" name="optradio" checked)
+									img(src="assets/img/opticlub-shipping-paquetexpress.png", alt="OptiClub").img-responsive.ml-2
+								b 5 a 7 días hábiles
+								span ($235.00)
+						h2.title-form MÉTODO DE PAGO
 						p
-							| TOTAL DEL PAQUETE
-							| 23 pzas - $2,000 pesos
-				.row
-					.col-sm-12
-						img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
-						.table-responsive
-							table.table
+							| Los pagos se realizarán a la cuenta de 
+							b Alhazen Optical
+						.shipping
+							img(src="assets/img/opticlub-wallet-icon.png", alt="OptiClub").img-responsive
+							.item.payment
+								label.radio-inline
+									input(type="radio" name="optradio" checked)
+									img(src="assets/img/opticlub-payment-santander-black.png", alt="OptiClub Santander").img-responsive
+								span Transferencia bancaria, depósito o cheque
+								label.radio-inline
+									input(type="radio" name="optradio")
+									img(src="assets/img/opticlub-payment-paypal-black.png", alt="OptiClub Paypal").img-responsive
+								span 1 mes gratis de membresía PRIME al pagar con PayPal
+								label.radio-inline
+									input(type="radio" name="optradio")
+									img(src="assets/img/opticlub-payment-conekta-black.png", alt="OptiClub Conekta").img-responsive
+								span Pago en línea (Oxxo o tarjetas bancarias)
+			.row
+				.col-xs-10.col-xs-offset-1.col-md-offset-6.col-md-5.resume-package
+					i.fas.fa-chevron-right.mr-3
+					a(href="")
+						| Resumen de 
+						b Paquete
+			.row.cta-offer
+				.col-sm-7
+					img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub").img-responsive
+					p
+						| Felicidades llevas 
+						b $1,200
+						| ahorrados. 
+						| Te faltan 
+						b $3,800 
+						| para obtener 
+						b envío GRATIS.
+				.col-sm-5
+					img(src="assets/img/opticlub-heart-icon.png", alt="OptiClub").img-responsive
+					b TOTAL DEL PAQUETE 23 pzas - $2,000 pesos
+			.row
+				.col-sm-10.col-sm-offset-1.my-5
+					.resume-product
+						table.table.hidden-xs
+							thead
 								tr
+									th
 									th DESCRIPCIÓN
-									th TOTAL
+									th(colspan="2") TOTAL
+							tbody
 								tr
+									td
+										img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
 									td
 										h3
 											b DISCOVERY 079
 											| (DIS079-19)
 										p
-											| Precio Unitario $300.00
+											| Precio Unitario $300.00 #[br]
 											| Color: Negro
-											| Cantidad select
-										label(for="") Cantidad
-										select.form-control
-											option(value="") 1
-											option(value="") 2
-											option(value="") 3
+										.form-group
+											label Cantidad
+											select.form-control
+												option 1
+												option 2
+												option 3
 									td
 										span $900
-										img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub").img-responsive
-				.row
-					.col-sm-12
-						.table-responsive
-							table.table
+									td.delete
+										a(href="#")
+											img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub")
 								tr
-									td SUBTOTAL
-									td MX $2,700.00
+									td
+										img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+									td
+										h3
+											b DISCOVERY 079
+											| (DIS079-19)
+										p
+											| Precio Unitario $300.00 #[br]
+											| Color: Negro
+										.form-group
+											label Cantidad
+											select.form-control
+												option 1
+												option 2
+												option 3
+									td
+										span $900
+									td.delete
+										a(href="#")
+											img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub")
 								tr
-									td ENVÍO
-									td MX $235.00
+									td
+										img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+									td
+										h3
+											b DISCOVERY 079
+											| (DIS079-19)
+										p
+											| Precio Unitario $300.00 #[br]
+											| Color: Negro
+										.form-group
+											label Cantidad
+											select.form-control
+												option 1
+												option 2
+												option 3
+									td
+										span $900
+									td.delete
+										a(href="#")
+											img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub")
 								tr
-									td Total
-									td MX $2,935.00
-				.row
-					.col-sm-12.form-group
-						img(src="assets/img/opticlub-alert-icon.png", alt="").img-responsive
+									td
+										img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+									td
+										h3
+											b DISCOVERY 079
+											| (DIS079-19)
+										p
+											| Precio Unitario $300.00 #[br]
+											| Color: Negro
+										.form-group
+											label Cantidad
+											select.form-control
+												option 1
+												option 2
+												option 3
+									td
+										span $900
+									td.delete
+										a(href="#")
+											img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub")
+						table.table.visible-xs
+							thead
+								tr
+									th DESCRIPCIÓN
+							tbody
+								tr
+									td
+										img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+										h3
+											b DISCOVERY 079
+											| (DIS079-19)
+										p
+											| Precio Unitario $300.00 #[br]
+											| Color: Negro
+										.form-group
+											label Cantidad
+											select.form-control
+												option 1
+												option 2
+												option 3
+								tr
+									td
+										b Total 
+										span $900
+										.delete
+											a(href="#")
+												img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub")
+								tr
+									td
+										img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+										h3
+											b DISCOVERY 079
+											| (DIS079-19)
+										p
+											| Precio Unitario $300.00 #[br]
+											| Color: Negro
+										.form-group
+											label Cantidad
+											select.form-control
+												option 1
+												option 2
+												option 3
+								tr
+									td
+										b Total 
+										span $900
+										.delete
+											a(href="#")
+												img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub")
+								tr
+									td
+										img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+										h3
+											b DISCOVERY 079
+											| (DIS079-19)
+										p
+											| Precio Unitario $300.00 #[br]
+											| Color: Negro
+										.form-group
+											label Cantidad
+											select.form-control
+												option 1
+												option 2
+												option 3
+								tr
+									td
+										b Total 
+										span $900
+										.delete
+											a(href="#")
+												img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub")
+								tr
+									td
+										img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+										h3
+											b DISCOVERY 079
+											| (DIS079-19)
+										p
+											| Precio Unitario $300.00 #[br]
+											| Color: Negro
+										.form-group
+											label Cantidad
+											select.form-control
+												option 1
+												option 2
+												option 3
+								tr
+									td
+										b Total 
+										span $900
+										.delete
+											a(href="#")
+												img(src="assets/img/opticlub-trash-icon.png", alt="OptiClub")
+			.row
+				.col-sm-10.col-sm-offset-1
+					table.table.resume-total
+						tr
+							td Subtotal
+							td MX $2,700.00
+						tr
+							td Envío
+							td MX $235.00
+						tr
+							td Total
+							td MX $2,935.00
+					.form-group.msg
+						img(src="assets/img/opticlub-alert-icon.png", alt="OptiClub")
 						label OBSERVACIONES DEL PAQUETE
-						textarea(name="", cols="30", rows="10").form-control.input-default
-				.row
-					.col-sm-4.form-group
-						img(src="assets/img/opticlub-discount-icon.png", alt="").img-responsive
+						textarea(name="", cols="30", rows="5").form-control.input-default
+			.row
+				.col-sm-10.col-sm-offset-1.finish-payment
+					.form-group.msg
+						img(src="assets/img/opticlub-discount-icon.png", alt="OptiClub")
 						label(for="") CÓDIGO PROMOCIONAL
 						input(type="text").form-control.input-default
-					.col-sm-4
-						a(href="#").btn.btn-primary SEGUIR COMPRANDO
-					.col-sm-4
-						a(href="#").btn.btn-default FINALIZAR PEDIDO
-				.row
-					.col-sm-12
-						b ¿Necesitas Ayuda?
-						ul
-							li
-								| - Contáctanos por 
-								b WhatsApp
-								a(href="tel:(044) 3311308015") (044) 3311308015
-								| o al correo 
-								a(href="mailto:hola@opticlub.mx").link-default hola@opticlub.mx
-							li
-								| - Puedes devolver tus artículos dentro de un plazo de 5 días inmediatos a la entrega del paquete;
-								| las políticas de devolución dependen de cada proveedor y se especifican en cada detalle del producto.
-							li
-								| - Opticlub cuenta con una fecha estimada de entrega del paquete dentro de 5 a 7 días hábiles
-								| (Lunes - Viernes). Dichas fechas pueden variar dependiendo de la paquetería; Opticlub no se hace
-								| responsable de los cambios en fechas de entrega por parte del proveedor de paquetería.
+					a(href="#").btn.btn-primary SEGUIR COMPRANDO
+					input(type="submit" value="FINALIZAR PEDIDO").btn.btn-default
+			.row
+				.col-sm-10.col-sm-offset-1.agree
+					b ¿Necesitas Ayuda?
+					ul
+						li
+							| Contáctanos por 
+							b WhatsApp 
+							a(href="tel:(044) 3311308015") (044) 3311308015 
+							| o al correo 
+							a(href="mailto:hola@opticlub.mx").link-default hola@opticlub.mx
+						li
+							| Puedes devolver tus artículos dentro de un plazo de 5 días inmediatos a la entrega del paquete;
+							| las políticas de devolución dependen de cada proveedor y se especifican en cada detalle del producto.
+						li
+							| Opticlub cuenta con una fecha estimada de entrega del paquete dentro de 5 a 7 días hábiles
+							| (Lunes - Viernes). Dichas fechas pueden variar dependiendo de la paquetería; Opticlub no se hace
+							| responsable de los cambios en fechas de entrega por parte del proveedor de paquetería.
 		include parts/footer.pug

@@ -25,8 +25,8 @@ html(lang="es")
 
 		.Course.container-fluid
 			.row
-				.col-sm-12
-					span
+				.col-sm-12.banner
+					span.breadcrumbs
 						a(href="#") Buscar >
 						a(href="#") Cursos >
 						a(href="#") Técnicas de venta para generar utilidad en tu negocio
@@ -34,107 +34,319 @@ html(lang="es")
 						| Técnicas de venta
 						| para tu Negocio
 					h2 7 Estrategias para vender más
-					a(href="#").btn.btn-default Iniciar curso
+					a(href="#").btn.btn-default.btn-lg Iniciar curso
 			.row
-				.col-sm-12.breadcrumbs
-					ul.list-inline
+				.col-md-12.tabs
+					ul.nav.nav-tabs
 						li
-							a(href="#") Acerca
+							a(data-toggle="tab" href="#about").active Acerca
 						li 
-							a(href="#") Programa
+							a(data-toggle="tab" href="#program") Programa
 						li
-							a(href="#") Reseña
+							a(data-toggle="tab" href="#review") Reseña
 						li
-							a(href="#") Preguntas frecuentes
+							a(data-toggle="tab" href="#faq") Preguntas frecuentes
 			.row
-				.col-sm-7.col-sm-offset-1.about
-					h2
-						b Acerca de este curso
-					.stars
-					span 607 comentarios
-					p
-						| En este curso, identificarás las principales responsabilidades y actividades que realiza un directivo en
-						| cualquier nivel de mando. Revisarás ejemplos que reflejan la importancia del ejercicio del liderazgo
-						| resaltando el valor del manejo adecuado de la comunicación, toma de desiciones, motivación,
-						| delegación, supervisión y coordinación del equipo de trabajo.
-					a(href="#").btn VER MÁS
-				.col-sm-2.sidebar-right
-					h3 Instructores
-					b Itzel Mercado, Sofía Rincón y Laura Luna
-					h3 Duración
-					b 15 minutos
-					h2 Material de Descarga
-					p
-						| Descarga el resumen de nuestra 
-						b solución “Ventas” 
-						| en 
-						b formato PDF
-					a(href="#").btn.btn-blue DESCARGAR
-					p
-						| Descarga el resumen de nuestra 
-						b solución Cobranza 
-						| en 
-						b formato PDF
-					a(href="#").btn.btn-blue DESCARGAR
-					p
-						| Descarga el resumen de nuestra 
-						b solución Cobranza 
-						| en 
-						b formato PDF
-					a(href="#").btn.btn-blue DESCARGAR
+				.col-md-12
+					.tab-content
+						#about.tab-pane.fade.in.active
+							.content
+								.about
+									h2
+										b Acerca de este curso
+									.stars
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+									span 607 comentarios
+									p
+										| En este curso, identificarás las principales responsabilidades y actividades que realiza un directivo en
+										| cualquier nivel de mando. Revisarás ejemplos que reflejan la importancia del ejercicio del liderazgo
+										| resaltando el valor del manejo adecuado de la comunicación, toma de desiciones, motivación,
+										| delegación, supervisión y coordinación del equipo de trabajo.
+									a(href="#").btn.btn-blue VER MÁS
+								.sidebar-right
+									h3 Instructores
+									p Itzel Mercado, Sofía Rincón y Laura Luna
+									h3 Duración
+									p 15 minutos
+									h2 Material de Descarga
+									p.download
+										| Descarga el resumen de nuestra 
+										b solución “Ventas” 
+										| en 
+										span formato PDF
+									a(href="#").btn.btn-blue DESCARGAR
+									p.download
+										| Descarga el resumen de nuestra 
+										b solución Cobranza 
+										| en 
+										span formato PDF
+									a(href="#").btn.btn-blue DESCARGAR
+									p.download
+										| Descarga el resumen de nuestra 
+										b solución Cobranza 
+										| en 
+										span formato PDF
+									a(href="#").btn.btn-blue DESCARGAR
+						#program.tab-pane.fade.fade
+							.content
+								.about
+									h2
+										b Programa de este curso
+									.stars
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+									span 607 comentarios
+									p
+										| En este curso, identificarás las principales responsabilidades y actividades que realiza un directivo en
+										| cualquier nivel de mando. Revisarás ejemplos que reflejan la importancia del ejercicio del liderazgo
+										| resaltando el valor del manejo adecuado de la comunicación, toma de desiciones, motivación,
+										| delegación, supervisión y coordinación del equipo de trabajo.
+									a(href="#").btn.btn-blue VER MÁS
+								.sidebar-right
+									h3 Instructores
+									p Itzel Mercado, Sofía Rincón y Laura Luna
+									h3 Duración
+									p 15 minutos
+									h2 Material de Descarga
+									p.download
+										| Descarga el resumen de nuestra 
+										b solución “Ventas” 
+										| en 
+										span formato PDF
+									a(href="#").btn.btn-blue DESCARGAR
+									p.download
+										| Descarga el resumen de nuestra 
+										b solución Cobranza 
+										| en 
+										span formato PDF
+									a(href="#").btn.btn-blue DESCARGAR
+									p.download
+										| Descarga el resumen de nuestra 
+										b solución Cobranza 
+										| en 
+										span formato PDF
+									a(href="#").btn.btn-blue DESCARGAR
+						#review.tab-pane.fade
+							.content
+								.about
+									h2
+										b Reseña de este curso
+									.stars
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+									span 607 comentarios
+									p
+										| En este curso, identificarás las principales responsabilidades y actividades que realiza un directivo en
+										| cualquier nivel de mando. Revisarás ejemplos que reflejan la importancia del ejercicio del liderazgo
+										| resaltando el valor del manejo adecuado de la comunicación, toma de desiciones, motivación,
+										| delegación, supervisión y coordinación del equipo de trabajo.
+									a(href="#").btn.btn-blue VER MÁS
+								.sidebar-right
+									h3 Instructores
+									p Itzel Mercado, Sofía Rincón y Laura Luna
+									h3 Duración
+									p 15 minutos
+									h2 Material de Descarga
+									p.download
+										| Descarga el resumen de nuestra 
+										b solución “Ventas” 
+										| en 
+										span formato PDF
+									a(href="#").btn.btn-blue DESCARGAR
+									p.download
+										| Descarga el resumen de nuestra 
+										b solución Cobranza 
+										| en 
+										span formato PDF
+									a(href="#").btn.btn-blue DESCARGAR
+									p.download
+										| Descarga el resumen de nuestra 
+										b solución Cobranza 
+										| en 
+										span formato PDF
+									a(href="#").btn.btn-blue DESCARGAR
+						#faq.tab-pane.fade
+							.content
+								.about
+									h2
+										b Preguntas de este curso
+									.stars
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+										a(href="#", target="_blank")
+											i.fas.fa-star
+									span 607 comentarios
+									p
+										| En este curso, identificarás las principales responsabilidades y actividades que realiza un directivo en
+										| cualquier nivel de mando. Revisarás ejemplos que reflejan la importancia del ejercicio del liderazgo
+										| resaltando el valor del manejo adecuado de la comunicación, toma de desiciones, motivación,
+										| delegación, supervisión y coordinación del equipo de trabajo.
+									a(href="#").btn.btn-blue VER MÁS
+								.sidebar-right
+									h3 Instructores
+									p Itzel Mercado, Sofía Rincón y Laura Luna
+									h3 Duración
+									p 15 minutos
+									h2 Material de Descarga
+									p.download
+										| Descarga el resumen de nuestra 
+										b solución “Ventas” 
+										| en 
+										span formato PDF
+									a(href="#").btn.btn-blue DESCARGAR
+									p.download
+										| Descarga el resumen de nuestra 
+										b solución Cobranza 
+										| en 
+										span formato PDF
+									a(href="#").btn.btn-blue DESCARGAR
+									p.download
+										| Descarga el resumen de nuestra 
+										b solución Cobranza 
+										| en 
+										span formato PDF
+									a(href="#").btn.btn-blue DESCARGAR
 			.row.text-center
-				.col-sm-12.breadcrumbs
-					h2 Vídeos que te pueden interesar:
-					ul.list-inline
+				.col-sm-12
+					h2
+						b Vídeos que te pueden interesar:
+			.row
+				.col-sm-12.tabs
+					ul.nav.nav-tabs
 						li
-							a(href="#") Tips
+							a(data-toggle="tab" href="#tips") Tips
 						li
-							a(href="#") Conferencias
+							a(data-toggle="tab" href="#conferences") Conferencias
 						li
-							a(href="#") Cursos
+							a(data-toggle="tab" href="#cursos") Cursos
 						li
-							a(href="#") Entrevistas
-			.row.owl-carousel.owl-theme#video-carousel
-				.col-sm-8.col-sm-offset-2.item
-					img(src="assets/img/opticlub-course-thumbnail.jpg", alt="OptiClub").img-responsive
-					h2.top Top Ventas
-					b.title Introducción a las ventas
-					p Curso de Ana López López
-					p
-						| Muchos vendedores se enfocan únicamente
-						| en lo que están vendiendo y se olvidan que
-						| están en un negocio donde la base es la
-						| gente; tus clientes quieren ser tratados de
-						| forma personalizada.
-					i.far.fa-user
-					span 987 comentarios
-					a(href="#").btn.btn-default ¡Iniciar Ahora!
-				.col-sm-8.col-sm-offset-2.item
-					img(src="assets/img/opticlub-course-thumbnail.jpg", alt="OptiClub").img-responsive
-					h2.top Top Ventas
-					b.title Introducción a las ventas
-					p Curso de Ana López López
-					p
-						| Muchos vendedores se enfocan únicamente
-						| en lo que están vendiendo y se olvidan que
-						| están en un negocio donde la base es la
-						| gente; tus clientes quieren ser tratados de
-						| forma personalizada.
-					i.far.fa-user
-					span 987 comentarios
-					a(href="#").btn.btn-default ¡Iniciar Ahora!
-				.col-sm-8.col-sm-offset-2.item
-					img(src="assets/img/opticlub-course-thumbnail.jpg", alt="OptiClub").img-responsive
-					h2.top Top Ventas
-					b.title Introducción a las ventas
-					p Curso de Ana López López
-					p
-						| Muchos vendedores se enfocan únicamente
-						| en lo que están vendiendo y se olvidan que
-						| están en un negocio donde la base es la
-						| gente; tus clientes quieren ser tratados de
-						| forma personalizada.
-					i.far.fa-user
-					span 987 comentarios
-					a(href="#").btn.btn-default ¡Iniciar Ahora!
+							a(data-toggle="tab" href="#entrevistas") Entrevistas
+			.row
+				.col-sm-12
+					.tab-content
+						#tips.tab-pane.fade.in.active
+							.owl-carousel.owl-theme#tips-carousel.style-carousel
+								.item
+									img(src="assets/img/opticlub-course-thumbnail.jpg", alt="OptiClub").img-responsive
+									h2.top Top Ventas
+									b.title Introducción a las ventas
+									p Curso de Ana López López
+									p
+										| Muchos vendedores se enfocan únicamente
+										| en lo que están vendiendo y se olvidan que
+										| están en un negocio donde la base es la
+										| gente; tus clientes quieren ser tratados de
+										| forma personalizada.
+									span
+										i.far.fa-user
+										| 987 comentarios
+									a(href="#").btn.btn-default ¡Iniciar Ahora!
+								.item
+									img(src="assets/img/opticlub-course-thumbnail.jpg", alt="OptiClub").img-responsive
+									h2.top Top Ventas
+									b.title Introducción a las ventas
+									p Curso de Ana López López
+									p
+										| Muchos vendedores se enfocan únicamente
+										| en lo que están vendiendo y se olvidan que
+										| están en un negocio donde la base es la
+										| gente; tus clientes quieren ser tratados de
+										| forma personalizada.
+									span
+										i.far.fa-user
+										| 987 comentarios
+									a(href="#").btn.btn-default ¡Iniciar Ahora!
+								.item
+									img(src="assets/img/opticlub-course-thumbnail.jpg", alt="OptiClub").img-responsive
+									h2.top Top Ventas
+									b.title Introducción a las ventas
+									p Curso de Ana López López
+									p
+										| Muchos vendedores se enfocan únicamente
+										| en lo que están vendiendo y se olvidan que
+										| están en un negocio donde la base es la
+										| gente; tus clientes quieren ser tratados de
+										| forma personalizada.
+									span
+										i.far.fa-user
+										| 987 comentarios
+									a(href="#").btn.btn-default ¡Iniciar Ahora!
+						#conferences.tab-pane.fade
+							.owl-carousel.owl-theme#conferences-carousel.style-carousel
+								.item
+									img(src="assets/img/opticlub-course-thumbnail.jpg", alt="OptiClub").img-responsive
+									h2.top Top Conferencias
+									b.title Introducción a las ventas
+									p Curso de Ana López López
+									p
+										| Muchos vendedores se enfocan únicamente
+										| en lo que están vendiendo y se olvidan que
+										| están en un negocio donde la base es la
+										| gente; tus clientes quieren ser tratados de
+										| forma personalizada.
+									span
+										i.far.fa-user
+										| 987 comentarios
+									a(href="#").btn.btn-default ¡Iniciar Ahora!
+								.item
+									img(src="assets/img/opticlub-course-thumbnail.jpg", alt="OptiClub").img-responsive
+									h2.top Top Conferencias
+									b.title Introducción a las ventas
+									p Curso de Ana López López
+									p
+										| Muchos vendedores se enfocan únicamente
+										| en lo que están vendiendo y se olvidan que
+										| están en un negocio donde la base es la
+										| gente; tus clientes quieren ser tratados de
+										| forma personalizada.
+									span
+										i.far.fa-user
+										| 987 comentarios
+									a(href="#").btn.btn-default ¡Iniciar Ahora!
+								.item
+									img(src="assets/img/opticlub-course-thumbnail.jpg", alt="OptiClub").img-responsive
+									h2.top Top Conferencias
+									b.title Introducción a las ventas
+									p Curso de Ana López López
+									p
+										| Muchos vendedores se enfocan únicamente
+										| en lo que están vendiendo y se olvidan que
+										| están en un negocio donde la base es la
+										| gente; tus clientes quieren ser tratados de
+										| forma personalizada.
+									span
+										i.far.fa-user
+										| 987 comentarios
+									a(href="#").btn.btn-default ¡Iniciar Ahora!
 		include parts/footer.pug

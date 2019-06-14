@@ -13,7 +13,7 @@ footer, a
             color white
             float right
   .contact
-    padding 40px 0
+    padding-bottom 40px
     img
       float left
     .payments
@@ -21,6 +21,8 @@ footer, a
         color $white
       ul
         display flex
+        @media only screen and (max-width 480px)
+          flex-direction column
   .middle
     padding-bottom 30px
   .bottom
