@@ -32,10 +32,10 @@
     background-color $gray
     margin 10px
     .item
-      @media only screen and (max-width 768px)
+      @media only screen and (max-width $tablet_sm)
         width 50%
         float left
-      @media only screen and (max-width 480px)
+      @media only screen and (max-width $phone)
         width 100%
         display flex
         flex-direction column
@@ -57,41 +57,34 @@
 .About
   background-color $gray
   .title
-    font-size 1.5em
-    margin-top 60px
+    // font-size 1.5em
     h2
       color $blueDemon
       span
         color $blue
-  .content
-    margin-top 40px
-    margin-bottom 40px
-    .item
-      h2
-        font-size 2em
-        font-weight bolder
-      a
-        margin 40px 0 20px 0
-        display block
-      p
-        &:last-child
-          text-align justify
-      @media only screen and (max-width 767px)
-        width 50%
-        height 600px
-        float left
-      @media only screen and (max-width 480px)
-        width 100%
-        height auto
-        margin-top 15px
+  .item
+    h2
+      font-size 2em
+      font-weight bolder
+    a
+      margin 40px 0 20px 0
+      display block
+    p
+      &:last-child
+        text-align justify
+    @media only screen and (max-width 767px)
+      width 50%
+      height 600px
+      float left
+    @media only screen and (max-width $phone)
+      width 100%
+      height auto
+      margin-top 15px
 
 .Contact
   .location
     display flex
-    & > div:last-child
-      padding-left 0
-      padding-right 0
-    @media only screen and (max-width 991px)
+    @media only screen and (max-width $tablet_md)
       flex-direction column
     .info
       background-color $blueDemon
@@ -102,27 +95,17 @@
       justify-items center
       color $white
       padding 10px
-      @media only screen and (max-width 480px)
+      @media only screen and (max-width $phone)
         grid-template-columns auto
         grid-template-rows 150px
-      ul
-        margin 0
-        li
-          display grid
-          grid-template-columns 50px 170px
-          margin 20px 0
-          img
-            margin-right 10px
-  .content-form
-    margin 3rem 0
-    b
-      color $blue
-    .msg
-      img
-        width 40px
-        margin 10px 10px 10px 0
-      label
-        color $blue
+      li
+        display grid
+        grid-template-columns 50px 170px
+        margin 20px 0
+        img
+          margin-right 10px
+  .faq
+    color $blue
   .title
     background-color $gray
     padding 20px 0
@@ -136,9 +119,9 @@
     grid-gap 4rem
     margin-top 40px
     margin-bottom 40px
-    @media only screen and (max-width 768px)
+    @media only screen and (max-width $tablet_sm)
       grid-template-columns repeat(2, auto)
-    @media only screen and (max-width 480px)
+    @media only screen and (max-width $phone)
       grid-template-columns auto
     .item
       h2
@@ -147,76 +130,62 @@
         color $blue
         display block
 
+.Prime, .Club
+  h2
+    color $blueDemon
+    b
+      color $blue
+
 .Prime
-  .title
+  .page-title
     display flex
     align-items center
     .crown
       width 50px
     h2
       margin-left 10px
-      color $blueDemon
       b
-        color $blue
         display block
     .adorn
       position absolute
       top 0
       right 20px
       z-index 1
-  .content-form
-    h2
-      color $blueDemon
-      margin 40px 0
-  .benefit-title
-    text-align center
-    margin-bottom 20px
-    h2
-      color $blueDemon
-      b
-        color $blue
+  .title-form
+    font-weight bold
 
 .Club
-  .title
+  h2
+    font-weight bold
+  .page-title
     display flex
     align-items center
     .content
       margin-left 10px
-      h2
-        color $blueDemon
-        font-weight bold
-      b.enable
+      .enable
         color $blue
     .adorn
       position absolute
       top 0
       right 20px
       z-index 1
-  .content-form
-    h2
-      color $blueDemon
-      font-weight bold
-  .convert-prime
-    h2
-      span
-        color $blue
+  .prime-title
     p
       color $blueDemon
-      span
-        color $blue
+      .enable
         font-weight bold
   .account-prime
     display flex
     margin-top 50px
     margin-bottom 80px
-    @media only screen and (max-width 991px)
+    @media only screen and (max-width $tablet_md)
       flex-direction column
     .benefits
       background-color $gray
       ul
         display grid
         grid-template-columns auto auto auto
-        @media only screen and (max-width 768px)
+        @media only screen and (max-width $tablet_sm)
           grid-template-columns auto auto
         @media only screen and (max-width 400px)
           grid-template-columns auto
@@ -226,9 +195,9 @@
       display grid
       grid-template-columns auto
       grid-template-rows 150px auto auto
-      @media only screen and (max-width 991px)
+      @media only screen and (max-width $tablet_md)
         grid-template-rows repeat(3, 100px)
-      .text
+      .title
         align-self center
         justify-self center
       .price
@@ -249,7 +218,7 @@
         justify-self end
 
 .Membership
-  .title
+  .page-title
     h2
       margin 8px 0
       &:first-child
@@ -257,7 +226,7 @@
     img
       width 40px
   .info
-    @media only screen and (min-width 768px)
+    @media only screen and (min-width $tablet_sm)
       display grid
       grid-template-columns auto auto
       width 66.66666667%
@@ -272,7 +241,7 @@
   .agent
     width 66.66666667%
     margin-left 16.66666667%
-    @media only screen and (max-width 768px)
+    @media only screen and (max-width $tablet_sm)
       width 100%
       margin-left 0
     .item
@@ -283,12 +252,12 @@
       grid-template-columns auto auto auto auto
       align-items center
       justify-items center
-      @media only screen and (max-width 1080px)
+      @media only screen and (max-width $tablet_lg)
         grid-template-columns auto auto
-      @media only screen and (max-width 480px)
+      @media only screen and (max-width $phone)
         grid-template-columns auto
       .details, .date
-        @media only screen and (max-width 1080px)
+        @media only screen and (max-width $tablet_lg)
           text-align center
           margin 10px 0
       h2
@@ -306,9 +275,9 @@
     display grid
     grid-template-columns repeat(3, auto)
     justify-items center
-    @media only screen and (max-width 1280px)
+    @media only screen and (max-width $desktop_size)
       grid-template-columns repeat(2,auto)
-    @media only screen and (max-width 768px)
+    @media only screen and (max-width $tablet_sm)
       grid-template-columns auto
     .item
       text-align center
@@ -327,19 +296,17 @@
 
 .Product-detail
   .breadcrumbs
-    margin 50px 0
     a
       color $blueDemon
       font-weight bold
-      b
-        color $blue
+    .enable
+      color $blue
   .picture-prod
-    margin-top 50px
     display grid
     grid-template-columns auto auto
     grid-template-rows auto
     align-items center
-    @media only screen and (max-width 1280px)
+    @media only screen and (max-width $desktop_size)
       grid-template-columns auto
       grid-template-rows auto auto
     ul
@@ -347,10 +314,10 @@
       li
         border 1px solid $gray
         margin 10px 0
-      @media only screen and (max-width 1280px)
+      @media only screen and (max-width $desktop_size)
         display flex
     .picture
-      @media only screen and (max-width 1280px)
+      @media only screen and (max-width $desktop_size)
         grid-row 1
   .title
     h2
@@ -414,22 +381,16 @@
         left 100%
 
 .Order
-  .title
+  .page-title
     display flex
     align-items center
     margin 40px 0
-    @media only screen and (max-width 768px)
+    @media only screen and (max-width $tablet_sm)
       display block
     img
       margin-right 10px
     h2
       color $blueDemon
-  form
-    position relative
-    height 600px
-    overflow auto
-    thead
-      background-color $gray
   .form-group
     display grid
     grid-template-columns 80px 80px
@@ -437,7 +398,7 @@
       color #333333
       font-weight lighter
   .delete
-    @media only screen and (max-width 768px)
+    @media only screen and (max-width $tablet_sm)
       float right
     img
       width 30px
@@ -445,11 +406,10 @@
     margin 10px
 
 .Checkout
-  .title
+  .page-title
     display flex
     align-items center
-    margin-top 40px
-    @media only screen and (max-width 768px)
+    @media only screen and (max-width $tablet_sm)
       display block
     img
       margin-right 10px
@@ -464,23 +424,15 @@
       font-size 0.9em
     .form-group
       margin 20px 0
-  .title-form
+  .form-title
     color $white
     background-color $blue
     border-radius 15px
     padding 4px 16px
     width auto
     display inline-block
-    @media only screen and (max-width 768px)
+    @media only screen and (max-width $tablet_sm)
       font-size 1em
-  .form-adress
-    .msg
-      img
-        width 40px
-        margin 10px 10px 10px 0
-      label
-        color $blue
-        font-weight bolder
   .form-bill
     .header
       background-color $blue
@@ -520,10 +472,10 @@
       display grid
       grid-template-columns 80px auto
       margin-top 20px
-      @media only screen and (max-width 480px)
+      @media only screen and (max-width $phone)
         grid-template-columns auto
       img
-        @media only screen and (max-width 480px)
+        @media only screen and (max-width $phone)
           justify-self center
       .item
         background-color $gray
@@ -533,17 +485,16 @@
         grid-template-columns auto auto auto
         grid-template-rows auto
         gap 2rem
-        @media only screen and (max-width 480px)
+        @media only screen and (max-width $phone)
           margin-top 15px
       .item.payment
         display grid
         grid-template-columns auto auto
         grid-template-rows auto auto auto
       .item, .item.payment
-        @media only screen and (max-width 1280px)
+        @media only screen and (max-width $desktop_size)
           grid-template-columns auto
   .resume-package
-    padding 20px 0
     font-size 2em
     a, i
       color $blueDemon
@@ -553,9 +504,9 @@
     grid-template-rows auto
     align-items end
     gap 2rem
-    @media only screen and (max-width 768px)
+    @media only screen and (max-width $tablet_sm)
       grid-template-columns auto
-    .msg
+    .alert-msg
       margin-bottom 0
   .resume-total
     tr
@@ -618,7 +569,6 @@
     padding-left 5%
     .breadcrumbs a
       color $black
-      text-decoration none
     h1
       font-weight bold
       font-size 2.3em
@@ -647,7 +597,7 @@
     grid-template-rows auto
     gap 3rem
     padding 50px
-    @media only screen and (max-width 768px)
+    @media only screen and (max-width $tablet_sm)
       grid-template-columns auto
       padding 10px
     .about
@@ -705,7 +655,7 @@
     width 100%
     @media only screen and (max-width 992px)
       grid-template-columns auto auto
-    @media only screen and (max-width 480px)
+    @media only screen and (max-width $phone)
       grid-template-columns auto
     li
       border-right 1px solid #b8c3c0
@@ -723,7 +673,7 @@
     align-items center
     justify-items center
     padding 12px 0
-    @media only screen and (max-width 768px)
+    @media only screen and (max-width $tablet_sm)
       justify-items start
     img
       justify-self end
@@ -742,9 +692,9 @@
     text-align center
     margin 0
     padding 35px 0
-    @media only screen and (max-width 1080px)
+    @media only screen and (max-width $tablet_lg)
       grid-template-columns auto auto auto
-    @media only screen and (max-width 768px)
+    @media only screen and (max-width $tablet_sm)
       grid-template-columns auto auto
     li
       font-weight bold
@@ -760,19 +710,6 @@
     color $blue
   a
     padding 6px 40px
-
-.title-default
-  color $blueDemon
-
-.title-main
-  display flex
-  align-items center
-  h2
-    margin-left 10px
-    color $blueDemon
-    b
-      color $blue
-      display block
 
 .agree
   margin-top 3rem
@@ -800,7 +737,7 @@
   thead
     background-color $gray
 
-.msg
+.alert-msg
   img
     width 40px
     margin 10px 10px 10px 0

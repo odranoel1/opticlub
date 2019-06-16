@@ -26,7 +26,7 @@ html(lang="es")
 		form(action="")
 			.Prime.container-fluid
 				.row
-					.col-sm-10.col-sm-offset-1.title
+					.col-sm-10.col-sm-offset-1.page-title
 						img(src="assets/img/opticlub-crown-icon.png", alt="OptiClub").img-responsive.crown
 						h2
 							| Estas a punto de convertirte en 
@@ -34,10 +34,9 @@ html(lang="es")
 						.adorn
 							img(src="assets/img/opticlub-adorn-white.png", alt="OptiClub").img-responsive
 				.row
-					.col-sm-10.col-sm-offset-1.content-form
-						h2
-							b Datos principales
-						.row.form-group
+					.col-sm-10.col-sm-offset-1
+						h2.title-form Datos principales
+						.row.form-group.mt-5
 							.col-sm-6
 								label * Nombre completo:
 								input(type="text").form-control
@@ -69,12 +68,12 @@ html(lang="es")
 								label Repetir contraseña
 								input(type="password").form-control.input-default
 				.row
-					.col-sm-10.col-sm-offset-1.benefit-title
+					.col-sm-10.col-sm-offset-1.text-center
 						h2
 							| Estos son los 
 							b beneficios 
 							| que PRIME te ofrece
-				.row.benefits
+				.row.benefits.mt-5
 					.col-sm-12
 						ul.list-inline
 							li

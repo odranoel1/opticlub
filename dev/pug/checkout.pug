@@ -24,17 +24,17 @@ html(lang="es")
 		include parts/header.pug
 
 		.Checkout.container-fluid
-			.row
+			.row.my-5
 				.col-md-10.col-md-offset-1
-					.title
+					.page-title
 						img(src="assets/img/opticlub-box-icon.png", alt="OptiClub").img-responsive
 						h2
 							| Estas a punto de terminar 
 							b "Mi paquete"
 			.row
-				.col-sm-6.col-md-5.col-md-offset-1.mt-5
+				.col-sm-6.col-md-5.col-md-offset-1
 					form(action="").form.form-adress
-						h2.title-form INFORMACIÓN DE CONTACTO
+						h2.form-title INFORMACIÓN DE CONTACTO
 						.row
 							.col-sm-12
 								label(for="") * Nombre Completo:
@@ -43,7 +43,7 @@ html(lang="es")
 							.col-sm-12.form-group
 								label(for="") * Correo electrónico:
 								input(type="text").form-control
-						h2.title-form DIRECCIÓN DE ENVÍO
+						h2.form-title DIRECCIÓN DE ENVÍO
 						a(href="#" data-toggle="modal" data-target="#changeAdress").ml-3 Cambiar
 						.modal.fade#changeAdress(role="dialog")
 							.modal-dialog.modal-lg
@@ -107,13 +107,13 @@ html(lang="es")
 								.form-group
 									label(for="") * Teléfono móvil:
 									input(type="text").form-control
-								.form-group.msg
+								.form-group.alert-msg
 									img(src="assets/img/opticlub-alert-icon.png", alt="Opticlub")
 									label INFORMACIÓN ADICIONAL
 									textarea(name="", cols="30", rows="5").form-control.input-default
 								.form-group
 									input(type="submit" value="Guardar NUEVA dirección de envío").btn.btn-primary.pull-right
-				.col-sm-6.col-md-5.mt-5
+				.col-sm-6.col-md-5
 					form(action="").form.form-bill
 						.header
 							img(src="assets/img/opticlub-bill-icon.png", alt="OptiClub").img-responsive
@@ -211,7 +211,7 @@ html(lang="es")
 			.row
 				.col-md-5.col-md-offset-1
 					form.form-payment
-						h2.title-form MÉTODO DE ENVÍO
+						h2.form-title MÉTODO DE ENVÍO
 						.shipping
 							img(src="assets/img/opticlub-package-icon.png", alt="OptiClub").img-responsive
 							.item
@@ -220,7 +220,7 @@ html(lang="es")
 									img(src="assets/img/opticlub-shipping-paquetexpress.png", alt="OptiClub").img-responsive.ml-2
 								b 5 a 7 días hábiles
 								span ($235.00)
-						h2.title-form MÉTODO DE PAGO
+						h2.form-title MÉTODO DE PAGO
 						p
 							| Los pagos se realizarán a la cuenta de 
 							b Alhazen Optical
@@ -240,7 +240,7 @@ html(lang="es")
 									img(src="assets/img/opticlub-payment-conekta-black.png", alt="OptiClub Conekta").img-responsive
 								span Pago en línea (Oxxo o tarjetas bancarias)
 			.row
-				.col-xs-10.col-xs-offset-1.col-md-offset-6.col-md-5.resume-package
+				.col-xs-10.col-xs-offset-1.col-md-offset-6.col-md-5.resume-package.my-5
 					i.fas.fa-chevron-right.mr-3
 					a(href="")
 						| Resumen de 
@@ -464,7 +464,7 @@ html(lang="es")
 						textarea(name="", cols="30", rows="5").form-control.input-default
 			.row
 				.col-sm-10.col-sm-offset-1.finish-payment
-					.form-group.msg
+					.form-group.alert-msg
 						img(src="assets/img/opticlub-discount-icon.png", alt="OptiClub")
 						label(for="") CÓDIGO PROMOCIONAL
 						input(type="text").form-control.input-default

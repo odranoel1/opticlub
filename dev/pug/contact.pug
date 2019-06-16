@@ -46,13 +46,14 @@ html(lang="es")
 							a(href="tel:52 1 3311308015")
 								| WhatsApp #[br]
 								| +52 1 3311308015
-				.col-md-6
+				.col-md-6.px-0
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.199413179507!2d-103.35796838470209!3d20.661464586198466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b200fc7299f1%3A0xbedc3d1d6ec4d667!2sCalle+Francia+1225%2C+Moderna%2C+44190+Guadalajara%2C+Jal.!5e0!3m2!1ses-419!2smx!4v1560205227559!5m2!1ses-419!2smx" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-			.row.content-form
+			.row.content-form.my-5
 				.col-sm-8.col-sm-offset-2
 					h2 Contáctanos
-					b ¿Tienes alguna duda? 
-					span Déjanos un mensaje y nos podremos en contacto a la brevedad
+					span
+						b.faq ¿Tienes alguna duda? 
+						| Déjanos un mensaje y nos podremos en contacto a la brevedad
 					form(action="")
 						.form-group.mt-5
 							label * Nombre:
@@ -63,7 +64,7 @@ html(lang="es")
 						.form-group
 							label * Asunto:
 							input(type="text").form-control.input-default
-						.form-group.msg
+						.form-group.alert-msg
 							img(src="assets/img/opticlub-alert-icon.png", alt="Opticlub")
 							label MENSAJE
 							textarea(name="", cols="30", rows="10").form-control.input-default
