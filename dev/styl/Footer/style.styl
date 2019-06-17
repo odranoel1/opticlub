@@ -14,17 +14,30 @@ footer, a
             float right
   .contact
     padding-bottom 40px
+    & > div:first-child, & > div:last-child
+      h2
+        font-size 1.8em
+        font-weight bold
     img
       float left
     .payments
       h2
         color $white
+        display inline-block
+        border-bottom 1px solid $blue
+        padding-bottom 8px
       ul
         display flex
         @media only screen and (max-width 480px)
           flex-direction column
   .middle
     padding-bottom 30px
+    & > div
+      @media only screen and (min-width $tablet_sm)
+        border-top 1px solid $white
+        padding-top 20px
+    ul
+      margin-top 10px
   .bottom
     background-color $blue
     text-align center

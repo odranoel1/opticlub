@@ -22,7 +22,61 @@ html(lang="es")
 		script(src="assets/main.js")
 	body
 		include parts/header.pug
-
+		
+		header.Header.HeaderHome.d-none
+			.container-fluid
+				.row
+					.col-sm-12.px-0
+						ul.list-inline.desktop
+							li.social-media
+								a(href="#").mr-3
+									i.fab.fa-facebook-f
+								a(href="#")
+									i.fab.fa-instagram
+							li.whatsapp
+								i.fab.fa-whatsapp.pl-3
+								a(href="https://api.whatsapp.com/send?phone=5213311308015" target="_blank").ml-2 +521 331 1308015
+							li
+								a(href="product.html", class=section == 'index' ? 'active' : '') TIENDA
+							li
+								a(href="about.html") NOSOTROS
+							li.logo
+								a.d-block(href="/")
+									img(src="assets/img/opti-logo.png", alt="OptiClub Logo").img-responsive
+							li.align
+								img(src="assets/img/opticlub-monocle-white-icon.png", alt="OptiClub").img-responsive
+								a(href="#") BUSCAR
+							li
+								a(href="membership.html") MEMBRESÍAS
+							li.align
+								img(src="assets/img/opticlub-box-white-icon.png", alt="OptiClub").img-responsive
+								a(href="order.html") MI PAQUETE (23)
+							li.align
+								img(src="assets/img/opticlub-login-white-icon.png", alt="OptiClub").img-responsive
+								a(href="#") SOY SOCIO
+						.header-mobil
+							a.d-block(href="/")
+								img(src="assets/img/opti-logo.png", alt="OptiClub Logo").img-responsive
+							a(href="#", target="_blank").open-menu
+								i.fas.fa-bars
+						ul.mobil
+							li
+								a(href="product.html", class=section == 'index' ? 'active' : '') TIENDA
+							li
+								a(href="about.html") NOSOTROS
+							li
+								a(href="membership.html") MEMBRESÍAS
+							li
+								a(href="order.html") MI PAQUETE (23)
+							li
+								a(href="#") SOY SOCIO
+							li
+								a(href="#").mr-3
+									i.fab.fa-facebook-f
+								a(href="#")
+									i.fab.fa-instagram
+								i.fab.fa-whatsapp.px-3
+								a(href="https://api.whatsapp.com/send?phone=5213311308015" target="_blank") +521 331 1308015
 		//- .Banner-home
 		//- 	img(src="assets/img/opticlub-adorn-left-icon.png", alt="OptiClub").img-responsive
 		//- 	img(src="assets/img/opticlub-logo-primary.png", alt="OptiClub").img-responsive
@@ -64,14 +118,14 @@ html(lang="es")
 								img(src="assets/img/opticlub-mobil-card-icon.png", alt="OptiClub").img-responsive
 								p
 									| ¡Comprar es fácil! Puedes usar #[br]
-									| Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
+									| Pay Pal, Tarjeta de débito y crédito o pago en tiendas OXXO.
 							li
 								img(src="assets/img/opticlub-prize-icon.png", alt="OptiClub").img-responsive
 								p ¡Satisfacción Total en nuestros productos!
 				.row.membership
 					.col-sm-6.col-md-8
 						.row
-							.col-sm-10.col-sm-offset-1
+							.col-sm-10.col-sm-offset-1.mt-4
 								h1 ¡Únete al Club!
 						.row
 							.col-sm-5.col-sm-offset-1.item
@@ -80,15 +134,10 @@ html(lang="es")
 								p.price $0 
 									span GRATIS
 								.stars
-									a(href="#", target="_blank")
 										i.fas.fa-star
-									a(href="#", target="_blank")
 										i.far.fa-star
-									a(href="#", target="_blank")
 										i.far.fa-star
-									a(href="#", target="_blank")
 										i.far.fa-star
-									a(href="#", target="_blank")
 										i.far.fa-star
 								i.fas.fa-arrow-right.mr-3
 								a(href="partner-club.html").btn.btn-blue ACTIVAR AHORA
@@ -96,27 +145,22 @@ html(lang="es")
 								h2 MEMBRESÍA
 									p SOCIO PRIME
 								p.price $499 
-									span GRATIS
+									span MENSUAL
 								.stars
-									a(href="#", target="_blank")
 										i.fas.fa-star
-									a(href="#", target="_blank")
 										i.fas.fa-star
-									a(href="#", target="_blank")
 										i.fas.fa-star
-									a(href="#", target="_blank")
 										i.fas.fa-star
-									a(href="#", target="_blank")
 										i.fas.fa-star
-									a(href="#", target="_blank")
 										i.fas.fa-star
 								i.fas.fa-arrow-right.mr-3
 								a(href="partner-prime.html").btn.btn-default COMPRAR AHORA
 					.col-sm-6.col-md-4
 						img(src="assets/img/opticlub-home-banner-3.jpg", alt="OptiClub").img-responsive
 				.row
-					.col-sm-12.text-center
-						i.fab.fa-instagram
-						h2 INSTAGRAM
+					.col-sm-12.text-center.my-5
+						.instagram-title
+							i.fab.fa-instagram
+							h2 INSTAGRAM
 						p opticlub.mx
 		include parts/footer.pug

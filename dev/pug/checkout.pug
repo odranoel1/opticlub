@@ -78,8 +78,8 @@ html(lang="es")
 													span
 														b Añadir 
 														| una nueva dirección de envío
-												a(href="#").link-default Añadir una dirección de envío nueva
-												a(href="#").link-default Editar o eliminar direcciones
+												a(href="#").link Añadir una dirección de envío nueva
+												a(href="#").link Editar o eliminar direcciones
 						.row
 							.col-sm-6.form-group
 								label(for="") * Nombre Completo:
@@ -152,7 +152,7 @@ html(lang="es")
 														| Francia 1225 Colonia Moder...
 														| COLONIA MODERNAGUADALAJARA, JALISCO
 														| Teléfono celular: (044) 3311
-													a(href="#").btn.btn-primary Entregar en esta dirección
+													a(href="#").btn.btn-primary Elegir esta razón social
 												.col-sm-4
 													b RFC RI3854FZMOPTICA LENTES Y MÁS
 													p
@@ -161,15 +161,15 @@ html(lang="es")
 														| Teléfono celular: (044) 3311
 													a(href="#").btn.btn-adress
 														i.fa.fa-check
-														| Entregar en esta dirección
+														| Agregar datos fiscales
 												.col-sm-4
 													.add-adress
 														i.fa.fa-plus
 														span
 															b Añadir 
 															| nuevos datos fiscales
-													a(href="#").link-default Añadir nuevos datos fiscales
-													a(href="#").link-default Editar o eliminar datos fiscales
+													a(href="#").link Añadir nuevos datos fiscales
+													a(href="#").link Editar o eliminar datos fiscales
 							.form-group
 								label(for="") * RFC:
 								input(type="text").form-control
@@ -240,7 +240,7 @@ html(lang="es")
 									img(src="assets/img/opticlub-payment-conekta-black.png", alt="OptiClub Conekta").img-responsive
 								span Pago en línea (Oxxo o tarjetas bancarias)
 			.row
-				.col-xs-10.col-xs-offset-1.col-md-offset-6.col-md-5.resume-package.my-5
+				.col-xs-10.col-xs-offset-1.col-md-offset-7.col-md-4.resume-package.my-5
 					i.fas.fa-chevron-right.mr-3
 					a(href="")
 						| Resumen de 
@@ -250,7 +250,7 @@ html(lang="es")
 					img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub").img-responsive
 					p
 						| Felicidades llevas 
-						b $1,200
+						b $1,200 
 						| ahorrados. 
 						| Te faltan 
 						b $3,800 
@@ -458,7 +458,7 @@ html(lang="es")
 						tr
 							td Total
 							td MX $2,935.00
-					.form-group.msg
+					.form-group.alert-msg
 						img(src="assets/img/opticlub-alert-icon.png", alt="OptiClub")
 						label OBSERVACIONES DEL PAQUETE
 						textarea(name="", cols="30", rows="5").form-control.input-default
@@ -468,7 +468,7 @@ html(lang="es")
 						img(src="assets/img/opticlub-discount-icon.png", alt="OptiClub")
 						label(for="") CÓDIGO PROMOCIONAL
 						input(type="text").form-control.input-default
-					a(href="#").btn.btn-primary SEGUIR COMPRANDO
+					a(href="product.html").btn.btn-primary SEGUIR COMPRANDO
 					input(type="submit" value="FINALIZAR PEDIDO").btn.btn-default
 			.row
 				.col-sm-10.col-sm-offset-1.agree

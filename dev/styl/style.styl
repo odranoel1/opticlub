@@ -44,7 +44,7 @@ label
 	font-weight bolder
 	color $black
 
-input
+input,textarea
 	border none !important
 	border-bottom 1px solid $black !important
 	border-radius 0 !important
@@ -68,17 +68,22 @@ input
 .btn
 	color $white
 	transition 0.3s
+	border-radius 0
+	font-weight bold
 	&:hover
 		background-color rgba($blue, 0.8)
-		border-color $blue
+		border-color $blue !important
 		color $white
 	&-default
 		background-color $blue
-		border-color $blue
+		border-color $blue !important
 	&-primary
 		background-color $blueDemon
 	&-link
 		border-color $blue
+		&:hover
+			background-color $black
+			color $white !important
 	&-blue
 		border-color $blue
 		color $blue
@@ -91,11 +96,9 @@ input
 	&-primary
 		color $black
 
-.box
-	&-gray
-		background-color $gray
-	&-blueDemon
-		background-color $blueDemon
+.title-default
+	font-size 1.8em
+	font-weight bold
 
 .img-default
 	display block

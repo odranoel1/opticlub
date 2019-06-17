@@ -4,6 +4,11 @@
   display grid
   grid-template-columns auto auto auto
 
+.HeaderHome
+  background-color $blue
+  a, i
+    color $white !important
+
 .Home
   .product
     padding-top 1.5rem
@@ -31,6 +36,9 @@
   .membership
     background-color $gray
     margin 10px
+    h1
+      font-size 2.5em
+      font-weight bold
     .item
       @media only screen and (max-width $tablet_sm)
         width 50%
@@ -53,11 +61,18 @@
           margin-left 10px
       .stars
         margin 15px 0
+  .instagram-title
+    i
+      font-size 1.5em
+    h2
+      color $blueDemon
+      display inline-block
+      margin 0
 
 .About
   background-color $gray
   .title
-    // font-size 1.5em
+    font-size 1.5em
     h2
       color $blueDemon
       span
@@ -82,6 +97,10 @@
       margin-top 15px
 
 .Contact
+  a
+    &:hover
+    	color $white
+    	text-decoration none
   .location
     display flex
     @media only screen and (max-width $tablet_md)
@@ -112,27 +131,30 @@
     text-align center
     span
       color $blueDemon
-  .agent
-    display grid
-    grid-template-columns repeat(3, auto)
-    grid-template-rows repeat(2, auto)
-    grid-gap 4rem
-    margin-top 40px
-    margin-bottom 40px
-    @media only screen and (max-width $tablet_sm)
-      grid-template-columns repeat(2, auto)
-    @media only screen and (max-width $phone)
-      grid-template-columns auto
-    .item
-      h2
-        font-weight bolder
-      a
-        color $blue
-        display block
+  .agents
+    background-color $gray
+    .items
+      display grid
+      grid-template-columns repeat(3, auto)
+      grid-template-rows repeat(2, auto)
+      grid-gap 4rem
+      margin-top 40px
+      margin-bottom 40px
+      @media only screen and (max-width $tablet_sm)
+        grid-template-columns repeat(2, auto)
+      @media only screen and (max-width $phone)
+        grid-template-columns auto
+      .item
+        h2
+          font-weight bolder
+        a
+          color $blue
+          display block
 
 .Prime, .Club
   h2
     color $blueDemon
+    font-weight bold
     b
       color $blue
 
@@ -169,6 +191,8 @@
       top 0
       right 20px
       z-index 1
+      img
+        width 170px
   .prime-title
     p
       color $blueDemon
@@ -198,6 +222,7 @@
       @media only screen and (max-width $tablet_md)
         grid-template-rows repeat(3, 100px)
       .title
+        text-align center
         align-self center
         justify-self center
       .price
@@ -207,13 +232,14 @@
         p
           justify-self end
           align-self center
-          font-size 2.5em
+          font-size 3.5em
           margin 0
         .stars
           align-self center
           p
             font-size 1em
       a.btn
+        font-weight lighter
         align-self center
         justify-self end
 
@@ -238,6 +264,9 @@
       align-items center
       padding 10px
       margin 10px
+      a
+        color $blueDemon
+        text-decoration none
   .agent
     width 66.66666667%
     margin-left 16.66666667%
@@ -313,12 +342,17 @@
       padding-left 0
       li
         border 1px solid $gray
-        margin 10px 0
+        cursor pointer
+        @media only screen and (min-width 1025px)
+          width 250px
+          margin 10px 10px 10px 0
       @media only screen and (max-width $desktop_size)
         display flex
     .picture
       @media only screen and (max-width $desktop_size)
         grid-row 1
+  .info a
+    color $blue
   .title
     h2
       color $blueDemon
@@ -348,6 +382,8 @@
     margin-top 27px
     a
       color $blueDemon
+      font-weight bold
+      padding 7px 4px
     .active a
       text-decoration underline
       border-color transparent
@@ -359,10 +395,14 @@
     h2
       color $blueDemon
       span
-        font-weight bold
+        font-weight lighter
   #products-carousel
     .item
       text-align center
+      .content
+        display none
+    .item:hover > .content
+      display block
     .owl-nav
       position absolute
       top 50%
@@ -402,8 +442,13 @@
       float right
     img
       width 30px
-  .pull-right a
-    margin 10px
+  .finish-payment
+    display grid
+    grid-template-columns auto auto auto
+    align-items end
+    gap 2rem
+    @media only screen and (max-width $tablet_sm)
+      grid-template-columns auto
 
 .Checkout
   .page-title
@@ -508,6 +553,8 @@
       grid-template-columns auto
     .alert-msg
       margin-bottom 0
+      img
+        width 50px
   .resume-total
     tr
       td
@@ -524,7 +571,8 @@
       background-color $gray
       .msg
         img
-          width 40px
+          width 30px
+          margin-right 6px
         h2
           color $blue
           font-weight bolder
@@ -536,6 +584,7 @@
         i
           color $blueDemon
     .modal-body
+      padding 30px
       a.btn
         color $white
       a.btn-adress
@@ -662,6 +711,8 @@
       display flex
       align-items center
       margin 10px
+      &:last-child
+        border-right none
       p
         margin-left 10px
 
@@ -744,3 +795,9 @@
   label
     color $blue
     font-weight bolder
+
+.fixed
+  position fixed
+  left 0
+  right 0
+  z-index 2

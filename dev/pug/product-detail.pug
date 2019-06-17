@@ -29,7 +29,7 @@ html(lang="es")
 					img(src="assets/img/opticlub-pork-icon.png", alt="OptiClub").img-responsive
 					p
 						| Felicidades llevas 
-						b $1,200
+						b $1,200 
 						| ahorrados. 
 						| Te faltan 
 						b $3,800 
@@ -51,10 +51,11 @@ html(lang="es")
 						.col-sm-12.picture-prod
 							ul
 								li
-									img(src="assets/img/opticlub-product-item-thumbnail.jpg", alt="OptiClub").img-responsive
+									img(src="assets/img/opticlub-product-item.jpg" data-detail="#img-detail" data-src="assets/img/opticlub-product-item.jpg", alt="OptiClub").img-responsive.img-detail-link
 								li
-									img(src="assets/img/opticlub-product-item-thumbnail.jpg", alt="OptiClub").img-responsive
-							img(src="assets/img/opticlub-product-item.jpg", alt="OptiClub").img-responsive.picture
+									img(src="assets/img/opticlub-product-item.jpg" data-detail="#img-detail" data-src="assets/img/opticlub-product-item.jpg", alt="OptiClub").img-responsive.img-detail-link
+							a(href="assets/img/opticlub-product-item.jpg").img-zoom
+								img(src="assets/img/opticlub-product-item.jpg", alt="OptiClub").img-responsive.picture#img-detail
 				.col-sm-6.col-md-3.info
 					.title
 						h2 MASSIMO ROSSI
@@ -107,41 +108,46 @@ html(lang="es")
 								| hecho de acetato fino. Las micas están 100% protegidas
 								| contra los rayos UV, y las gafas tienen un logotipo
 								| de Massimo Rossi en las varillas.
-					a(href="#").link.link-default.mr-3 Términos y condiciones
-					a(href="#").link.link-default Politica de envíos
+					a(href="#").link.mr-3 Términos y condiciones
+					a(href="#").link Politica de envíos
 			.row.my-5
 				.col-sm-12.title-interesed
-					h2
-						span También te puede 
-						| interesar
+					h2.title-default
+						| También te puede 
+						span interesar
 			.row
 				.col-sm-10.col-sm-offset-1
 					.owl-carousel.owl-theme#products-carousel
 						.item
 							img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
-							b MASSIMO ROSSI
-							p Acetato y Metal
-							span $299.00
+							.content
+								b MASSIMO ROSSI
+								p Acetato y Metal
+								span $299.00
 						.item
 							img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
-							b MASSIMO ROSSI
-							p Acetato y Metal
-							span $299.00
+							.content
+								b MASSIMO ROSSI
+								p Acetato y Metal
+								span $299.00
 						.item
 							img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
-							b MASSIMO ROSSI
-							p Acetato y Metal
-							span $299.00
+							.content
+								b MASSIMO ROSSI
+								p Acetato y Metal
+								span $299.00
 						.item
 							img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
-							b MASSIMO ROSSI
-							p Acetato y Metal
-							span $299.00
+							.content
+								b MASSIMO ROSSI
+								p Acetato y Metal
+								span $299.00
 						.item
 							img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
-							b MASSIMO ROSSI
-							p Acetato y Metal
-							span $299.00
+							.content
+								b MASSIMO ROSSI
+								p Acetato y Metal
+								span $299.00
 			.row
 				.col-sm-12.cta-default
 					ul.list-inline
@@ -153,7 +159,7 @@ html(lang="es")
 							p Envíos a toda la república mexicana
 						li
 							img(src="assets/img/opticlub-mobil-card-icon.png", alt="OptiClub").img-responsive
-							p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y créditoo pago en tiendas OXXO.
+							p ¡Comprar es fácil! Puedes usar Pay Pal, Tarjeta de débito y crédito o pago en tiendas OXXO.
 						li
 							img(src="assets/img/opticlub-prize-icon.png", alt="OptiClub").img-responsive
 							p ¡Satisfacción Totalen nuestros productos!

@@ -19,87 +19,49 @@ $( document ).ready(function() {
         }
     });
 
-    $('#products-carousel').owlCarousel({
-        // items: 4,
-        nav: true,
-        dots: false,
-        loop: true,
-        responsive: {
-          0: {
-            nav: false,
-            dots: true,
-            items: 1
-          },
-          480: {
-            nav: false,
-            dots: true,
-            items: 2
-          },
-          768: {
-            items: 3
-          },
-          992: {
-            items: 3
-          }
-        }
-    });
-    $( ".owl-prev").html('<i class="fas fa-chevron-left"></i>');
-    $( ".owl-next").html('<i class="fas fa-chevron-right"></i>');
-
-    $('#tips-carousel').owlCarousel({
-        // items: 4,
-        nav: true,
-        dots: false,
-        loop: true,
-        responsive: {
-          0: {
-            nav: false,
-            dots: true,
-            items: 1
-          },
-          480: {
-            nav: false,
-            dots: true,
-            items: 2
-          },
-          768: {
-            items: 3
-          },
-          992: {
-            items: 3
-          }
-        }
-    });
-
-    $('#conferences-carousel').owlCarousel({
-        // items: 4,
-        nav: true,
-        dots: false,
-        loop: true,
-        responsive: {
-          0: {
-            nav: false,
-            dots: true,
-            items: 1
-          },
-          480: {
-            nav: false,
-            dots: true,
-            items: 2
-          },
-          768: {
-            items: 3
-          },
-          992: {
-            items: 3
-          }
-        }
-    });
-
     //Open Mobil Menu
     $('.open-menu').click(function(e){
       e.preventDefault();
 
       $('.mobil').slideToggle('fast');
     });
+
+    // ScrollTop Button
+    $(window).scroll(function(){
+      if ($(this).scrollTop()>30) {
+        $(".scroll-top").fadeIn();
+      } else {
+        $(".scroll-top").fadeOut();
+      }
+    });
+
+    $(".scroll-button").click(function(e){
+      e.preventDefault();
+      $('body,html').animate({
+        scrollTop: $("body,html").offset().top
+      }, 1500);
+    });
+
+    // Product ZOOM & Change beetwen thumbnail
+    $(".img-detail-link").click( function(e) {
+       e.preventDefault();
+       var src = $(this).attr('data-src');
+
+       $("#img-detail").attr('src',src);
+       $(".img-zoom").attr('href',src);
+
+       $("#img-detail").magnify();
+    });
+
+    $("#img-detail").magnify();
+
+    // CallToAction fixed in scroll
+    // $(window).scroll(function(){
+    //
+    //   if ($(this).scrollTop()>30) {
+    //     $(".cta-offer").addClass('fixed');
+    //   } else {
+    //     $(".cta-offer").removeClass('fixed');
+    //   }
+    // });
 });

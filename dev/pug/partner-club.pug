@@ -58,18 +58,18 @@ html(lang="es")
 								label * Teléfóno
 								input(type="text").form-control
 							.col-sm-6
-								label * Nombre de mi agente:
+								label Nombre de mi agente:
 								input(type="text").form-control
 						.row.form-group
 							.col-sm-6.pass-style
 								label Contraseña
 								.input-group
-									input(type="text").form-control.input-primary
+									input(type="password").form-control.input-primary
 									span.input-group-btn
 										a(href="#").btn.btn-primary Mostrar
 							.col-sm-6
 								label Repetir contraseña
-								input(type="text").form-control.input-default
+								input(type="password").form-control.input-default
 						input(type="submit" value="+ CREAR TU CUENTA SOCIO CLUB").btn.btn-default.pull-right
 			.row
 				.col-sm-10.col-sm-offset-1.agree
@@ -84,7 +84,7 @@ html(lang="es")
 					p
 						| Una vez que hagas el registro enviaremos un 
 						b correo de confirmación 
-						| de tu cuenta, posteriormente a la activación podrás visualizar las marcas y precios de nuestros productos
+						| de tu cuenta, posteriormente a la activación podrás visualizar las marcas y precios de nuestros productos.
 			.row
 				.col-sm-10.col-sm-offset-1.page-title.prime-title
 					img(src="assets/img/opticlub-crown-icon.png", alt="OptiClub").img-responsive
@@ -122,7 +122,7 @@ html(lang="es")
 							img(src="assets/img/opticlub-money-icon.png", alt="OptiClub")
 							p MEJOR PRECIO
 							span SIN LÍMITE DE VOLUMEN
-				.col-md-4.enable
+				.col-md-4.enable.px-0
 					h3.title ¡Comienza a disfrutar de sus beneficios!
 					.price
 						p $499
@@ -133,7 +133,7 @@ html(lang="es")
 							i.fas.fa-star
 							i.fas.fa-star
 							i.fas.fa-star
-					a(href="#").btn.btn-default
+					a(href="partner-prime.html").btn.btn-default
 						| + ACTIVAR MI CUENTA 
 						b AHORA
 		include parts/footer.pug
