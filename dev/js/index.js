@@ -26,14 +26,44 @@ $( document ).ready(function() {
       $('.mobil').slideToggle('fast');
     });
 
-    // ScrollTop Button
-    $(window).scroll(function(){
-      if ($(this).scrollTop()>30) {
-        $(".scroll-top").fadeIn();
-      } else {
-        $(".scroll-top").fadeOut();
-      }
+    //Mobil Menu - Open options(tienda)
+    $('.store').click(function(e){
+      e.preventDefault();
+
+      $('.store-option').slideToggle('fast');
     });
+
+    window.onscroll = function (e)
+    {
+      if($(this).scrollTop() > 110) {
+
+        if (!$(".cta-offer").hasClass('isCheckout')) {
+
+          var heightCTA = $('.cta-offer').outerHeight();
+
+          $(".cta-offer").addClass('fixed');
+          $(".row.cta-offer").next().css( "margin-top", heightCTA + "px" );
+        }
+
+        $(".scroll-top").fadeIn();
+
+        var heightHeader = $('.HeaderHome').outerHeight();
+
+        $('.HeaderHome').removeClass('d-none').addClass('fixed');
+
+      } else {
+
+        if (!$(".cta-offer").hasClass('isCheckout')) {
+
+          $(".cta-offer").removeClass('fixed');
+          $(".row.cta-offer").next().css( "margin-top", "auto");
+        }
+
+        $(".scroll-top").fadeOut();
+
+        $('.HeaderHome').addClass('d-none').remove('fixed');
+      }
+    }
 
     $(".scroll-button").click(function(e){
       e.preventDefault();
@@ -55,13 +85,12 @@ $( document ).ready(function() {
 
     $("#img-detail").magnify();
 
-    // CallToAction fixed in scroll
-    // $(window).scroll(function(){
-    //
-    //   if ($(this).scrollTop()>30) {
-    //     $(".cta-offer").addClass('fixed');
-    //   } else {
-    //     $(".cta-offer").removeClass('fixed');
-    //   }
-    // });
+
+    // Product Choose Variant IMG
+    $('.choose-variant').click(function(){
+
+      var inputSRC = $(this).attr('data-src');
+
+      $('.img-variant').attr('src', inputSRC);
+    })
 });

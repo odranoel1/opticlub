@@ -32,6 +32,32 @@ header.Header
 					li.align
 						img(src="assets/img/opticlub-login-icon.png", alt="OptiClub").img-responsive
 						a(href="#") SOY SOCIO
+					li.logout.d-none
+						a(href="#")
+							img(src="assets/img/opticlub-logout-icon.png", alt="OptiClub").img-responsive
+						p
+							b BUENAS TARDES #[br]
+							| NOEMÍ CALDERON
+						.prime
+							.title
+								img(src="assets/img/opticlub-crown-white-icon.png", alt="OptiClub")
+								h2 SOCIO PRIME
+							p ¿Cómo estás hoy?
+							ul
+								li
+									a(href="#") Mis paquetes
+								li
+									a(href="#") Direcciones
+								li
+									a(href="#") Mi Cuenta
+								li
+									a(href="#") Beneficios Prime
+								li
+									a(href="#") Videos Prime
+								li
+									a(href="#") ¿Ayuda?
+								li
+									a(href="#") Cerrar sesión
 				.header-mobil
 					a.d-block(href="/")
 						img(src="assets/img/opti-logo-default.png", alt="OptiClub Logo").img-responsive
@@ -39,7 +65,37 @@ header.Header
 						i.fas.fa-bars
 				ul.mobil
 					li
-						a(href="product.html", class=section == 'index' ? 'active' : '') TIENDA
+						a(href="product.html", class=section == 'index' ? 'active' : '').store
+							| TIENDA
+							i.fas.fa-angle-down.ml-3
+						ul.store-option
+							li
+								a(href="#") OFTÁLMICO
+								ul.store-item
+									li
+										a(href="product.html") HOMBRE
+									li
+										a(href="product.html") MUJER
+									li
+										a(href="product.html") NIÑO
+							li
+								a(href="#") SOLAR
+								ul.store-item
+									li
+										a(href="product.html") HOMBRE
+									li
+										a(href="product.html") MUJER
+									li
+										a(href="product.html") NIÑO
+							li
+								a(href="#") CLIP ON
+								ul.store-item
+									li
+										a(href="product.html") HOMBRE
+									li
+										a(href="product.html") MUJER
+									li
+										a(href="product.html") NIÑO
 					li
 						a(href="about.html") NOSOTROS
 					li

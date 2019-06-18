@@ -100,10 +100,40 @@ input,textarea
 	font-size 1.8em
 	font-weight bold
 
+.radio
+	display contents
+	label
+		padding 5px
+		input
+			float left
+		img
+			float right
+		p
+			display inline-block
+			width 100%
+			margin 0
+
 .img-default
 	display block
 	width 100%
 	height auto
+
+.owl-nav
+	position absolute
+	top 50%
+	width 100%
+	i
+		font-size 1.5em
+		color $black
+	.owl-prev, .owl-next
+		position absolute
+		&:hover
+			background-color transparent !important
+			color $black
+	.owl-prev
+		right 100%
+	.owl-next
+		left 100%
 
 .notify
 	padding 0.8em

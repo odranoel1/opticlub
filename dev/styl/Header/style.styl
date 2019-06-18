@@ -23,6 +23,36 @@
         font-size 1.2em
       i.fa-whatsapp
         color $black
+    .logout
+      position relative
+      display flex
+      align-items center
+      color $blue
+      p
+        margin 10px
+        font-size 0.8em
+      .prime
+        white-space normal
+        background-color rgba($blueDemon, 0.9);
+        position absolute
+        top 50px
+        right 0
+        z-index 1
+        width 230px
+        padding 10px
+        margin 10px
+        display none
+        .title
+          display flex
+          align-items center
+        h2, p, a
+          color $white
+        ul
+          padding 0
+          li
+            padding 3px 0
+      &:hover > .prime
+        display block
     .social-media, .whatsapp
       @media only screen and (max-width 1080px)
         position absolute
@@ -62,6 +92,12 @@
     padding 10px
     li
       padding 10px 0
+      & > ul
+        padding-left 15px
+        & > li
+          padding 5px 0
+      ul.store-option
+        display none
 
   .scroll-top
     position fixed
@@ -70,3 +106,29 @@
     font-size 50px
     z-index 999
     display none
+
+.HeaderHome
+  background-color $blue
+  a, i
+    color $white !important
+  .drop
+    position relative
+    white-space normal !important
+    .down-menu
+      position absolute
+      left 0
+      right 0
+      padding 0
+      z-index 1
+      width 140px
+      display none
+      background-color rgba($blue, 0.8)
+      li
+        padding 10px
+        &:nth-child(2)
+          background-color rgba($blue, 0.5)
+    .second
+      left 140px !important
+      top 0
+    &:hover > .down-menu
+      display block

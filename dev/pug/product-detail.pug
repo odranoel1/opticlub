@@ -38,7 +38,7 @@ html(lang="es")
 				.col-sm-5
 					img(src="assets/img/opticlub-heart-icon.png", alt="OptiClub").img-responsive
 					b TOTAL DEL PAQUETE 23 pzas - $2,000 pesos
-			.row.mt-5
+			.row
 				.col-sm-6.col-md-offset-1.col-md-7
 					.row.my-5
 						.col-sm-12
@@ -64,21 +64,23 @@ html(lang="es")
 						h3 Micas polarizadas
 						p Modelo: MSM 023 C07
 					p.price $299.00
-					form(action="").grid
-						.form-group
+					form(action="")
+						.grid
 							label.radio-inline
 								input(type="radio" name="optradio" checked)
-								| C04
-							label.radio-inline.m-0
-								input(type="radio" name="optradio")
-								| C11
-						.form-group
-							label Cantidad
-							select.form-control
-								option 12
-								option 11
-								option 10
-						input(type="submit" value="AGREGAR A MI PAQUETE").btn.btn-default
+								img(src="assets/img/opticlub-cb1-icon.png", alt="OptiClub").img-responsive
+								p C09
+							label.radio-inline
+								input(type="radio" name="optradio" checked)
+								img(src="assets/img/opticlub-cb2-icon.png", alt="OptiClub").img-responsive
+								p C09
+							.form-group
+								label Cantidad
+								select.form-control
+									option 12
+									option 11
+									option 10
+						input(type="submit" value="AGREGAR A MI PAQUETE").btn.btn-default.btn-block
 					ul.nav.nav-tabs
 						li.active
 							a(href="#description" data-toggle="tab") DESCRIPCIÓN
@@ -119,31 +121,36 @@ html(lang="es")
 				.col-sm-10.col-sm-offset-1
 					.owl-carousel.owl-theme#products-carousel
 						.item
-							img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+							a(href="product-detail.html")
+								img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
 							.content
 								b MASSIMO ROSSI
 								p Acetato y Metal
 								span $299.00
 						.item
-							img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+							a(href="product-detail.html")
+								img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
 							.content
 								b MASSIMO ROSSI
 								p Acetato y Metal
 								span $299.00
 						.item
-							img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+							a(href="product-detail.html")
+								img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
 							.content
 								b MASSIMO ROSSI
 								p Acetato y Metal
 								span $299.00
 						.item
-							img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+							a(href="product-detail.html")
+								img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
 							.content
 								b MASSIMO ROSSI
 								p Acetato y Metal
 								span $299.00
 						.item
-							img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
+							a(href="product-detail.html")
+								img(src="assets/img/opticlub-product-glasses.jpg", alt="OptiClub").img-responsive
 							.content
 								b MASSIMO ROSSI
 								p Acetato y Metal
